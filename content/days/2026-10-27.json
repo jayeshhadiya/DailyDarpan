@@ -1,0 +1,225 @@
+{
+  "date": "2026-10-27",
+  "questions": [
+    {
+      "category": "Defence",
+      "question": "Who released India's updated Land Warfare Doctrine in October 2026?",
+      "options": [
+        "Amit Shah",
+        "Rajnath Singh",
+        "Narendra Modi",
+        "General Dhiraj Seth"
+      ],
+      "answer": 1,
+      "gu": {
+        "question": "ઑક્ટોબર 2026માં ભારતનો અપડેટેડ લેન્ડ વૉરફેર ડૉક્ટ્રિન (ભૂમિ યુદ્ધ સિદ્ધાંત) કોણે જાહેર કર્યો?",
+        "options": [
+          "અમિત શાહ",
+          "રાજનાથ સિંહ",
+          "નરેન્દ્ર મોદી",
+          "જનરલ ધીરજ શેઠ"
+        ]
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "National Infantry Day, observed on 27 October, marks the arrival of the Indian Army's first infantry battalion in which city in 1947?",
+      "options": [
+        "Jammu",
+        "Srinagar",
+        "Leh",
+        "Poonch"
+      ],
+      "answer": 1,
+      "explanation": "On 27 October 1947, troops of 1 Sikh were airlifted to Srinagar to defend Kashmir after the state acceded to India.",
+      "gu": {
+        "question": "27 ઑક્ટોબરે ઉજવાતો રાષ્ટ્રીય પાયદળ દિવસ 1947માં ભારતીય સેનાની પ્રથમ પાયદળ બટાલિયન કયા શહેરમાં પહોંચી તેની યાદમાં ઉજવાય છે?",
+        "options": [
+          "જમ્મુ",
+          "શ્રીનગર",
+          "લેહ",
+          "પૂંછ"
+        ],
+        "explanation": "27 ઑક્ટોબર 1947ના રોજ, રાજ્યના ભારતમાં વિલય પછી કાશ્મીરના રક્ષણ માટે 1 શીખ રેજિમેન્ટના સૈનિકોને વિમાન દ્વારા શ્રીનગર પહોંચાડવામાં આવ્યા હતા."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "In which city did the RBI inaugurate a new data centre and cybersecurity training institute in October 2026?",
+      "options": [
+        "Mumbai",
+        "Hyderabad",
+        "Bhubaneswar",
+        "Ahmedabad"
+      ],
+      "answer": 2,
+      "explanation": "It was inaugurated by the Prime Minister during his visit to Odisha on 25 October 2026.",
+      "gu": {
+        "question": "ઑક્ટોબર 2026માં RBIએ કયા શહેરમાં નવા ડેટા સેન્ટર અને સાયબર સુરક્ષા તાલીમ સંસ્થાનું ઉદ્ઘાટન કર્યું?",
+        "options": [
+          "મુંબઈ",
+          "હૈદરાબાદ",
+          "ભુવનેશ્વર",
+          "અમદાવાદ"
+        ],
+        "explanation": "25 ઑક્ટોબર 2026ના રોજ ઓડિશાની મુલાકાત દરમિયાન વડાપ્રધાને તેનું ઉદ્ઘાટન કર્યું હતું."
+      }
+    },
+    {
+      "category": "Environment",
+      "question": "What is the main purpose of the Atmospheric Chemistry and Aerosol Toxicity Analysis Laboratory (AATAL)?",
+      "options": [
+        "Studying deep-sea organisms",
+        "Analysing atmospheric pollution and aerosol toxicity",
+        "Developing satellite navigation systems",
+        "Testing nuclear reactor materials"
+      ],
+      "answer": 1,
+      "gu": {
+        "question": "એટમોસ્ફેરિક કેમિસ્ટ્રી એન્ડ એરોસોલ ટૉક્સિસિટી એનાલિસિસ લેબોરેટરી (AATAL)નો મુખ્ય હેતુ શું છે?",
+        "options": [
+          "ઊંડા સમુદ્રના જીવોનો અભ્યાસ",
+          "વાતાવરણના પ્રદૂષણ અને એરોસોલની ઝેરી અસરનું વિશ્લેષણ",
+          "સેટેલાઇટ નેવિગેશન સિસ્ટમ વિકસાવવી",
+          "પરમાણુ રિએક્ટરની સામગ્રીનું પરીક્ષણ"
+        ]
+      }
+    },
+    {
+      "category": "International",
+      "question": "Which date was announced as Poland–India Partnership Day during Polish PM Donald Tusk's visit in October 2026?",
+      "options": [
+        "26 January",
+        "30 March",
+        "15 August",
+        "11 November"
+      ],
+      "answer": 1,
+      "gu": {
+        "question": "ઑક્ટોબર 2026માં પોલેન્ડના વડાપ્રધાન ડોનાલ્ડ ટસ્કની મુલાકાત દરમિયાન કઈ તારીખને પોલેન્ડ-ભારત ભાગીદારી દિવસ તરીકે જાહેર કરવામાં આવી?",
+        "options": [
+          "26 જાન્યુઆરી",
+          "30 માર્ચ",
+          "15 ઑગસ્ટ",
+          "11 નવેમ્બર"
+        ]
+      }
+    },
+    {
+      "category": "International",
+      "question": "Which country is hosting the BRICS Summit in 2026?",
+      "options": [
+        "Brazil",
+        "Russia",
+        "India",
+        "South Africa"
+      ],
+      "answer": 2,
+      "explanation": "India holds the BRICS chairship in 2026. The 12th BRICS Parliamentary Forum was also held in New Delhi.",
+      "gu": {
+        "question": "2026માં BRICS શિખર સંમેલનનું યજમાન કયો દેશ છે?",
+        "options": [
+          "બ્રાઝિલ",
+          "રશિયા",
+          "ભારત",
+          "દક્ષિણ આફ્રિકા"
+        ],
+        "explanation": "2026માં BRICSનું અધ્યક્ષપદ ભારત પાસે છે. 12મું BRICS સંસદીય ફોરમ પણ નવી દિલ્હીમાં યોજાયું હતું."
+      }
+    },
+    {
+      "category": "Schemes",
+      "question": "Which institution gave technical support for the upgraded National Mobile Monitoring System (NMMS) 2.0 app?",
+      "options": [
+        "IIT Bombay",
+        "IIT Madras",
+        "IISc Bengaluru",
+        "C-DAC Pune"
+      ],
+      "answer": 1,
+      "explanation": "NMMS is used to record attendance of workers at MGNREGA worksites.",
+      "gu": {
+        "question": "અપગ્રેડ કરાયેલી નેશનલ મોબાઇલ મોનિટરિંગ સિસ્ટમ (NMMS) 2.0 એપ માટે કઈ સંસ્થાએ ટેકનિકલ સહયોગ આપ્યો?",
+        "options": [
+          "IIT બોમ્બે",
+          "IIT મદ્રાસ",
+          "IISc બેંગલુરુ",
+          "C-DAC પુણે"
+        ],
+        "explanation": "NMMSનો ઉપયોગ મનરેગા કામના સ્થળોએ શ્રમિકોની હાજરી નોંધવા માટે થાય છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "What is the theme of India Chem 2026, held in Mumbai?",
+      "options": [
+        "Make in India for Chemicals",
+        "Advantage Bharat: An Emerging Global Chemicals Hub",
+        "Green Chemistry for Viksit Bharat",
+        "Chemicals for a Sustainable Future"
+      ],
+      "answer": 1,
+      "gu": {
+        "question": "મુંબઈમાં યોજાયેલા ઇન્ડિયા કેમ 2026ની થીમ શું છે?",
+        "options": [
+          "Make in India for Chemicals",
+          "Advantage Bharat: An Emerging Global Chemicals Hub",
+          "Green Chemistry for Viksit Bharat",
+          "Chemicals for a Sustainable Future"
+        ]
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "Where is the Emerging Science, Technology and Innovation Conclave (ESTIC) 2026 being held from 27 to 29 October?",
+      "options": [
+        "Vigyan Bhawan, New Delhi",
+        "Bharat Mandapam, New Delhi",
+        "Yashobhoomi, New Delhi",
+        "Mahatma Mandir, Gandhinagar"
+      ],
+      "answer": 1,
+      "explanation": "The Prime Minister inaugurated ESTIC 2026.",
+      "gu": {
+        "question": "27 થી 29 ઑક્ટોબર દરમિયાન ઇમર્જિંગ સાયન્સ, ટેક્નોલોજી એન્ડ ઇનોવેશન કોન્ક્લેવ (ESTIC) 2026 ક્યાં યોજાઈ રહ્યું છે?",
+        "options": [
+          "વિજ્ઞાન ભવન, નવી દિલ્હી",
+          "ભારત મંડપમ, નવી દિલ્હી",
+          "યશોભૂમિ, નવી દિલ્હી",
+          "મહાત્મા મંદિર, ગાંધીનગર"
+        ],
+        "explanation": "વડાપ્રધાને ESTIC 2026નું ઉદ્ઘાટન કર્યું."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "Swavlamban 2026, the Indian Navy's fifth innovation and indigenisation seminar, was held at which venue?",
+      "options": [
+        "Manekshaw Centre, New Delhi",
+        "INS Hansa, Goa",
+        "Naval Dockyard, Mumbai",
+        "Bharat Mandapam, New Delhi"
+      ],
+      "answer": 0,
+      "gu": {
+        "question": "ભારતીય નૌકાદળનો પાંચમો ઇનોવેશન અને સ્વદેશીકરણ સેમિનાર સ્વાવલંબન 2026 ક્યાં યોજાયો?",
+        "options": [
+          "માણેકશૉ સેન્ટર, નવી દિલ્હી",
+          "INS હંસા, ગોવા",
+          "નેવલ ડૉકયાર્ડ, મુંબઈ",
+          "ભારત મંડપમ, નવી દિલ્હી"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Target Defence Academy, 27 Oct 2026",
+      "url": "https://www.thetargetclasses.com/gk/current-affairs-27-october-2026/"
+    },
+    {
+      "name": "Topprs notes, 27 Oct 2026",
+      "url": "https://www.topprs.in/2026/10/daily-current-affairs-notes-27-october.html"
+    }
+  ]
+}

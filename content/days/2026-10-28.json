@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-28",
+  "questions": [
+    {
+      "category": "National",
+      "question": "What is the theme of Vigilance Awareness Week 2026?",
+      "options": [
+        "Integrity Begins with Us",
+        "Probity for Prosperity",
+        "Transparency for Development",
+        "Corruption-Free India"
+      ],
+      "answer": 1,
+      "explanation": "The Central Vigilance Commission observes Vigilance Awareness Week every year in the week of 31 October, Sardar Vallabhbhai Patel's birth anniversary.",
+      "gu": {
+        "question": "તકેદારી જાગૃતિ સપ્તાહ (Vigilance Awareness Week) 2026ની થીમ શું છે?",
+        "options": [
+          "Integrity Begins with Us",
+          "Probity for Prosperity",
+          "Transparency for Development",
+          "Corruption-Free India"
+        ],
+        "explanation": "કેન્દ્રીય તકેદારી આયોગ દર વર્ષે સરદાર વલ્લભભાઈ પટેલની જન્મજયંતિ, 31 ઑક્ટોબરવાળા સપ્તાહમાં તકેદારી જાગૃતિ સપ્તાહ ઉજવે છે."
+      }
+    },
+    {
+      "category": "Environment",
+      "question": "Which country proposed the name \"Arnab\" for the cyclone that formed over the Bay of Bengal in October 2026?",
+      "options": [
+        "India",
+        "Bangladesh",
+        "Sri Lanka",
+        "Thailand"
+      ],
+      "answer": 1,
+      "explanation": "Cyclone names for the north Indian Ocean come from a list contributed by the WMO/ESCAP panel member countries. Uttar Pradesh issued a rain alert for Cyclone Arnab for 28–31 October.",
+      "gu": {
+        "question": "ઑક્ટોબર 2026માં બંગાળની ખાડીમાં બનેલા વાવાઝોડા માટે \"અર્નબ\" નામ કયા દેશે સૂચવ્યું હતું?",
+        "options": [
+          "ભારત",
+          "બાંગ્લાદેશ",
+          "શ્રીલંકા",
+          "થાઇલેન્ડ"
+        ],
+        "explanation": "ઉત્તર હિંદ મહાસાગરના વાવાઝોડાના નામ WMO/ESCAP પેનલના સભ્ય દેશોએ આપેલી યાદીમાંથી રખાય છે. ઉત્તર પ્રદેશે 28–31 ઑક્ટોબર માટે અર્નબ વાવાઝોડાને કારણે વરસાદની ચેતવણી આપી હતી."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "On 26 October 2026, the Defence Acquisition Council approved capital acquisition proposals worth about how much?",
+      "options": [
+        "₹1.25 lakh crore",
+        "₹1.75 lakh crore",
+        "₹2.12 lakh crore",
+        "₹3.50 lakh crore"
+      ],
+      "answer": 2,
+      "explanation": "The DAC, chaired by the Defence Minister, approved proposals worth about ₹2.12 lakh crore for the armed forces.",
+      "gu": {
+        "question": "26 ઑક્ટોબર 2026ના રોજ સંરક્ષણ સંપાદન પરિષદ (DAC)એ આશરે કેટલી રકમના મૂડી સંપાદન પ્રસ્તાવોને મંજૂરી આપી?",
+        "options": [
+          "₹1.25 લાખ કરોડ",
+          "₹1.75 લાખ કરોડ",
+          "₹2.12 લાખ કરોડ",
+          "₹3.50 લાખ કરોડ"
+        ],
+        "explanation": "સંરક્ષણ મંત્રીની અધ્યક્ષતામાં DACએ સશસ્ત્ર દળો માટે આશરે ₹2.12 લાખ કરોડના પ્રસ્તાવો મંજૂર કર્યા."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "The 13th ASEAN Defence Ministers' Meeting-Plus (ADMM-Plus), attended by India's Defence Minister, is being held in which city?",
+      "options": [
+        "Bangkok",
+        "Cebu",
+        "Jakarta",
+        "Hanoi"
+      ],
+      "answer": 1,
+      "explanation": "ADMM-Plus brings together the 10 ASEAN members and 8 dialogue partners, including India.",
+      "gu": {
+        "question": "ભારતના સંરક્ષણ મંત્રી જેમાં ભાગ લઈ રહ્યા છે તે 13મી આસિયાન સંરક્ષણ મંત્રીઓની બેઠક-પ્લસ (ADMM-Plus) કયા શહેરમાં યોજાઈ રહી છે?",
+        "options": [
+          "બેંગકોક",
+          "સેબુ",
+          "જકાર્તા",
+          "હનોઈ"
+        ],
+        "explanation": "ADMM-Plusમાં 10 આસિયાન સભ્ય દેશો અને ભારત સહિત 8 સંવાદ ભાગીદાર દેશો સામેલ છે."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "SIMBEX, whose 33rd edition is in the news, is a naval exercise between India and which country?",
+      "options": [
+        "Sri Lanka",
+        "Singapore",
+        "Indonesia",
+        "Malaysia"
+      ],
+      "answer": 1,
+      "explanation": "SIMBEX (Singapore–India Maritime Bilateral Exercise) is one of the Indian Navy's longest-running bilateral exercises.",
+      "gu": {
+        "question": "જેની 33મી આવૃત્તિ ચર્ચામાં છે તે SIMBEX ભારત અને કયા દેશ વચ્ચેનો નૌકા અભ્યાસ છે?",
+        "options": [
+          "શ્રીલંકા",
+          "સિંગાપોર",
+          "ઇન્ડોનેશિયા",
+          "મલેશિયા"
+        ],
+        "explanation": "SIMBEX (સિંગાપોર-ઇન્ડિયા મેરિટાઇમ બાયલેટરલ એક્સરસાઇઝ) ભારતીય નૌકાદળના સૌથી લાંબા સમયથી ચાલતા દ્વિપક્ષીય અભ્યાસોમાંનો એક છે."
+      }
+    },
+    {
+      "category": "Schemes",
+      "question": "According to reports on 28 October 2026, the National Social Assistance Programme (NSAP) has been extended and renamed as which scheme?",
+      "options": [
+        "PM Samajik Sahayata Yojana",
+        "PM Jan Dhan Yojana",
+        "PM Garib Kalyan Yojana",
+        "Atal Pension Yojana"
+      ],
+      "answer": 0,
+      "explanation": "NSAP provides pensions and support to elderly people, widows and persons with disabilities from poor households.",
+      "gu": {
+        "question": "28 ઑક્ટોબર 2026ના અહેવાલો મુજબ, રાષ્ટ્રીય સામાજિક સહાય કાર્યક્રમ (NSAP)ને લંબાવીને કયું નવું નામ આપવામાં આવ્યું છે?",
+        "options": [
+          "પીએમ સામાજિક સહાયતા યોજના",
+          "પીએમ જન ધન યોજના",
+          "પીએમ ગરીબ કલ્યાણ યોજના",
+          "અટલ પેન્શન યોજના"
+        ],
+        "explanation": "NSAP ગરીબ પરિવારોના વૃદ્ધો, વિધવાઓ અને દિવ્યાંગ વ્યક્તિઓને પેન્શન અને સહાય પૂરી પાડે છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "The RBI is encouraging states to use which of these for programmable Direct Benefit Transfers (DBT)?",
+      "options": [
+        "UPI Lite",
+        "Digital rupee (CBDC)",
+        "RuPay credit cards",
+        "Aadhaar Pay"
+      ],
+      "answer": 1,
+      "explanation": "A programmable digital rupee can make sure a benefit is spent only for its intended purpose.",
+      "gu": {
+        "question": "પ્રોગ્રામેબલ ડાયરેક્ટ બેનિફિટ ટ્રાન્સફર (DBT) માટે RBI રાજ્યોને નીચેનામાંથી શેનો ઉપયોગ કરવા પ્રોત્સાહિત કરી રહી છે?",
+        "options": [
+          "UPI લાઇટ",
+          "ડિજિટલ રૂપિયો (CBDC)",
+          "RuPay ક્રેડિટ કાર્ડ",
+          "આધાર પે"
+        ],
+        "explanation": "પ્રોગ્રામેબલ ડિજિટલ રૂપિયાથી ખાતરી કરી શકાય છે કે લાભનો ઉપયોગ ફક્ત તેના નિર્ધારિત હેતુ માટે જ થાય."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "According to an October 2026 announcement, ISRO aims to have how many functional launch pads by 2029?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Six"
+      ],
+      "answer": 2,
+      "explanation": "New pads include the third launch pad at Sriharikota and the Kulasekarapattinam spaceport in Tamil Nadu for small rockets.",
+      "gu": {
+        "question": "ઑક્ટોબર 2026ની જાહેરાત મુજબ, ISRO 2029 સુધીમાં કેટલા કાર્યરત લૉન્ચ પેડ ધરાવવાનું લક્ષ્ય રાખે છે?",
+        "options": [
+          "બે",
+          "ત્રણ",
+          "ચાર",
+          "છ"
+        ],
+        "explanation": "નવા પેડમાં શ્રીહરિકોટાનું ત્રીજું લૉન્ચ પેડ અને નાના રૉકેટ માટે તમિલનાડુનું કુલશેખરપટ્ટિનમ સ્પેસપોર્ટ સામેલ છે."
+      }
+    },
+    {
+      "category": "Energy",
+      "question": "Under India's updated flex-fuel vehicle rules, what does \"E100\" refer to?",
+      "options": [
+        "100% electric vehicles",
+        "Fuel made predominantly of ethanol",
+        "Euro-100 emission norm",
+        "A 100 km/litre efficiency standard"
+      ],
+      "answer": 1,
+      "explanation": "The \"E\" number shows the ethanol share in the fuel blend, for example E20 is 20% ethanol.",
+      "gu": {
+        "question": "ભારતના અપડેટેડ ફ્લેક્સ-ફ્યુઅલ વાહન નિયમો હેઠળ \"E100\"નો અર્થ શું છે?",
+        "options": [
+          "100% ઇલેક્ટ્રિક વાહનો",
+          "મુખ્યત્વે ઇથેનોલથી બનેલું ઇંધણ",
+          "યુરો-100 ઉત્સર્જન ધોરણ",
+          "100 કિમી/લિટર કાર્યક્ષમતા ધોરણ"
+        ],
+        "explanation": "\"E\" પછીનો આંકડો ઇંધણના મિશ્રણમાં ઇથેનોલનો હિસ્સો દર્શાવે છે, ઉદાહરણ તરીકે E20 એટલે 20% ઇથેનોલ."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "What is the main objective of the Emerging Science, Technology and Innovation Conclave (ESTIC) 2026?",
+      "options": [
+        "Selecting astronauts for Gaganyaan",
+        "Promoting research and turning innovation into practical applications",
+        "Regulating AI start-ups",
+        "Hosting the national science olympiad"
+      ],
+      "answer": 1,
+      "explanation": "ESTIC brings together government, academia and industry to connect research with real-world use.",
+      "gu": {
+        "question": "ઇમર્જિંગ સાયન્સ, ટેક્નોલોજી એન્ડ ઇનોવેશન કોન્ક્લેવ (ESTIC) 2026નો મુખ્ય હેતુ શું છે?",
+        "options": [
+          "ગગનયાન માટે અવકાશયાત્રીઓની પસંદગી",
+          "સંશોધનને પ્રોત્સાહન આપવું અને નવીનતાને વ્યવહારુ ઉપયોગમાં ફેરવવી",
+          "AI સ્ટાર્ટ-અપ્સનું નિયમન",
+          "રાષ્ટ્રીય વિજ્ઞાન ઓલિમ્પિયાડનું આયોજન"
+        ],
+        "explanation": "ESTIC સંશોધનને વાસ્તવિક ઉપયોગ સાથે જોડવા માટે સરકાર, શિક્ષણ જગત અને ઉદ્યોગને એક મંચ પર લાવે છે."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Target Defence Academy, 28 Oct 2026",
+      "url": "https://www.thetargetclasses.com/gk/current-affairs-28-october-2026/"
+    },
+    {
+      "name": "Practicemock, 28 Oct 2026",
+      "url": "https://www.practicemock.com/blog/current-affairs-free-quiz-for-october-28-2026/"
+    }
+  ]
+}
