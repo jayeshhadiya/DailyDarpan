@@ -3,10 +3,11 @@ import { RouterLink } from '@angular/router';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
 import { Logo } from '@shared/components/logo/logo';
+import { TelegramLink } from '@shared/directives/telegram-link.directive';
 
 @Component({
   selector: 'foot-note',
-  imports: [Logo, RouterLink],
+  imports: [Logo, RouterLink, TelegramLink],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -19,7 +20,7 @@ import { Logo } from '@shared/components/logo/logo';
       <nav class="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400" aria-label="Footer">
         <a [routerLink]="lang.path('/about')" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().navAbout }}</a>
         @if (site.telegramUrl) {
-          <a [href]="site.telegramUrl" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().telegram }}</a>
+          <a [href]="site.telegramUrl" telegramLink target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().telegram }}</a>
         }
         <span>© {{ year }} {{ site.name }}</span>
       </nav>

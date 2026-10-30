@@ -2,6 +2,7 @@ import { Component, ViewEncapsulation, inject, input } from '@angular/core';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
 import { telegram } from '@icon/icons';
+import { TelegramLink } from '@shared/directives/telegram-link.directive';
 import { Icon } from '@shared/components/icon/icon';
 
 // "Join on Telegram" call to action. Renders nothing until `telegramUrl` is set
@@ -9,7 +10,7 @@ import { Icon } from '@shared/components/icon/icon';
 @Component({
   selector: 'ca-telegram-join',
   encapsulation: ViewEncapsulation.None,
-  imports: [Icon],
+  imports: [Icon, TelegramLink],
   template: `
   @let t = lang.t();
   @if (url) {
@@ -34,7 +35,7 @@ import { Icon } from '@shared/components/icon/icon';
             </ul>
           </div>
           <div class="flex flex-col items-center gap-2 sm:w-56">
-            <a [href]="url" target="_blank" rel="noopener"
+            <a [href]="url" telegramLink target="_blank" rel="noopener"
               class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-[#1a7fb8] shadow-lg transition-transform hover:scale-[1.03]">
               <icon [path]="icon" [size]="20" color="#229ED9"/> {{ t.joinHandle(handle) }}
             </a>
@@ -43,7 +44,7 @@ import { Icon } from '@shared/components/icon/icon';
         </div>
       </section>
     } @else {
-      <a [href]="url" target="_blank" rel="noopener" [class]="buttonClass">
+      <a [href]="url" telegramLink target="_blank" rel="noopener" [class]="buttonClass">
         <icon [path]="icon" [size]="16" color="#fff"/> {{ t.joinTelegram }}
       </a>
     }
