@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { latestDay, months } from '@content/content';
 import { daySummaries } from '@content/content.generated';
 import { MetaService } from '@core/services/meta.service';
+import { ProgressService } from '@core/services/progress.service';
 import { LangService } from '@i18n/lang.service';
 import { DatePicker } from '@shared/components/date-picker/date-picker';
 import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
@@ -31,6 +32,16 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
         </div>
       }
       <p class="text-sm text-gray-500 dark:text-gray-400">{{ t.stats(days.length, totalQuestions) }}</p>
+      <!-- This visitor's own progress, saved in their browser; appears after the first finished quiz. -->
+      @if (progress.finishedCount(); as finished) {
+        <p class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 rounded-full bg-amber-50 dark:bg-amber-900/20 px-4 py-1.5 text-sm text-amber-900 dark:text-amber-100">
+          @if (progress.streak(); as streak) {
+            <span class="font-semibold">{{ t.streak(streak) }}</span>
+            @if (!progress.playedToday()) { <span>{{ t.streakPending }}</span> }
+          }
+          <span>{{ t.quizzesFinished(finished) }}</span>
+        </p>
+      }
     </header>
 
     <section class="mt-16">
@@ -101,6 +112,9 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
                     @if (day === latest) { <span class="rounded-full bg-green-100 dark:bg-green-900/40 px-2 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">{{ t.latest }}</span> }
                   </span>
                   <span class="mt-0.5 block truncate text-sm text-gray-600 dark:text-gray-400">{{ t.cardSubtitle(day.count, topics(day.categories)) }}</span>
+                  @if (progress.results()[day.date]; as result) {
+                    <span class="mt-1 inline-flex items-center gap-1 text-xs font-semibold text-green-700 dark:text-green-400">✓ {{ t.savedScore(result.score, result.total) }}</span>
+                  }
                 </span>
                 <span class="text-primary-600 dark:text-primary-400 transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
               </a>
@@ -119,6 +133,8 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 })
 export class HomePage {
   lang = inject(LangService);
+  // Saved scores and streak (this browser only).
+  progress = inject(ProgressService);
   // Newest first.
   days = daySummaries;
   latest = latestDay;

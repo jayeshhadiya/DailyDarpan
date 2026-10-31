@@ -21,9 +21,12 @@ export class MetaService {
     return site.url.replace(/\/$/, '') + this.lang.switchUrl(this.router.url.split(/[?#]/)[0], lang);
   }
 
-  setMetaTags(title: string, description: string, keywords: string[] = []): void {
+  // `image` is the link preview picture made by scripts/build-images.mjs, e.g. '/og/2026-10-31-gu.jpg';
+  // pages without their own get the general one.
+  setMetaTags(title: string, description: string, keywords: string[] = [], image = `/og/site-${this.lang.lang()}.jpg`): void {
     const fullTitle = `${title} | ${site.name}`;
     const url = this.url(this.lang.lang());
+    const imageUrl = site.url.replace(/\/$/, '') + image;
     this.title.setTitle(fullTitle);
     // updateTag replaces the previous page's tag instead of adding a duplicate.
     const tags: MetaDefinition[] = [
@@ -35,9 +38,14 @@ export class MetaService {
       {property: 'og:locale', content: this.lang.lang() === 'gu' ? 'gu_IN' : 'en_IN'},
       {property: 'og:type', content: 'website'},
       {property: 'og:site_name', content: site.name},
-      {name: 'twitter:card', content: 'summary'},
+      {property: 'og:image', content: imageUrl},
+      {property: 'og:image:width', content: '1200'},
+      {property: 'og:image:height', content: '630'},
+      {property: 'og:image:alt', content: title},
+      {name: 'twitter:card', content: 'summary_large_image'},
       {name: 'twitter:title', content: fullTitle},
       {name: 'twitter:description', content: description},
+      {name: 'twitter:image', content: imageUrl},
     ];
     tags.forEach(tag => this.meta.updateTag(tag, tag.property ? `property='${tag.property}'` : `name='${tag.name}'`));
     this.setLink('canonical', url);

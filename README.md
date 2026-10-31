@@ -15,7 +15,7 @@ npm run preview    # serve the built site locally
 
 ## Add a new day
 
-1. Copy any file in `content/days/` and name it with the date, e.g. `content/days/2026-11-01.json`.
+1. Create a file in `content/days/` named with the date, e.g. `content/days/2026-11-01.json` (copy any day file as a start).
 2. Change `date` to the same date and write the questions. `answer` is the index of the right option (0 = first).
 
    ```json
@@ -49,6 +49,11 @@ npm run preview    # serve the built site locally
 
 The day page, the month page, the home page list, the calendar and `sitemap.xml` all update automatically.
 
+When a month is complete (see Monthly PDFs below), the next `npm start`, `npm run build` or `npm run content` moves its
+day files into a folder for that month, e.g. `content/days/2026-10/2026-10-31.json`, so `content/days/` only holds
+the running month. Nothing else changes: addresses stay the same. To fix a past day, edit it in its month folder.
+Commit the moved files.
+
 Each day's file is added the next morning (on 31 October you add `2026-10-30.json`), so the site calls the
 newest day the "latest quiz" rather than "today's quiz".
 
@@ -66,6 +71,22 @@ The PDFs are made by `scripts/build-pdfs.mjs` during `npm run content` (so also 
 not committed; a PDF is only rebuilt when its month's files change. Text is set in Hind Vadodara
 (`scripts/fonts`, SIL Open Font License) and shaped with HarfBuzz, so Gujarati renders the same as in a browser.
 
+## Sharing, progress and the app
+
+- **Share:** each quiz and the Monthly page have a "Share:" row (the Monthly one shares that month's PDF page), and the score box has one with a "can you beat me?"
+  message and the score once the last question is answered. The buttons are Telegram, WhatsApp, X, LinkedIn, the
+  phone's own share menu (only where the browser has one) and Copy link (`src/app/shared/components/share-buttons`).
+- **Link previews:** `scripts/build-images.mjs` draws a 1200×630 picture for every day, every month and the
+  rest of the site, in both languages (`public/og/`, not committed). WhatsApp, Telegram, Facebook and X show it when
+  a link is shared. A picture is only redrawn when its day changes.
+- **Progress and streaks:** answers, scores and the days a quiz was finished are saved in the visitor's browser
+  (`ProgressService`, localStorage), so a reload keeps the answers. The home page shows "🔥 N-day streak" and a
+  ✓ score on finished days. Nothing is sent anywhere.
+- **Offline:** the service worker `public/sw.js` keeps pages a visitor has opened working without internet; others
+  show `public/offline.html`. `public/manifest.webmanifest` gives the site its name and icons when someone adds it to
+  their home screen from the browser menu. If you change how `sw.js` saves files, change its `VERSION` so phones drop
+  the old copies. Icons are drawn from `public/favicon.svg` into `public/icons/`.
+
 ## Settings
 
 `src/app/data/site.json` holds the site name, tagline, address (`url`, used for the sitemap and canonical links),
@@ -73,8 +94,8 @@ default theme color, `telegramUrl`, `gaMeasurementId` and `launchDate` (the firs
 only have sample days, so their PDF and their card on the Monthly page carry a yellow "Demo PDF" note). The "Join on Telegram" buttons stay hidden until `telegramUrl` is set.
 
 Google Analytics 4 (`src/app/core/services/analytics.service.ts`) loads only on the live site, not on localhost or during
-the build. Besides page views it records `quiz_complete` (score), `telegram_join` (which button) and
-`language_switch`. If you change what is recorded, update the Privacy page text in `src/app/i18n/strings.ts`.
+the build. Besides page views it records `quiz_complete` (score), `share` (which button; quiz or score),
+`telegram_join` (which button) and `language_switch`. If you change what is recorded, update the Privacy page text in `src/app/i18n/strings.ts`.
 
 All UI text (buttons, headings, messages) in both languages is in `src/app/i18n/strings.ts`.
 
@@ -82,9 +103,10 @@ All UI text (buttons, headings, messages) in both languages is in `src/app/i18n/
 
 | Path | What it is |
 |---|---|
-| `content/days/*.json` | One file per day: the only place questions live |
+| `content/days/` | One file per day: the only place questions live. Finished months sit in `YYYY-MM/` folders |
 | `scripts/build-content.mjs` | Checks the content and generates the day index, `public/sitemap.xml` and `public/robots.txt` (runs before `start` and `build`) |
 | `scripts/build-pdfs.mjs` | Makes the monthly compilation PDFs in `public/pdf` (called by `build-content.mjs`) |
+| `scripts/build-images.mjs` | Draws the link preview pictures in `public/og` and the app icons (called by `build-content.mjs`) |
 | `src/app/content/` | Question types, month grouping and route resolvers; `content.generated.ts` is generated, don't edit it |
 | `src/app/i18n/` | UI text in Gujarati and English, and `LangService` (current language, `/en` links, month names) |
 | `src/app/pages/` | Home, day quiz, month compilation, about and 404 pages |
@@ -103,7 +125,7 @@ The site is on Vercel at https://dailydarpan.online. `vercel.json` holds the bui
 `npm run build`, output `dist/current-affairs/browser`), so nothing needs setting in the Vercel dashboard. Every push
 to the main branch deploys automatically.
 
-- Unknown addresses get the built `404.html` with a real 404 status.
+- Unknown addresses get the 404 page with a real 404 status (`/en/…` gets the English one); the rules are in `routes` in `vercel.json`.
 - `www.dailydarpan.online` redirects to `dailydarpan.online` (set under Project → Domains). Keep it that way: the
   canonical links and sitemap use `url` from `src/app/data/site.json`, which has no `www`.
 - DNS is at Hostinger: an `A` record for `@` and a `CNAME` for `www`, with the values Vercel shows under Domains.

@@ -3,7 +3,9 @@ import { RouterLink } from '@angular/router';
 import { isDemoMonth, monthPdfPath, months } from '@content/content';
 import { CurrentAffairsMonth } from '@content/content.schema';
 import { MetaService } from '@core/services/meta.service';
+import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
+import { ShareButtons } from '@shared/components/share-buttons/share-buttons';
 import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 
 // Monthly PDFs at /current-affairs/month/YYYY-MM: one big card per month, newest first, with the
@@ -12,7 +14,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 @Component({
   selector: 'month-page',
   encapsulation: ViewEncapsulation.None,
-  imports: [RouterLink, TelegramJoin],
+  imports: [RouterLink, ShareButtons, TelegramJoin],
   template: `
   @let t = lang.t();
   <div class="mx-auto max-w-3xl">
@@ -22,6 +24,9 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-4xl">{{ t.monthlyPdfsTitle }}</h1>
       <p class="max-w-xl text-gray-600 dark:text-gray-400">{{ t.monthlyPdfsIntro }}</p>
     </header>
+    <div class="mt-6">
+      <ca-share [text]="t.shareMonthText(lang.monthLabel(selected().key), selectedTotal(), pageUrl())" [url]="pageUrl()"/>
+    </div>
 
     <ul class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
       @for (m of cards(); track m.key) {
@@ -67,6 +72,9 @@ export class MonthPage {
   private metaService = inject(MetaService);
   // The month in the address (from monthResolver).
   selected = input.required<CurrentAffairsMonth>();
+  selectedTotal = computed(() => this.selected().days.reduce((sum, day) => sum + day.count, 0));
+  // This page's full address, for sharing.
+  pageUrl = computed(() => site.url.replace(/\/$/, '') + this.lang.path(`/current-affairs/month/${this.selected().key}`));
   // Every month, newest first, with its question count and PDF (in the language shown) if ready.
   cards = computed(() => months.map(m => ({
     key: m.key,
@@ -88,7 +96,8 @@ export class MonthPage {
       this.metaService.setMetaTags(
         t.pdfCardTitle(label),
         t.monthMetaDescription(label, month.days.reduce((sum, day) => sum + day.count, 0)),
-        ['current affairs', 'કરન્ટ અફેર્સ', `${label} current affairs pdf`, 'monthly current affairs pdf', 'માસિક કરન્ટ અફેર્સ PDF', 'gk', 'upsc', 'gpsc', 'ssc']
+        ['current affairs', 'કરન્ટ અફેર્સ', `${label} current affairs pdf`, 'monthly current affairs pdf', 'માસિક કરન્ટ અફેર્સ PDF', 'gk', 'upsc', 'gpsc', 'ssc'],
+        `/og/month-${month.key}-${this.lang.lang()}.jpg`
       );
     });
   }

@@ -50,4 +50,6 @@ export type AnalyticsEvent =
   // A Telegram link clicked: { placement }
   | 'telegram_join'
   // The ગુજ / EN picker used: { to }
-  | 'language_switch';
+  | 'language_switch'
+  // A share button used: { method: telegram | whatsapp | x | linkedin | native | copy, content: quiz | score }
+  | 'share';

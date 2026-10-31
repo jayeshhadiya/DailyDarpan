@@ -6,9 +6,11 @@ import { daySummaries } from '@content/content.generated';
 import { CurrentAffairsDay } from '@content/content.schema';
 import { AnalyticsService } from '@core/services/analytics.service';
 import { MetaService } from '@core/services/meta.service';
+import { ProgressService } from '@core/services/progress.service';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
 import { DatePicker } from '@shared/components/date-picker/date-picker';
+import { ShareButtons } from '@shared/components/share-buttons/share-buttons';
 import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 
 // One day's quiz at /current-affairs/YYYY-MM-DD. The questions come from dayResolver;
@@ -16,7 +18,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 @Component({
   selector: 'day-page',
   encapsulation: ViewEncapsulation.None,
-  imports: [DatePipe, RouterLink, DatePicker, TelegramJoin],
+  imports: [DatePipe, RouterLink, DatePicker, ShareButtons, TelegramJoin],
   template: `
   @let t = lang.t();
   @let locale = lang.locale();
@@ -37,6 +39,9 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 
     <div class="mt-6 flex justify-center">
       <ca-date-picker [dates]="dates" [selected]="day().date" [label]="t.chooseAnotherDay"/>
+    </div>
+    <div class="mt-4">
+      <ca-share [text]="t.shareQuizText(shortDate(), day().questions.length, pageUrl())" [url]="pageUrl()"/>
     </div>
 
     @if (days.length > 1) {
@@ -89,6 +94,12 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
         <div class="mt-8 flex flex-col items-center gap-3 rounded-xl border-2 border-primary-500 p-6 text-center" role="status">
           <p class="text-3xl font-bold text-gray-900 dark:text-white">{{ score() }} / {{ d.questions.length }}</p>
           <p class="font-semibold text-primary-600 dark:text-primary-400">{{ verdict() }}</p>
+          @if (progress.streak(); as streak) {
+            <p class="rounded-full bg-amber-100 dark:bg-amber-900/40 px-4 py-1.5 text-sm font-semibold text-amber-900 dark:text-amber-200">{{ t.streak(streak) }}</p>
+            <p class="-mt-1 text-xs text-gray-500 dark:text-gray-400">{{ t.keepStreak }}</p>
+          }
+          <p class="mt-2 text-sm font-semibold text-gray-900 dark:text-white">{{ t.challengeFriends }}</p>
+          <ca-share content="score" [text]="t.shareScoreText(shortDate(), score(), d.questions.length, pageUrl())" [url]="pageUrl()"/>
           @if (telegramUrl) {
             <p class="max-w-sm text-sm text-gray-600 dark:text-gray-400">{{ t.telegramPrompt }}</p>
             <ca-telegram-join/>
@@ -130,14 +141,19 @@ export class DayPage {
   smallButton = 'rounded-full border border-gray-300 dark:border-gray-700 px-3 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 transition-colors hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400';
   private metaService = inject(MetaService);
   private analytics = inject(AnalyticsService);
+  // Saved answers, scores and the streak (this browser only).
+  progress = inject(ProgressService);
   // Days already reported as completed, so "Reset" and answering again don't count twice.
   private reported = new Set<string>();
   day = input.required<CurrentAffairsDay>();
+  // This quiz's full address, for sharing.
+  pageUrl = computed(() => site.url.replace(/\/$/, '') + this.lang.path(`/current-affairs/${this.day().date}`));
+  // "31 October" / "31 ઑક્ટોબર", for share messages.
+  shortDate = computed(() => formatDate(this.day().date, 'd MMMM', this.lang.locale()));
   // The questions in the language being shown (English where a Gujarati text is missing).
   questions = computed(() => this.day().questions.map(q => localizeQuestion(q, this.lang.lang())));
   translated = computed(() => isTranslated(this.day(), this.lang.lang()));
-  // Chosen option per question, keyed by "date:index" so each day keeps its own answers.
-  private chosen = signal<Record<string, number>>({});
+  // Questions opened with "Show answers", keyed by "date:index" so each day keeps its own.
   private revealed = signal<Record<string, boolean>>({});
   // Every question answered by the student (not just revealed with "Show answers").
   finished = computed(() => this.answeredCount() === this.day().questions.length);
@@ -166,7 +182,8 @@ export class DayPage {
       this.metaService.setMetaTags(
         t.dayMetaTitle(label),
         t.dayMetaDescription(label, day.questions.length),
-        ['current affairs', 'કરન્ટ અફેર્સ', `current affairs ${formatDate(day.date, 'd MMMM y', 'en-US')}`, `કરન્ટ અફેર્સ ${label}`, 'daily quiz', 'gk', 'upsc', 'gpsc', 'ssc']
+        ['current affairs', 'કરન્ટ અફેર્સ', `current affairs ${formatDate(day.date, 'd MMMM y', 'en-US')}`, `કરન્ટ અફેર્સ ${label}`, 'daily quiz', 'gk', 'upsc', 'gpsc', 'ssc'],
+        `/og/${day.date}-${this.lang.lang()}.jpg`
       );
     });
   }
@@ -176,7 +193,7 @@ export class DayPage {
   }
 
   choice(index: number): number | undefined {
-    return this.chosen()[this.key(index)];
+    return this.progress.answer(this.day().date, index);
   }
 
   isDone(index: number): boolean {
@@ -185,11 +202,14 @@ export class DayPage {
 
   choose(index: number, option: number): void {
     if (this.isDone(index)) return;
-    this.chosen.update(map => ({ ...map, [this.key(index)]: option }));
     const date = this.day().date;
-    if (this.finished() && !this.reported.has(date)) {
-      this.reported.add(date);
-      this.analytics.event('quiz_complete', { quiz_date: date, score: this.score(), total: this.day().questions.length });
+    this.progress.setAnswer(date, index, option);
+    if (this.finished()) {
+      this.progress.finish(date, this.score(), this.day().questions.length);
+      if (!this.reported.has(date)) {
+        this.reported.add(date);
+        this.analytics.event('quiz_complete', { quiz_date: date, score: this.score(), total: this.day().questions.length });
+      }
     }
   }
 
@@ -200,9 +220,8 @@ export class DayPage {
 
   reset(): void {
     const prefix = `${this.day().date}:`;
-    const without = <T>(map: Record<string, T>) => Object.fromEntries(Object.entries(map).filter(([k]) => !k.startsWith(prefix)));
-    this.chosen.update(without);
-    this.revealed.update(without);
+    this.progress.clearAnswers(this.day().date);
+    this.revealed.update(map => Object.fromEntries(Object.entries(map).filter(([k]) => !k.startsWith(prefix))));
   }
 
   resultText(index: number): string {

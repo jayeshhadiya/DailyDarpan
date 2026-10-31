@@ -3,15 +3,17 @@
   "framework": null,
   "buildCommand": "npm run build",
   "outputDirectory": "dist/current-affairs/browser",
-  "trailingSlash": false,
-  "redirects": [
-    { "source": "/current-affairs", "destination": "/", "permanent": true },
-    { "source": "/en/current-affairs", "destination": "/en", "permanent": true }
-  ],
-  "headers": [
+  "routes": [
+    { "src": "^/(.+)/$", "status": 308, "headers": { "Location": "/$1" } },
+    { "src": "^/current-affairs$", "status": 308, "headers": { "Location": "/" } },
+    { "src": "^/en/current-affairs$", "status": 308, "headers": { "Location": "/en" } },
     {
-      "source": "/:file((?:main|chunk|polyfills|styles)-[^/]+\\.(?:js|css))",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
-    }
+      "src": "^/(?:main|chunk|polyfills|styles)-[^/]+\\.(?:js|css)$",
+      "headers": { "Cache-Control": "public, max-age=31536000, immutable" },
+      "continue": true
+    },
+    { "handle": "filesystem" },
+    { "src": "^/en/.*$", "status": 404, "dest": "/en/404/index.html" },
+    { "src": "^/.*$", "status": 404, "dest": "/404.html" }
   ]
 }

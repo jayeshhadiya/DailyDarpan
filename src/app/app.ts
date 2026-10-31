@@ -1,7 +1,8 @@
-import { Component, ElementRef, ViewEncapsulation, effect, inject } from '@angular/core';
+import { Component, ElementRef, ViewEncapsulation, afterNextRender, effect, inject, isDevMode } from '@angular/core';
 import { DOCUMENT, ViewportScroller } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AnalyticsService } from '@core/services/analytics.service';
+import { ProgressService } from '@core/services/progress.service';
 import { ThemeService } from '@core/services/theme.service';
 import { Footer } from '@layout/footer/footer';
 import { Navbar } from '@layout/navbar/navbar';
@@ -29,6 +30,14 @@ export class App {
 
   constructor() {
     inject(AnalyticsService).load();
+    // Saved quiz progress only exists in the browser, so it loads after the prerendered page has been
+    // taken over, keeping that first render identical to it.
+    const progress = inject(ProgressService);
+    afterNextRender(() => {
+      progress.load();
+      // public/sw.js keeps opened quizzes working offline.
+      if ('serviceWorker' in navigator && !isDevMode()) navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
     // Links to #anchors stop below the fixed navbar instead of behind it.
     inject(ViewportScroller).setOffset(() => [0, (this.document.querySelector('nav')?.offsetHeight ?? 0) + 16]);
     effect(() => {
