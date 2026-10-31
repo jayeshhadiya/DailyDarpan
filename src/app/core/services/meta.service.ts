@@ -53,6 +53,44 @@ export class MetaService {
     this.setLink('alternate', this.url('gu'), 'gu');
     this.setLink('alternate', this.url('en'), 'en');
     this.setLink('alternate', this.url('gu'), 'x-default');
+    // Every page starts with just the site's own details; pages add theirs with setStructuredData().
+    this.setStructuredData([]);
+  }
+
+  // schema.org data for search engines (JSON-LD in <head>): the site and its publisher on every page,
+  // plus `items` for this page, such as breadcrumbs or a quiz. Call after setMetaTags().
+  setStructuredData(items: object[]): void {
+    const home = site.url.replace(/\/$/, '') + this.lang.path('/');
+    const graph = [
+      {
+        '@type': 'Organization', '@id': `${site.url}/#organization`, name: site.name, url: site.url,
+        logo: `${site.url}/icons/icon-512.png`, ...(site.telegramUrl ? { sameAs: [site.telegramUrl] } : {}),
+      },
+      {
+        '@type': 'WebSite', '@id': `${site.url}/#website`, name: site.name, url: home, inLanguage: this.lang.lang(),
+        description: this.lang.t().homeMetaDescription, publisher: { '@id': `${site.url}/#organization` },
+      },
+      ...items,
+    ];
+    let script = this.document.head.querySelector<HTMLScriptElement>('script#structured-data');
+    if (!script) {
+      script = this.document.createElement('script');
+      script.id = 'structured-data';
+      script.type = 'application/ld+json';
+      this.document.head.appendChild(script);
+    }
+    // "<" escaped so text in a question can never close the script tag.
+    script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c');
+  }
+
+  // Breadcrumb trail for search results ("DailyDarpan › October 2026 › 31 October 2026"), from app paths.
+  breadcrumbs(trail: { name: string; path: string }[]): object {
+    return {
+      '@type': 'BreadcrumbList',
+      itemListElement: trail.map((crumb, i) => ({
+        '@type': 'ListItem', position: i + 1, name: crumb.name, item: site.url.replace(/\/$/, '') + this.lang.path(crumb.path),
+      })),
+    };
   }
 
   private setLink(rel: string, href: string, hreflang?: string): void {

@@ -100,6 +100,9 @@ const en = {
   likedQuizText: 'Get a new quiz every morning on Telegram and revise with other aspirants preparing for the same exams. Free, and you can leave any time.',
   revising: 'Revising for an exam?',
   sources: 'Sources:',
+  otherDays: 'Other days',
+  previousDay: 'Previous day',
+  nextDay: 'Next day',
 
   // Sharing, progress and streaks
   shareLabel: 'Share:',
@@ -264,6 +267,9 @@ const gu: typeof en = {
   likedQuizText: 'દરરોજ સવારે ટેલિગ્રામ પર નવી ક્વિઝ મેળવો અને એ જ પરીક્ષાની તૈયારી કરતા બીજા ઉમેદવારો સાથે રિવિઝન કરો. તદ્દન મફત, ગમે ત્યારે છોડી શકો.',
   revising: 'પરીક્ષા માટે રિવિઝન કરો છો?',
   sources: 'સ્રોત:',
+  otherDays: 'બીજા દિવસો',
+  previousDay: 'પાછલો દિવસ',
+  nextDay: 'પછીનો દિવસ',
 
   shareLabel: 'શેર કરો:',
   shareOn: name => `${name} પર શેર કરો`,

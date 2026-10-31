@@ -107,6 +107,21 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
         </div>
       }
 
+      <nav class="mt-10 grid grid-cols-2 gap-3" [attr.aria-label]="t.otherDays">
+        @if (older(); as o) {
+          <a [routerLink]="lang.path('/current-affairs/' + o.date)" rel="prev" [class]="dayNavClass">
+            <span class="text-xs text-gray-500 dark:text-gray-400">← {{ t.previousDay }}</span>
+            <span class="font-semibold text-gray-900 dark:text-white">{{ o.date | date: 'd MMMM' : undefined : locale }}</span>
+          </a>
+        } @else { <span></span> }
+        @if (newer(); as n) {
+          <a [routerLink]="lang.path('/current-affairs/' + n.date)" rel="next" [class]="dayNavClass + ' items-end text-right'">
+            <span class="text-xs text-gray-500 dark:text-gray-400">{{ t.nextDay }} →</span>
+            <span class="font-semibold text-gray-900 dark:text-white">{{ n.date | date: 'd MMMM' : undefined : locale }}</span>
+          </a>
+        }
+      </nav>
+
       <div class="mt-10 flex flex-col items-center gap-4 rounded-xl bg-primary-50 dark:bg-gray-800/60 p-6 text-center">
         <p class="font-semibold text-gray-900 dark:text-white">{{ t.revising }}</p>
         <div class="flex flex-wrap justify-center gap-3">
@@ -148,6 +163,11 @@ export class DayPage {
   day = input.required<CurrentAffairsDay>();
   // This quiz's full address, for sharing.
   pageUrl = computed(() => site.url.replace(/\/$/, '') + this.lang.path(`/current-affairs/${this.day().date}`));
+  // The days just before and after this one, for the previous/next links (daySummaries is newest first).
+  private position = computed(() => daySummaries.findIndex(d => d.date === this.day().date));
+  older = computed(() => daySummaries[this.position() + 1]);
+  newer = computed(() => this.position() > 0 ? daySummaries[this.position() - 1] : undefined);
+  dayNavClass = 'flex flex-col gap-0.5 rounded-xl border border-gray-200 dark:border-gray-800 p-4 transition-colors hover:border-primary-500';
   // "31 October" / "31 ઑક્ટોબર", for share messages.
   shortDate = computed(() => formatDate(this.day().date, 'd MMMM', this.lang.locale()));
   // The questions in the language being shown (English where a Gujarati text is missing).
@@ -185,6 +205,36 @@ export class DayPage {
         ['current affairs', 'કરન્ટ અફેર્સ', `current affairs ${formatDate(day.date, 'd MMMM y', 'en-US')}`, `કરન્ટ અફેર્સ ${label}`, 'daily quiz', 'gk', 'upsc', 'gpsc', 'ssc'],
         `/og/${day.date}-${this.lang.lang()}.jpg`
       );
+      const month = day.date.slice(0, 7);
+      const questions = this.questions();
+      this.metaService.setStructuredData([
+        this.metaService.breadcrumbs([
+          { name: t.navHome, path: '/' },
+          { name: t.pdfCardTitle(this.lang.monthLabel(month)), path: `/current-affairs/month/${month}` },
+          { name: t.dayMetaTitle(label), path: `/current-affairs/${day.date}` },
+        ]),
+        {
+          '@type': 'Quiz',
+          name: t.dayMetaTitle(label),
+          about: { '@type': 'Thing', name: 'Current affairs' },
+          educationalLevel: 'Competitive exams',
+          inLanguage: this.lang.lang(),
+          datePublished: day.date,
+          url: this.pageUrl(),
+          publisher: { '@id': `${site.url}/#organization` },
+          hasPart: questions.map((q, i) => ({
+            '@type': 'Question',
+            position: i + 1,
+            eduQuestionType: 'Multiple choice',
+            text: q.question,
+            suggestedAnswer: q.options.filter((_, o) => o !== q.answer).map(text => ({ '@type': 'Answer', text })),
+            acceptedAnswer: {
+              '@type': 'Answer', text: q.options[q.answer],
+              ...(q.explanation ? { answerExplanation: { '@type': 'Comment', text: q.explanation } } : {}),
+            },
+          })),
+        },
+      ]);
     });
   }
 

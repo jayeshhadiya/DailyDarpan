@@ -87,6 +87,15 @@ not committed; a PDF is only rebuilt when its month's files change. Text is set 
   their home screen from the browser menu. If you change how `sw.js` saves files, change its `VERSION` so phones drop
   the old copies. Icons are drawn from `public/favicon.svg` into `public/icons/`.
 
+## Search engines
+
+- Every page is prerendered HTML with a canonical link, Gujarati/English alternates and a link preview, and is listed
+  in `sitemap.xml`.
+- Previous/next day links follow each quiz, so search engines (and visitors) move from day to day.
+- `MetaService.setStructuredData()` adds schema.org data (JSON-LD): the site and publisher on every page,
+  breadcrumbs on day and month pages, and each day's questions as a `Quiz` with the right answer and explanation.
+  Check a page with Google's Rich Results Test (search.google.com/test/rich-results).
+
 ## Settings
 
 `src/app/data/site.json` holds the site name, tagline, address (`url`, used for the sitemap and canonical links),

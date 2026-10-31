@@ -99,6 +99,12 @@ export class MonthPage {
         ['current affairs', 'કરન્ટ અફેર્સ', `${label} current affairs pdf`, 'monthly current affairs pdf', 'માસિક કરન્ટ અફેર્સ PDF', 'gk', 'upsc', 'gpsc', 'ssc'],
         `/og/month-${month.key}-${this.lang.lang()}.jpg`
       );
+      this.metaService.setStructuredData([
+        this.metaService.breadcrumbs([
+          { name: t.navHome, path: '/' },
+          { name: t.pdfCardTitle(label), path: `/current-affairs/month/${month.key}` },
+        ]),
+      ]);
     });
   }
 }
