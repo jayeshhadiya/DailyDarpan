@@ -13,7 +13,9 @@ export class DarkModeService {
 
   private getInitialDarkModeState(): boolean {
     if (typeof window !== 'undefined') {
-      const storedTheme = localStorage.getItem('theme');
+      // localStorage throws when the browser blocks site data; fall back to the system setting.
+      let storedTheme: string | null = null;
+      try { storedTheme = localStorage.getItem('theme'); } catch {}
       if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         return true;
       }
@@ -22,6 +24,6 @@ export class DarkModeService {
   }
 
   private saveDarkModeState() {
-    localStorage.setItem('theme', this.state() ? 'dark' : 'light');
+    try { localStorage.setItem('theme', this.state() ? 'dark' : 'light'); } catch {}
   }
 }

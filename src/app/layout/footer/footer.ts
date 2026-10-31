@@ -24,7 +24,7 @@ import { TelegramLink } from '@shared/directives/telegram-link.directive';
         @if (site.telegramUrl) {
           <a [href]="site.telegramUrl" telegramLink="footer" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().telegram }}</a>
         }
-        <span>© {{ year }} {{ site.name }}</span>
+        <span>©{{ year }} {{ site.name }}</span>
       </nav>
     </div>
   </footer>

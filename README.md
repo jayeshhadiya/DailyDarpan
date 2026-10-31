@@ -2,7 +2,7 @@
 
 Daily current affairs quiz for India's competitive exams: 10 MCQs a day with answers and explanations,
 day-wise pages and monthly PDFs, in Gujarati (default, at `/`) and English (at `/en`). Built with Angular and Tailwind, prerendered to plain HTML
-so it can be hosted free on Cloudflare Pages.
+so it can be hosted free on Vercel.
 
 ## Run it
 
@@ -97,12 +97,14 @@ Addresses: `/current-affairs/YYYY-MM-DD` for a day, `/current-affairs/month/YYYY
 front for English. Each page links to its other-language version (hreflang) so search engines index both.
 The Gujarati addresses match the old portfolio section, so links shared before the move keep working once they redirect here.
 
-## Deploy to Cloudflare Pages (free)
+## Deploy to Vercel (free)
 
-1. Push this folder to a GitHub repository.
-2. In Cloudflare: Workers & Pages → Create → Pages → connect the repository.
-3. Build command: `npm run build`. Build output directory: `dist/current-affairs/browser`.
-4. Set `url` in `src/app/data/site.json` to the final address (your `*.pages.dev` address or your own domain).
-5. After the first deploy, add the site to Google Search Console and submit `/sitemap.xml`.
+The site is on Vercel at https://dailydarpan.online. `vercel.json` holds the build settings (build command
+`npm run build`, output `dist/current-affairs/browser`), so nothing needs setting in the Vercel dashboard. Every push
+to the main branch deploys automatically.
 
-Every push to the main branch deploys automatically. Unknown addresses get the built `404.html` with a real 404 status.
+- Unknown addresses get the built `404.html` with a real 404 status.
+- `www.dailydarpan.online` redirects to `dailydarpan.online` (set under Project → Domains). Keep it that way: the
+  canonical links and sitemap use `url` from `src/app/data/site.json`, which has no `www`.
+- DNS is at Hostinger: an `A` record for `@` and a `CNAME` for `www`, with the values Vercel shows under Domains.
+- In Google Search Console, add `https://dailydarpan.online` and submit `/sitemap.xml`.

@@ -14,15 +14,19 @@ export class ThemeService {
   toggle(){
     this.openColor.set(!this.openColor());
   }
+  // localStorage throws when the browser blocks site data, so failures just mean the choice isn't remembered.
   private saveColor(color: string){
-    localStorage.setItem('color', color);
+    try { localStorage.setItem('color', color); } catch {}
   }
   private getInitialColor(): string {
     if (typeof window !== 'undefined') {
-      const storedColor = localStorage.getItem('color');
-      if(storedColor){
-        return storedColor;
-      }
+      try {
+        const storedColor = localStorage.getItem('color');
+        // Same check as the early script in index.html.
+        if (storedColor && /^#[0-9a-f]{3,8}$/i.test(storedColor)) {
+          return storedColor;
+        }
+      } catch {}
     }
     return site.mainColor
   }
