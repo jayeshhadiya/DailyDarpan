@@ -1,6 +1,7 @@
 import { Component, ElementRef, ViewEncapsulation, effect, inject } from '@angular/core';
 import { DOCUMENT, ViewportScroller } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { AnalyticsService } from '@core/services/analytics.service';
 import { ThemeService } from '@core/services/theme.service';
 import { Footer } from '@layout/footer/footer';
 import { Navbar } from '@layout/navbar/navbar';
@@ -27,6 +28,7 @@ export class App {
   private document = inject(DOCUMENT);
 
   constructor() {
+    inject(AnalyticsService).load();
     // Links to #anchors stop below the fixed navbar instead of behind it.
     inject(ViewportScroller).setOffset(() => [0, (this.document.querySelector('nav')?.offsetHeight ?? 0) + 16]);
     effect(() => {

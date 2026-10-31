@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation, effect, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { latestQuizPath } from '@content/content';
 import { MetaService } from '@core/services/meta.service';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
@@ -32,7 +33,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
       <span class="font-semibold">{{ t.disclaimerLabel }}</span> {{ t.disclaimer(name) }}
     </p>
 
-    <a [routerLink]="lang.path('/')" class="mt-10 inline-block rounded-lg bg-primary-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-600">{{ t.startToday }}</a>
+    <a [routerLink]="lang.path(todayPath)" class="mt-10 inline-block rounded-lg bg-primary-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-600">{{ t.startToday }}</a>
   </div>
   `
 })
@@ -40,6 +41,7 @@ export class AboutPage {
   lang = inject(LangService);
   name = site.name;
   telegramUrl = site.telegramUrl;
+  todayPath = latestQuizPath;
 
   constructor() {
     const meta = inject(MetaService);

@@ -77,6 +77,7 @@ const months = [...new Set(days.map((day) => day.date.slice(0, 7)))];
 const guPages = [
   { path: '/', lastmod: days[0]?.date },
   { path: '/about' },
+  { path: '/privacy' },
   ...days.map((day) => ({ path: `/current-affairs/${day.date}`, lastmod: day.date })),
   // days is newest first, so the first match is the month's latest day.
   ...months.map((month) => ({ path: `/current-affairs/month/${month}`, lastmod: days.find((day) => day.date.startsWith(month)).date })),

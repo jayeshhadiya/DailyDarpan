@@ -2,6 +2,7 @@ import { Component, OnDestroy, ViewEncapsulation, effect, inject } from '@angula
 import { Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { latestQuizPath } from '@content/content';
 import navLinkData from '@data/nav-link.data';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
@@ -18,7 +19,7 @@ import { LangService } from '@i18n/lang.service';
     @if (path) {
       <p class="mt-3 max-w-full truncate rounded-md bg-gray-100 dark:bg-gray-800 px-3 py-1 font-mono text-sm text-gray-600 dark:text-gray-300">{{ path }}</p>
     }
-    <a [routerLink]="lang.path('/')" class="mt-8 rounded-lg bg-primary-500 hover:bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors">{{ t.goToday }}</a>
+    <a [routerLink]="lang.path(todayPath)" class="mt-8 rounded-lg bg-primary-500 hover:bg-primary-600 px-6 py-2.5 font-medium text-white transition-colors">{{ t.goToday }}</a>
     <nav class="mt-14 w-full max-w-md border-t border-gray-200 dark:border-gray-700 pt-8" aria-label="Popular pages">
       <p class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{{ t.tryThese }}</p>
       <ul class="mt-4 flex flex-wrap justify-center gap-2">
@@ -40,6 +41,7 @@ import { LangService } from '@i18n/lang.service';
 export class ErrorPage implements OnDestroy {
   private meta = inject(Meta);
   lang = inject(LangService);
+  todayPath = latestQuizPath;
   links = navLinkData.filter(link => link.path !== '/');
   // The address the visitor asked for; hidden on the prerendered /404 page itself.
   path = [inject(Location).path()].find(path => path && path !== '/404');

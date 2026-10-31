@@ -3,9 +3,11 @@ import { DOCUMENT, NgClass } from '@angular/common';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { filter, map } from 'rxjs';
+import { AnalyticsService } from '@core/services/analytics.service';
 import { DarkModeService } from '@core/services/dark-mode.service';
 import { ThemeService } from '@core/services/theme.service';
 import navLinkData from '@data/nav-link.data';
+import themeColorData from '@data/theme-color.data';
 import { LangService } from '@i18n/lang.service';
 import { Lang } from '@i18n/strings';
 import { moon, paintBucket, sun } from '@icon/icons';
@@ -35,7 +37,7 @@ import { ToolbarColor } from '@shared/components/toolbar-color/toolbar-color';
       <button (click)="darkMode.toggleDarkMode()" type="button" [attr.aria-label]="darkMode.isDark() ? lang.t().toLight : lang.t().toDark" [class]="iconButton">
         <icon [path]="icon()" [size]="20" iconClass="dark:fill-white fill-black"/>
       </button>
-      <!-- Hidden on small phones so the bar fits on one row next to the language picker. -->
+      <!-- Hidden on small phones so the bar fits on one row; phones get the colors in the menu instead. -->
       <button (click)="themeColor.toggle()" type="button" [attr.aria-label]="lang.t().themeColor" [attr.aria-expanded]="themeColor.openColor()" [class]="iconButton + ' max-sm:hidden'">
         <icon [path]="paintBucket" [size]="20" iconClass="dark:fill-white fill-black"/>
       </button>
@@ -57,6 +59,17 @@ import { ToolbarColor } from '@shared/components/toolbar-color/toolbar-color';
             class="block py-4 px-3 rounded hover:text-primary dark:hover:text-primary-400 dark:text-gray-100 lg:p-0">{{ lang.t()[link.label] }}</a>
         </li>
         }
+        <!-- Theme colors for phones, where the paint-bucket button is hidden. -->
+        <li class="mt-4 border-t border-gray-200 dark:border-gray-700 pt-5 sm:hidden">
+          <p class="text-sm text-gray-500 dark:text-gray-400">{{ lang.t().themeColorLabel }}</p>
+          <div class="mt-3 flex flex-wrap justify-center gap-3" role="group" [attr.aria-label]="lang.t().themeColorLabel">
+            @for (color of colors; track color) {
+              <button type="button" (click)="themeColor.setThemeColor(color)" [attr.aria-label]="color" [attr.aria-pressed]="color === themeColor.getColor()"
+                class="h-7 w-7 rounded-full border-2" [style.background-color]="color"
+                [class]="color === themeColor.getColor() ? 'border-gray-900 dark:border-gray-100' : 'border-transparent'"></button>
+            }
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -71,12 +84,14 @@ export class Navbar {
     { lang: 'en', short: 'EN', name: 'English' },
   ];
   private router = inject(Router);
+  private analytics = inject(AnalyticsService);
   // Current address, updated after every navigation.
   private url = toSignal(this.router.events.pipe(filter(e => e instanceof NavigationEnd), map(() => this.router.url)), { initialValue: this.router.url });
   paintBucket = paintBucket;
   iconButton = 'mx-1 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600';
   darkMode = inject(DarkModeService);
   themeColor = inject(ThemeService);
+  colors = themeColorData;
   icon = computed(() => this.darkMode.isDark() ? sun : moon);
   private document = inject(DOCUMENT);
 
@@ -86,6 +101,7 @@ export class Navbar {
 
   // Ctrl/Cmd-click still opens a new tab; a plain click navigates inside the app.
   switchTo(event: MouseEvent, lang: Lang): void {
+    if (lang !== this.lang.lang()) this.analytics.event('language_switch', { to: lang });
     if (event.ctrlKey || event.metaKey || event.shiftKey || event.button !== 0) return;
     event.preventDefault();
     this.open.set(false);

@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { isTranslated, localizeQuestion } from '@content/content';
 import { daySummaries } from '@content/content.generated';
 import { CurrentAffairsDay } from '@content/content.schema';
+import { AnalyticsService } from '@core/services/analytics.service';
 import { MetaService } from '@core/services/meta.service';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
@@ -103,8 +104,11 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
           <a [routerLink]="lang.path('/current-affairs/month/' + d.date.slice(0, 7))" class="rounded-lg border border-primary-500 px-5 py-2.5 text-sm font-medium text-primary-700 dark:text-primary-300 hover:bg-primary-500 hover:text-white">
             {{ t.allMonthQuestions(lang.monthLabel(d.date.slice(0, 7))) }}
           </a>
-          <ca-telegram-join/>
         </div>
+      </div>
+
+      <div class="mt-10">
+        <ca-telegram-join variant="card" [heading]="t.likedQuizTitle" [text]="t.likedQuizText"/>
       </div>
 
       @if (d.sources?.length) {
@@ -127,6 +131,9 @@ export class DayPage {
   lang = inject(LangService);
   smallButton = 'rounded-full border border-gray-300 dark:border-gray-700 px-3 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 transition-colors hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400';
   private metaService = inject(MetaService);
+  private analytics = inject(AnalyticsService);
+  // Days already reported as completed, so "Reset" and answering again don't count twice.
+  private reported = new Set<string>();
   day = input.required<CurrentAffairsDay>();
   // The questions in the language being shown (English where a Gujarati text is missing).
   questions = computed(() => this.day().questions.map(q => localizeQuestion(q, this.lang.lang())));
@@ -173,6 +180,11 @@ export class DayPage {
   choose(index: number, option: number): void {
     if (this.isDone(index)) return;
     this.chosen.update(map => ({ ...map, [this.key(index)]: option }));
+    const date = this.day().date;
+    if (this.finished() && !this.reported.has(date)) {
+      this.reported.add(date);
+      this.analytics.event('quiz_complete', { quiz_date: date, score: this.score(), total: this.day().questions.length });
+    }
   }
 
   revealAll(): void {

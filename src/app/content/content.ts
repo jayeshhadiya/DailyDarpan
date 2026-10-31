@@ -15,6 +15,9 @@ export const months: CurrentAffairsMonth[] = daySummaries.reduce<CurrentAffairsM
 
 export const latestDay = daySummaries[0];
 
+// Address of the newest quiz ("today's quiz"), or the home page while there is none.
+export const latestQuizPath = latestDay ? `/current-affairs/${latestDay.date}` : '/';
+
 // A question in the language being shown; `category` stays the English name.
 export interface QuestionView {
   question: string;

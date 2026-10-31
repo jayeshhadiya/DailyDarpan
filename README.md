@@ -52,7 +52,11 @@ The day page, the month page, the home page list, the calendar and `sitemap.xml`
 ## Settings
 
 `src/app/data/site.json` holds the site name, tagline, address (`url`, used for the sitemap and canonical links),
-default theme color and `telegramUrl`. The "Join on Telegram" buttons stay hidden until `telegramUrl` is set.
+default theme color, `telegramUrl` and `gaMeasurementId`. The "Join on Telegram" buttons stay hidden until `telegramUrl` is set.
+
+Google Analytics 4 (`src/app/core/services/analytics.service.ts`) loads only on the live site, not on localhost or during
+the build. Besides page views it records `quiz_complete` (score), `telegram_join` (which button), `language_switch` and
+`month_filter`. If you change what is recorded, update the Privacy page text in `src/app/i18n/strings.ts`.
 
 All UI text (buttons, headings, messages) in both languages is in `src/app/i18n/strings.ts`.
 

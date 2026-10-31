@@ -4,6 +4,7 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { QuestionView, isTranslated, localizeQuestion, months } from '@content/content';
 import { CurrentAffairsDay } from '@content/content.schema';
+import { AnalyticsService } from '@core/services/analytics.service';
 import { MetaService } from '@core/services/meta.service';
 import { LangService } from '@i18n/lang.service';
 import { DemoNotice } from '@shared/components/demo-notice/demo-notice';
@@ -129,6 +130,7 @@ export class MonthPage {
   lang = inject(LangService);
   private metaService = inject(MetaService);
   private router = inject(Router);
+  private analytics = inject(AnalyticsService);
   private queryParams = toSignal(inject(ActivatedRoute).queryParamMap);
   // 1st of the month first.
   days = input.required<CurrentAffairsDay[]>();
@@ -213,6 +215,7 @@ export class MonthPage {
   // A new category starts again from page 1.
   chooseCategory(name: string): void {
     this.category.set(name);
+    this.analytics.event('month_filter', { category: name, month: this.month().key });
     this.router.navigate([], { queryParams: { page: null }, queryParamsHandling: 'merge', fragment: 'questions' });
   }
 

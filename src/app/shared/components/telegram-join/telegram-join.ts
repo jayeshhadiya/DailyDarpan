@@ -7,6 +7,7 @@ import { Icon } from '@shared/components/icon/icon';
 
 // "Join on Telegram" call to action. Renders nothing until `telegramUrl` is set
 // in src/app/data/site.json. `card` is the full community section, `button` just the button.
+// `heading` and `text` replace the card's default title and intro, e.g. on the quiz page.
 @Component({
   selector: 'ca-telegram-join',
   encapsulation: ViewEncapsulation.None,
@@ -23,8 +24,8 @@ import { Icon } from '@shared/components/icon/icon';
             <p class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-widest">
               <icon [path]="icon" [size]="14" color="#fff"/> {{ t.freeCommunity }}
             </p>
-            <h2 id="telegram-community" class="mt-3 text-2xl font-bold tracking-tight">{{ t.communityTitle(name) }}</h2>
-            <p class="mt-2 text-sm text-white/85">{{ t.communityText }}</p>
+            <h2 id="telegram-community" class="mt-3 text-2xl font-bold tracking-tight">{{ heading() ?? t.communityTitle(name) }}</h2>
+            <p class="mt-2 text-sm text-white/85">{{ text() ?? t.communityText }}</p>
             <ul class="mt-4 flex flex-col gap-2 text-sm">
               @for (benefit of t.benefits; track benefit) {
                 <li class="flex items-start gap-2">
@@ -34,9 +35,9 @@ import { Icon } from '@shared/components/icon/icon';
               }
             </ul>
           </div>
-          <div class="flex flex-col items-center gap-2 sm:w-56">
-            <a [href]="url" telegramLink target="_blank" rel="noopener"
-              class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-[#1a7fb8] shadow-lg transition-transform hover:scale-[1.03]">
+          <div class="flex flex-col items-center gap-2 sm:w-64">
+            <a [href]="url" telegramLink="card" target="_blank" rel="noopener"
+              class="inline-flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-white px-5 py-3 font-semibold text-[#1a7fb8] shadow-lg transition-transform hover:scale-[1.03]">
               <icon [path]="icon" [size]="20" color="#229ED9"/> {{ t.joinHandle(handle) }}
             </a>
             <p class="text-xs text-white/80">{{ t.freeLeave }}</p>
@@ -44,7 +45,7 @@ import { Icon } from '@shared/components/icon/icon';
         </div>
       </section>
     } @else {
-      <a [href]="url" telegramLink target="_blank" rel="noopener" [class]="buttonClass">
+      <a [href]="url" telegramLink="button" target="_blank" rel="noopener" [class]="buttonClass">
         <icon [path]="icon" [size]="16" color="#fff"/> {{ t.joinTelegram }}
       </a>
     }
@@ -53,6 +54,8 @@ import { Icon } from '@shared/components/icon/icon';
 })
 export class TelegramJoin {
   variant = input<'card' | 'button'>('button');
+  heading = input<string>();
+  text = input<string>();
   url = site.telegramUrl;
   name = site.name;
   // "@DailyDarpan" from "https://t.me/DailyDarpan".

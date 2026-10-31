@@ -11,7 +11,8 @@ import { TelegramLink } from '@shared/directives/telegram-link.directive';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-  <footer class="border-t border-neutral-200 dark:border-neutral-700 max-w-screen-lg mx-auto px-4 py-6">
+  <!-- Extra bottom space so the floating Telegram button doesn't cover the footer. -->
+  <footer class="border-t border-neutral-200 dark:border-neutral-700 max-w-screen-lg mx-auto px-4 pt-6 pb-24">
     <div class="flex flex-col gap-4 text-gray-900 dark:text-white sm:flex-row sm:items-center sm:justify-between">
       <div>
         <logo/>
@@ -19,8 +20,9 @@ import { TelegramLink } from '@shared/directives/telegram-link.directive';
       </div>
       <nav class="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400" aria-label="Footer">
         <a [routerLink]="lang.path('/about')" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().navAbout }}</a>
+        <a [routerLink]="lang.path('/privacy')" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().navPrivacy }}</a>
         @if (site.telegramUrl) {
-          <a [href]="site.telegramUrl" telegramLink target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().telegram }}</a>
+          <a [href]="site.telegramUrl" telegramLink="footer" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400">{{ lang.t().telegram }}</a>
         }
         <span>© {{ year }} {{ site.name }}</span>
       </nav>

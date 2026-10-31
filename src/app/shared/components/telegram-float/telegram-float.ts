@@ -14,7 +14,7 @@ import { Icon } from '@shared/components/icon/icon';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
   @if (url) {
-    <a [href]="url" telegramLink target="_blank" rel="noopener" [attr.aria-label]="lang.t().joinChannelAria"
+    <a [href]="url" telegramLink="float" target="_blank" rel="noopener" [attr.aria-label]="lang.t().joinChannelAria"
       class="fixed bottom-4 left-4 z-50 inline-flex items-center gap-2 rounded-full bg-[#229ED9] p-3 font-medium text-white shadow-lg transition-colors hover:bg-[#1b8cc2] md:px-4 md:py-2.5 print:hidden">
       <icon [path]="icon" [size]="24" color="#fff"/>
       <span class="hidden text-sm md:inline">{{ lang.t().joinTelegramShort }}</span>

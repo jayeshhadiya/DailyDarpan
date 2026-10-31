@@ -1,15 +1,20 @@
-import { Directive, HostListener, PLATFORM_ID, inject } from '@angular/core';
+import { Directive, HostListener, PLATFORM_ID, inject, input } from '@angular/core';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { AnalyticsService } from '@core/services/analytics.service';
 import site from '@data/site.json';
 
 // Put on an <a href="https://t.me/…"> so phones open the channel straight in the Telegram app
 // instead of the t.me web page. The href stays a normal link for desktop, search engines and no-JS.
 //   Android: an intent link; Chrome opens the app, or the t.me page when Telegram isn't installed.
 //   iPhone/iPad: the tg:// link, then the t.me page if we are still here (app not installed).
+// The attribute value names the button for analytics, e.g. telegramLink="float".
 @Directive({
   selector: 'a[telegramLink]',
 })
 export class TelegramLink {
+  // Where the link is (card, button, float, footer), sent with the telegram_join event.
+  placement = input('', { alias: 'telegramLink' });
+  private analytics = inject(AnalyticsService);
   private document = inject(DOCUMENT);
   private isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   // "DailyDarpan" from "https://t.me/DailyDarpan".
@@ -17,6 +22,7 @@ export class TelegramLink {
 
   @HostListener('click', ['$event'])
   open(event: MouseEvent): void {
+    this.analytics.event('telegram_join', { placement: this.placement() || 'link' });
     // Leave Ctrl/Cmd/Shift-clicks and middle clicks to the browser.
     if (!this.isBrowser || !this.username || event.ctrlKey || event.metaKey || event.shiftKey || event.button !== 0) return;
     const ua = navigator.userAgent;

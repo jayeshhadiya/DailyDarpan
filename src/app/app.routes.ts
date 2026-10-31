@@ -27,6 +27,10 @@ const pages: Routes = [
     loadComponent: () => import('@pages/about/about.page').then(m => m.AboutPage)
   },
   {
+    path: 'privacy',
+    loadComponent: () => import('@pages/privacy/privacy.page').then(m => m.PrivacyPage)
+  },
+  {
     path: '404',
     loadComponent: () => import('@pages/error/error.page').then(m => m.ErrorPage)
   },

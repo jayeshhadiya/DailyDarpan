@@ -2,7 +2,7 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/
 import { registerLocaleData } from '@angular/common';
 import localeGu from '@angular/common/locales/gu';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import { provideRouter, withComponentInputBinding, withEnabledBlockingInitialNavigation, withInMemoryScrolling, withViewTransitions } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withViewTransitions } from '@angular/router';
 import { routes } from './app.routes';
 
 // Gujarati month and weekday names for the date pipe.
@@ -14,11 +14,10 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes,
       // Route data (the day's questions) arrives as component inputs.
       withComponentInputBinding(),
-      // Wait for the first page's data before hydrating, so it matches the prerendered HTML.
-      withEnabledBlockingInitialNavigation(),
       withViewTransitions(),
       withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' }),
     ),
+    // Hydration waits for the first navigation (and its question resolvers), so the page matches the prerendered HTML.
     provideClientHydration(withEventReplay()),
   ]
 };
