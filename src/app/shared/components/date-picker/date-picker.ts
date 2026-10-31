@@ -19,8 +19,17 @@ interface Cell { date: string; day: number; }
       {{ label() ?? lang.t().chooseDay }}
     </button>
     @if (open()) {
+      <!-- Phones: a sheet at the bottom of the screen over a dimmed page, so it never runs off the edge.
+           From sm up: a pop-up under the button. -->
+      <div class="fixed inset-0 z-[60] bg-black/40 sm:hidden" (click)="open.set(false)" aria-hidden="true"></div>
       <div role="dialog" [attr.aria-label]="lang.t().chooseDate"
-        class="absolute left-1/2 top-full z-20 mt-2 w-72 -translate-x-1/2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 text-left shadow-xl">
+        class="fixed inset-x-0 bottom-0 z-[60] rounded-t-2xl border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4 pb-[max(1rem,env(safe-area-inset-bottom))] text-left shadow-xl
+          sm:absolute sm:inset-x-auto sm:bottom-auto sm:left-1/2 sm:top-full sm:z-20 sm:mt-2 sm:w-72 sm:-translate-x-1/2 sm:rounded-xl sm:border sm:pb-4">
+        <div class="mx-auto mb-3 flex max-w-sm items-center justify-between gap-2 sm:hidden">
+          <p class="text-base font-semibold text-gray-900 dark:text-white">{{ lang.t().chooseDate }}</p>
+          <button type="button" (click)="open.set(false)" [attr.aria-label]="lang.t().closeCalendar" [class]="navClass">✕</button>
+        </div>
+        <div class="mx-auto max-w-sm sm:max-w-none">
         <div class="mb-3 flex items-center justify-between">
           <button type="button" (click)="shiftMonth(-1)" [disabled]="!canGoBack()" [attr.aria-label]="lang.t().prevMonth" [class]="navClass">‹</button>
           <p class="text-sm font-semibold text-gray-900 dark:text-white" aria-live="polite">{{ monthLabel() }}</p>
@@ -43,6 +52,7 @@ interface Cell { date: string; day: number; }
         <p class="mt-3 flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
           <span class="inline-block h-2.5 w-2.5 rounded-full bg-primary-500"></span> {{ lang.t().daysWithQuestions }}
         </p>
+        </div>
       </div>
     }
   </div>
@@ -60,7 +70,7 @@ export class DatePicker {
   private router = inject(Router);
   lang = inject(LangService);
   private host = inject(ElementRef<HTMLElement>);
-  navClass = 'flex h-8 w-8 items-center justify-center rounded-lg text-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-30 disabled:hover:bg-transparent';
+  navClass = 'flex h-10 w-10 sm:h-8 sm:w-8 items-center justify-center rounded-lg text-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-30 disabled:hover:bg-transparent';
   open = signal(false);
   // First day of the month on show, as "YYYY-MM".
   month = signal('');
@@ -105,7 +115,8 @@ export class DatePicker {
   }
 
   dayClass(date: string): string {
-    const base = 'h-9 w-full rounded-lg text-sm ';
+    // Taller cells on phones, for thumbs.
+    const base = 'h-11 w-full rounded-lg text-sm sm:h-9 ';
     if (date === this.selected()) return base + 'bg-primary-500 font-bold text-white ring-2 ring-primary-300';
     if (this.available().has(date)) return base + 'bg-primary-100 dark:bg-primary-900 font-semibold text-primary-800 dark:text-primary-200 hover:bg-primary-500 hover:text-white';
     return base + 'text-gray-400 dark:text-gray-600 cursor-not-allowed';

@@ -50,6 +50,4 @@ export type AnalyticsEvent =
   // A Telegram link clicked: { placement }
   | 'telegram_join'
   // The ગુજ / EN picker used: { to }
-  | 'language_switch'
-  // A category chip on a month page: { category, month }
-  | 'month_filter';
+  | 'language_switch';

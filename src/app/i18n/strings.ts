@@ -1,11 +1,13 @@
 // All UI text in both languages. `en` defines the shape; `gu` must provide every key.
 // Question text lives in content/days/*.json instead.
+import guCategories from '@i18n/categories.gu.json';
+
 export type Lang = 'gu' | 'en';
 
 const en = {
   // Navbar, footer, shared
   navHome: 'Home',
-  navToday: "Today's Quiz",
+  navToday: 'Latest Quiz',
   navMonthly: 'Monthly',
   navAbout: 'About',
   navPrivacy: 'Privacy',
@@ -21,22 +23,14 @@ const en = {
   telegram: 'Telegram',
   questionLabel: 'Q',
   allDays: '← All days',
-  startToday: "Start today's quiz",
-  allMonthQuestions: (month: string) => `All ${month} questions`,
+  startToday: 'Start the latest quiz',
   showAnswers: 'Show answers',
-  hideAnswers: 'Hide answers',
-
-  // Demo notice
-  noteLabel: 'Note:',
-  demoBefore: 'Daily current affairs start from ',
-  demoDate: '1 November 2026',
-  demoAfter: '. The days shown now are a demo, so you can see how the quiz works.',
 
   // Telegram
   freeCommunity: 'Free community',
   communityTitle: (name: string) => `Join the ${name} community on Telegram`,
   communityText: 'Revise with other aspirants every day. One short message a day, nothing else.',
-  benefits: ["Today's quiz link every morning", 'Monthly compilation as soon as the month ends', 'Exam-focused updates only, no spam'],
+  benefits: ["Yesterday's current affairs quiz every morning", 'Monthly compilation as soon as the month ends', 'Exam-focused updates only, no spam'],
   joinHandle: (handle: string) => `Join ${handle}`,
   freeLeave: 'Free · leave any time',
   joinTelegram: 'Join on Telegram',
@@ -50,6 +44,7 @@ const en = {
   nextMonth: 'Next month',
   daysWithQuestions: 'Days with questions',
   noQuestions: 'no questions',
+  closeCalendar: 'Close calendar',
   weekdays: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
 
   // Home
@@ -74,7 +69,7 @@ const en = {
   howTitle: 'How it works',
   stepLabel: (n: number) => `Step ${n}`,
   steps: [
-    { title: 'Pick a day', text: 'Start with today, or choose any earlier date below.' },
+    { title: 'Pick a day', text: 'Start with the latest quiz, or choose any earlier date below.' },
     { title: 'Answer 10 questions', text: 'Tap an option to see if you were right, with the explanation.' },
     { title: 'Check your score', text: 'Use "Show answers" to revise, or "Reset" to try again later.' },
   ],
@@ -111,21 +106,17 @@ const en = {
 
   // Month compilation
   monthlyCompilation: 'Monthly compilation',
-  monthTitle: (month: string) => `${month} Current Affairs`,
-  monthIntro: (total: number, days: number, month: string) => `All ${total} questions from ${days} ${days === 1 ? 'day' : 'days'} of ${month}, with answers and explanations, in one place for quick monthly revision.`,
-  filterAria: 'Filter by category',
-  allCategories: 'All',
-  range: (start: number, end: number, total: number) => `${start}–${end} of ${total}`,
+  viewPdf: 'View PDF',
+  downloadPdf: 'Download PDF',
+  pdfAria: (month: string) => `${month} questions as PDF`,
+  pdfAfterMonth: 'The PDF will be ready once the month is complete.',
+  demoPdf: 'Demo PDF:',
+  demoPdfText: (from: number, to: number, month: string) => `sample questions from ${from}–${to} ${month} only. Full monthly PDFs start with November 2026.`,
+  monthlyPdfsTitle: 'Monthly Current Affairs PDFs',
+  monthlyPdfsIntro: "Each month's questions in one PDF, with an answer key at the end, for practice and quick revision before the exam. Free to view and download.",
+  pdfCardTitle: (month: string) => `${month} Current Affairs PDF`,
   questionCount: (n: number) => `${n} questions`,
-  takeAsQuiz: 'Take as a quiz →',
-  previous: 'Previous',
-  next: 'Next',
-  previousPage: 'Previous page',
-  nextPage: 'Next page',
-  pageN: (n: number) => `Page ${n}`,
-  pagesAria: 'Question pages',
-  otherMonths: 'Other months',
-  monthMetaDescription: (month: string, total: number) => `${month} current affairs compilation: all ${total} India current affairs questions with answers and explanations for UPSC, GPSC, SSC, banking and state exams.`,
+  monthMetaDescription: (month: string, total: number) => `${month} current affairs PDF: all ${total} India current affairs questions with an answer key, for UPSC, GPSC, SSC, banking and state exams.`,
 
   // About
   aboutTitle: (name: string) => `About ${name}`,
@@ -158,7 +149,7 @@ const en = {
   // 404
   notFoundTitle: 'Page not found',
   notFoundText: "Sorry, the page you're looking for doesn't exist or has been moved. Questions are only published for the dates in the calendar.",
-  goToday: "Go to today's quiz",
+  goToday: 'Go to the latest quiz',
   tryThese: 'Or try one of these',
 
   categories: {} as Record<string, string>,
@@ -166,7 +157,7 @@ const en = {
 
 const gu: typeof en = {
   navHome: 'હોમ',
-  navToday: 'આજની ક્વિઝ',
+  navToday: 'તાજી ક્વિઝ',
   navMonthly: 'માસિક',
   navAbout: 'અમારા વિશે',
   navPrivacy: 'ગોપનીયતા',
@@ -182,20 +173,14 @@ const gu: typeof en = {
   telegram: 'ટેલિગ્રામ',
   questionLabel: 'પ્ર.',
   allDays: '← બધા દિવસો',
-  startToday: 'આજની ક્વિઝ શરૂ કરો',
-  allMonthQuestions: month => `${month}ના બધા પ્રશ્નો`,
+  startToday: 'તાજી ક્વિઝ શરૂ કરો',
   showAnswers: 'જવાબો બતાવો',
-  hideAnswers: 'જવાબો છુપાવો',
 
-  noteLabel: 'નોંધ:',
-  demoBefore: 'દૈનિક કરન્ટ અફેર્સ ',
-  demoDate: '1 નવેમ્બર 2026',
-  demoAfter: 'થી શરૂ થશે. અત્યારે દેખાતા દિવસો ડેમો છે, જેથી તમે ક્વિઝ કેવી રીતે કામ કરે છે તે જોઈ શકો.',
 
   freeCommunity: 'મફત કમ્યુનિટી',
   communityTitle: name => `ટેલિગ્રામ પર ${name} કમ્યુનિટીમાં જોડાઓ`,
   communityText: 'દરરોજ બીજા ઉમેદવારો સાથે રિવિઝન કરો. દિવસમાં એક ટૂંકો મેસેજ, બીજું કંઈ નહીં.',
-  benefits: ['દરરોજ સવારે આજની ક્વિઝની લિંક', 'મહિનો પૂરો થતાં જ માસિક સંકલન', 'ફક્ત પરીક્ષાલક્ષી અપડેટ્સ, કોઈ સ્પામ નહીં'],
+  benefits: ['દરરોજ સવારે ગઈકાલના કરન્ટ અફેર્સની ક્વિઝ', 'મહિનો પૂરો થતાં જ માસિક સંકલન', 'ફક્ત પરીક્ષાલક્ષી અપડેટ્સ, કોઈ સ્પામ નહીં'],
   joinHandle: handle => `${handle} સાથે જોડાઓ`,
   freeLeave: 'મફત · ગમે ત્યારે છોડી શકો',
   joinTelegram: 'ટેલિગ્રામ પર જોડાઓ',
@@ -208,7 +193,8 @@ const gu: typeof en = {
   nextMonth: 'આગલો મહિનો',
   daysWithQuestions: 'પ્રશ્નો ધરાવતા દિવસો',
   noQuestions: 'કોઈ પ્રશ્નો નથી',
-  weekdays: ['સોમ', 'મંગળ', 'બુધ', 'ગુરુ', 'શુક્ર', 'શનિ', 'રવિ'],
+  closeCalendar: 'કૅલેન્ડર બંધ કરો',
+  weekdays: ['સો', 'મં', 'બુ', 'ગુ', 'શુ', 'શ', 'ર'],
 
   updatedDaily: 'દરરોજ અપડેટ',
   heroTitle: 'સ્પર્ધાત્મક પરીક્ષાઓ માટે દૈનિક કરન્ટ અફેર્સ',
@@ -231,7 +217,7 @@ const gu: typeof en = {
   howTitle: 'તે કેવી રીતે કામ કરે છે',
   stepLabel: n => `પગલું ${n}`,
   steps: [
-    { title: 'દિવસ પસંદ કરો', text: 'આજથી શરૂ કરો અથવા નીચેથી કોઈ પણ જૂની તારીખ પસંદ કરો.' },
+    { title: 'દિવસ પસંદ કરો', text: 'તાજી ક્વિઝથી શરૂ કરો અથવા નીચેથી કોઈ પણ જૂની તારીખ પસંદ કરો.' },
     { title: '10 પ્રશ્નોના જવાબ આપો', text: 'તમારો જવાબ સાચો છે કે નહીં તે સમજૂતી સાથે જોવા વિકલ્પ પર ટૅપ કરો.' },
     { title: 'તમારો સ્કોર જુઓ', text: 'રિવિઝન માટે "જવાબો બતાવો" અથવા ફરી પ્રયાસ માટે "રીસેટ" વાપરો.' },
   ],
@@ -266,21 +252,17 @@ const gu: typeof en = {
   dayMetaDescription: (date, n) => `${date}ની કરન્ટ અફેર્સ ક્વિઝ ગુજરાતીમાં: UPSC, GPSC, GSSSB, SSC અને બેંકિંગ પરીક્ષાઓ માટે જવાબો અને સમજૂતી સાથે ${n} પ્રશ્નો.`,
 
   monthlyCompilation: 'માસિક સંકલન',
-  monthTitle: month => `${month} કરન્ટ અફેર્સ`,
-  monthIntro: (total, days, month) => `${month}ના ${days} દિવસના બધા ${total} પ્રશ્નો, જવાબો અને સમજૂતી સાથે, ઝડપી માસિક રિવિઝન માટે એક જ જગ્યાએ.`,
-  filterAria: 'વિષય પ્રમાણે ફિલ્ટર કરો',
-  allCategories: 'બધા',
-  range: (start, end, total) => `${total}માંથી ${start}–${end}`,
+  viewPdf: 'PDF જુઓ',
+  downloadPdf: 'PDF ડાઉનલોડ કરો',
+  pdfAria: month => `${month}ના પ્રશ્નોની PDF`,
+  pdfAfterMonth: 'મહિનો પૂરો થયા પછી PDF તૈયાર થશે.',
+  demoPdf: 'ડેમો PDF:',
+  demoPdfText: (from, to, month) => `ફક્ત ${from}–${to} ${month}ના નમૂના પ્રશ્નો. સંપૂર્ણ માસિક PDF નવેમ્બર 2026થી શરૂ થશે.`,
+  monthlyPdfsTitle: 'માસિક કરન્ટ અફેર્સ PDF',
+  monthlyPdfsIntro: 'દરેક મહિનાના બધા પ્રશ્નો એક જ PDFમાં, છેલ્લે જવાબ સૂચિ સાથે, પરીક્ષા પહેલાં પ્રેક્ટિસ અને ઝડપી રિવિઝન માટે. જોવા અને ડાઉનલોડ કરવા માટે મફત.',
+  pdfCardTitle: month => `${month} કરન્ટ અફેર્સ PDF`,
   questionCount: n => `${n} પ્રશ્નો`,
-  takeAsQuiz: 'ક્વિઝ તરીકે આપો →',
-  previous: 'પાછળ',
-  next: 'આગળ',
-  previousPage: 'પાછલું પાનું',
-  nextPage: 'આગલું પાનું',
-  pageN: n => `પાનું ${n}`,
-  pagesAria: 'પ્રશ્નોના પાના',
-  otherMonths: 'બીજા મહિના',
-  monthMetaDescription: (month, total) => `${month} કરન્ટ અફેર્સ સંકલન ગુજરાતીમાં: UPSC, GPSC, GSSSB, SSC અને બેંકિંગ પરીક્ષાઓ માટે જવાબો અને સમજૂતી સાથે બધા ${total} પ્રશ્નો.`,
+  monthMetaDescription: (month, total) => `${month} કરન્ટ અફેર્સ PDF ગુજરાતીમાં: UPSC, GPSC, GSSSB, SSC અને બેંકિંગ પરીક્ષાઓ માટે જવાબ સૂચિ સાથે બધા ${total} પ્રશ્નો.`,
 
   aboutTitle: name => `${name} વિશે`,
   aboutSections: name => [
@@ -310,27 +292,11 @@ const gu: typeof en = {
 
   notFoundTitle: 'પાનું મળ્યું નથી',
   notFoundText: 'માફ કરશો, તમે શોધી રહ્યા છો તે પાનું અસ્તિત્વમાં નથી અથવા ખસેડવામાં આવ્યું છે. પ્રશ્નો ફક્ત કૅલેન્ડરમાં દર્શાવેલી તારીખો માટે જ પ્રકાશિત થાય છે.',
-  goToday: 'આજની ક્વિઝ પર જાઓ',
+  goToday: 'તાજી ક્વિઝ પર જાઓ',
   tryThese: 'અથવા આમાંથી કોઈ અજમાવો',
 
-  // English category names (as written in content/days) to Gujarati.
-  categories: {
-    'National': 'રાષ્ટ્રીય',
-    'International': 'આંતરરાષ્ટ્રીય',
-    'States': 'રાજ્યો',
-    'Economy': 'અર્થતંત્ર',
-    'Schemes': 'યોજનાઓ',
-    'Defence': 'સંરક્ષણ',
-    'Science & Tech': 'વિજ્ઞાન અને ટેકનોલોજી',
-    'Environment': 'પર્યાવરણ',
-    'Energy': 'ઊર્જા',
-    'Agriculture': 'કૃષિ',
-    'Culture': 'સંસ્કૃતિ',
-    'Sports': 'રમતગમત',
-    'Awards': 'પુરસ્કારો',
-    'Important Days': 'મહત્વના દિવસો',
-    'Personalities': 'વ્યક્તિવિશેષ',
-  },
+  // English category names (as written in content/days) to Gujarati; also used by the monthly PDFs.
+  categories: guCategories,
 };
 
 export const STRINGS: Record<Lang, typeof en> = { gu, en };

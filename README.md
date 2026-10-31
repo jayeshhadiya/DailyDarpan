@@ -1,7 +1,7 @@
 # DailyDarpan
 
 Daily current affairs quiz for India's competitive exams: 10 MCQs a day with answers and explanations,
-day-wise pages and monthly compilations, in Gujarati (default, at `/`) and English (at `/en`). Built with Angular and Tailwind, prerendered to plain HTML
+day-wise pages and monthly PDFs, in Gujarati (default, at `/`) and English (at `/en`). Built with Angular and Tailwind, prerendered to plain HTML
 so it can be hosted free on Cloudflare Pages.
 
 ## Run it
@@ -40,8 +40,8 @@ npm run preview    # serve the built site locally
    ```
 
    `gu` holds the Gujarati text. Keep its options in the same order as the English ones, because `answer`
-   is shared. `category` stays in English (it is translated on screen); add new category names to
-   `categories` in `src/app/i18n/strings.ts`. A question without `gu` is shown in English on Gujarati pages,
+   is shared. `category` stays in English (it is translated on screen); add new category names (with their Gujarati name) to
+   `src/app/i18n/categories.gu.json`. A question without `gu` is shown in English on Gujarati pages,
    with a note.
 
 3. Run `npm run content` to check the file. It reports mistakes such as a wrong `answer` index, a date that
@@ -49,19 +49,34 @@ npm run preview    # serve the built site locally
 
 The day page, the month page, the home page list, the calendar and `sitemap.xml` all update automatically.
 
+Each day's file is added the next morning (on 31 October you add `2026-10-30.json`), so the site calls the
+newest day the "latest quiz" rather than "today's quiz".
+
+## Monthly PDFs
+
+Once a month is complete, the build makes a PDF of all its questions, numbered 1, 2, 3… through the month
+(no dates, no explanations), with the answers in an "Answer Key" table on the last page, one in Gujarati and one in English
+(`public/pdf/current-affairs-YYYY-MM-gu.pdf` / `-en.pdf`). The "Monthly" page (`/current-affairs/month/YYYY-MM`)
+shows one big card per month, such as "October 2026 Current Affairs PDF", with "View PDF" and "Download PDF".
+A month counts as complete when its last day is in (October once `2026-10-31.json` is added on 1 November) or
+when a later month has started, in case a day was skipped. Until then its card says the PDF will come once the
+month ends.
+
+The PDFs are made by `scripts/build-pdfs.mjs` during `npm run content` (so also before `start` and `build`) and are
+not committed; a PDF is only rebuilt when its month's files change. Text is set in Hind Vadodara
+(`scripts/fonts`, SIL Open Font License) and shaped with HarfBuzz, so Gujarati renders the same as in a browser.
+
 ## Settings
 
 `src/app/data/site.json` holds the site name, tagline, address (`url`, used for the sitemap and canonical links),
-default theme color, `telegramUrl` and `gaMeasurementId`. The "Join on Telegram" buttons stay hidden until `telegramUrl` is set.
+default theme color, `telegramUrl`, `gaMeasurementId` and `launchDate` (the first day of regular uploads: months before it
+only have sample days, so their PDF and their card on the Monthly page carry a yellow "Demo PDF" note). The "Join on Telegram" buttons stay hidden until `telegramUrl` is set.
 
 Google Analytics 4 (`src/app/core/services/analytics.service.ts`) loads only on the live site, not on localhost or during
-the build. Besides page views it records `quiz_complete` (score), `telegram_join` (which button), `language_switch` and
-`month_filter`. If you change what is recorded, update the Privacy page text in `src/app/i18n/strings.ts`.
+the build. Besides page views it records `quiz_complete` (score), `telegram_join` (which button) and
+`language_switch`. If you change what is recorded, update the Privacy page text in `src/app/i18n/strings.ts`.
 
 All UI text (buttons, headings, messages) in both languages is in `src/app/i18n/strings.ts`.
-
-The yellow "demo" notice is `src/app/shared/components/demo-notice/demo-notice.ts`; delete it and its
-`<ca-demo-notice/>` tags once real daily uploads start.
 
 ## How it fits together
 
@@ -69,6 +84,7 @@ The yellow "demo" notice is `src/app/shared/components/demo-notice/demo-notice.t
 |---|---|
 | `content/days/*.json` | One file per day: the only place questions live |
 | `scripts/build-content.mjs` | Checks the content and generates the day index, `public/sitemap.xml` and `public/robots.txt` (runs before `start` and `build`) |
+| `scripts/build-pdfs.mjs` | Makes the monthly compilation PDFs in `public/pdf` (called by `build-content.mjs`) |
 | `src/app/content/` | Question types, month grouping and route resolvers; `content.generated.ts` is generated, don't edit it |
 | `src/app/i18n/` | UI text in Gujarati and English, and `LangService` (current language, `/en` links, month names) |
 | `src/app/pages/` | Home, day quiz, month compilation, about and 404 pages |

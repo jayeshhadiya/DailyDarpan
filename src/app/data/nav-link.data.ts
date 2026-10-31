@@ -7,7 +7,7 @@ export interface NavLink {
   path: string;
 }
 
-// "Today" and "This month" always point at the newest content.
+// "Latest quiz" and "This month" always point at the newest content.
 const navLinkData: NavLink[] = [
   { label: 'navHome', path: '/' },
   ...(latestQuizPath !== '/' ? [{ label: 'navToday' as const, path: latestQuizPath }] : []),

@@ -14,7 +14,7 @@ const pages: Routes = [
   },
   {
     path: 'current-affairs/month/:month',
-    resolve: { days: monthResolver },
+    resolve: { selected: monthResolver },
     loadComponent: () => import('@pages/month/month.page').then(m => m.MonthPage)
   },
   {

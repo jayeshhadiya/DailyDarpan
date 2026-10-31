@@ -12,7 +12,7 @@ import { TelegramFloat } from '@shared/components/telegram-float/telegram-float'
   selector: 'app',
   template: `
   <navbar/>
-  <main class="max-w-screen-lg mx-auto px-4 md:px-10 my-28 overflow-x-hidden min-h-screen">
+  <main class="max-w-screen-lg mx-auto px-4 md:px-10 my-28 overflow-x-clip min-h-screen">
     <router-outlet/>
     <scroll-to-top/>
     <telegram-float/>

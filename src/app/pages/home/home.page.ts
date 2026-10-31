@@ -6,19 +6,17 @@ import { daySummaries } from '@content/content.generated';
 import { MetaService } from '@core/services/meta.service';
 import { LangService } from '@i18n/lang.service';
 import { DatePicker } from '@shared/components/date-picker/date-picker';
-import { DemoNotice } from '@shared/components/demo-notice/demo-notice';
 import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 
-// Home page: what the site is, today's quiz and the day-wise archive.
+// Home page: what the site is, the latest quiz and the day-wise archive.
 @Component({
   selector: 'home-page',
   encapsulation: ViewEncapsulation.None,
-  imports: [DatePipe, RouterLink, DatePicker, DemoNotice, TelegramJoin],
+  imports: [DatePipe, RouterLink, DatePicker, TelegramJoin],
   template: `
   @let t = lang.t();
   @let locale = lang.locale();
   <div class="mx-auto max-w-3xl">
-    <ca-demo-notice/>
     <header class="flex flex-col items-center gap-4 text-center">
       <span class="rounded-full border border-primary-500 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-600 dark:text-primary-400">{{ t.updatedDaily }}</span>
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">{{ t.heroTitle }}</h1>
@@ -86,7 +84,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
         @let label = lang.monthLabel(month.key);
         <div class="mt-8 mb-3 flex flex-wrap items-baseline justify-between gap-2">
           <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400">{{ label }}</h3>
-          <a [routerLink]="lang.path('/current-affairs/month/' + month.key)" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">{{ t.allMonthQuestions(label) }} →</a>
+          <a [routerLink]="lang.path('/current-affairs/month/' + month.key)" class="text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">{{ t.pdfCardTitle(label) }} →</a>
         </div>
         <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2">
           @for (day of month.days; track day.date) {

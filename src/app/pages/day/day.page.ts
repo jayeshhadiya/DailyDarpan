@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, computed, effect, inject, input, signal } from '@angular/core';
+import { Component, ElementRef, ViewEncapsulation, afterRenderEffect, computed, effect, inject, input, signal, viewChild } from '@angular/core';
 import { DatePipe, formatDate } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { isTranslated, localizeQuestion } from '@content/content';
@@ -9,7 +9,6 @@ import { MetaService } from '@core/services/meta.service';
 import site from '@data/site.json';
 import { LangService } from '@i18n/lang.service';
 import { DatePicker } from '@shared/components/date-picker/date-picker';
-import { DemoNotice } from '@shared/components/demo-notice/demo-notice';
 import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 
 // One day's quiz at /current-affairs/YYYY-MM-DD. The questions come from dayResolver;
@@ -17,13 +16,12 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 @Component({
   selector: 'day-page',
   encapsulation: ViewEncapsulation.None,
-  imports: [DatePipe, RouterLink, DatePicker, DemoNotice, TelegramJoin],
+  imports: [DatePipe, RouterLink, DatePicker, TelegramJoin],
   template: `
   @let t = lang.t();
   @let locale = lang.locale();
   <div class="mx-auto max-w-2xl">
     <a [routerLink]="lang.path('/')" fragment="days" class="mb-6 inline-block text-sm font-medium text-primary-600 dark:text-primary-400 hover:underline">{{ t.allDays }}</a>
-    <ca-demo-notice/>
     <header class="flex flex-col items-center gap-3 border-b border-gray-200 dark:border-gray-800 pb-8 text-center">
       <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-primary-500 text-2xl font-bold text-white" aria-hidden="true">?</span>
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white lg:text-4xl">{{ t.dayTitle }}</h1>
@@ -42,7 +40,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
     </div>
 
     @if (days.length > 1) {
-      <nav class="flex gap-2 overflow-x-auto border-b border-gray-200 dark:border-gray-800 py-3" [attr.aria-label]="t.chooseDay">
+      <nav #chips class="relative flex gap-2 overflow-x-auto border-b border-gray-200 dark:border-gray-800 py-3" [attr.aria-label]="t.chooseDay">
         @for (d of days; track d.date) {
           <a [routerLink]="lang.path('/current-affairs/' + d.date)" [class]="dayClass(d.date === day().date)"
             [attr.aria-current]="d.date === day().date ? 'date' : null">{{ d.date | date: 'd MMM' : undefined : locale }}</a>
@@ -102,7 +100,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
         <p class="font-semibold text-gray-900 dark:text-white">{{ t.revising }}</p>
         <div class="flex flex-wrap justify-center gap-3">
           <a [routerLink]="lang.path('/current-affairs/month/' + d.date.slice(0, 7))" class="rounded-lg border border-primary-500 px-5 py-2.5 text-sm font-medium text-primary-700 dark:text-primary-300 hover:bg-primary-500 hover:text-white">
-            {{ t.allMonthQuestions(lang.monthLabel(d.date.slice(0, 7))) }}
+            {{ t.pdfCardTitle(lang.monthLabel(d.date.slice(0, 7))) }}
           </a>
         </div>
       </div>
@@ -151,8 +149,16 @@ export class DayPage {
   telegramUrl = site.telegramUrl;
   answeredCount = computed(() => this.day().questions.filter((_, i) => this.choice(i) !== undefined).length);
   score = computed(() => this.day().questions.filter((q, i) => this.choice(i) === q.answer).length);
+  private chips = viewChild<ElementRef<HTMLElement>>('chips');
 
   constructor() {
+    // On phones the day chips scroll sideways; bring the day being viewed into the middle.
+    afterRenderEffect(() => {
+      this.day();
+      const nav = this.chips()?.nativeElement;
+      const chip = nav?.querySelector<HTMLElement>('[aria-current]');
+      if (nav && chip) nav.scrollLeft = chip.offsetLeft - (nav.clientWidth - chip.offsetWidth) / 2;
+    });
     effect(() => {
       const day = this.day();
       const t = this.lang.t();
