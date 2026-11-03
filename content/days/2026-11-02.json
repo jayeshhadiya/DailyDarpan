@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-02",
+  "questions": [
+    {
+      "category": "Energy",
+      "question": "What is the theme of the Bharat Renewable Energy Summit & Expo 2026, inaugurated by PM Narendra Modi on 2 November 2026?",
+      "options": ["Invest. Innovate. Inspire.", "Power for All, Power for Progress", "One Sun One World One Grid", "Green Growth for Viksit Bharat"],
+      "answer": 0,
+      "explanation": "The four-day summit (2–5 November) is at Bharat Mandapam, New Delhi. It is held alongside the 9th International Solar Alliance (ISA) Assembly and the 4th International Conference on Green Hydrogen.",
+      "gu": {
+        "question": "2 નવેમ્બર 2026ના રોજ વડાપ્રધાન નરેન્દ્ર મોદીએ ઉદ્ઘાટન કરેલ ભારત રિન્યુએબલ એનર્જી સમિટ એન્ડ એક્સ્પો 2026ની થીમ શું છે?",
+        "options": ["Invest. Innovate. Inspire.", "Power for All, Power for Progress", "One Sun One World One Grid", "Green Growth for Viksit Bharat"],
+        "explanation": "ચાર દિવસની આ સમિટ (2–5 નવેમ્બર) ભારત મંડપમ, નવી દિલ્હીમાં યોજાઈ રહી છે. તેની સાથે આંતરરાષ્ટ્રીય સૌર ગઠબંધન (ISA)ની 9મી એસેમ્બલી અને ગ્રીન હાઇડ્રોજન પરની 4થી આંતરરાષ્ટ્રીય પરિષદ પણ યોજાઈ રહી છે."
+      }
+    },
+    {
+      "category": "National",
+      "question": "Under the CISF's new functional sector-based structure, in force from 1 November 2026, where is the Petroleum & Natural Gas sector headquartered?",
+      "options": ["Mumbai", "Kolkata", "Guwahati", "Chennai"],
+      "answer": 2,
+      "explanation": "The CISF moved from territorial commands to functional sectors: Power-I (New Delhi), Power-II (Kolkata), Petroleum & Natural Gas (Guwahati), West Coast Port (Mumbai), East Coast Port (Chennai) and GBMM & MRTS (New Delhi).",
+      "gu": {
+        "question": "1 નવેમ્બર 2026થી અમલમાં આવેલી CISFની નવી કાર્યાત્મક સેક્ટર આધારિત વ્યવસ્થા હેઠળ પેટ્રોલિયમ અને નેચરલ ગેસ સેક્ટરનું મુખ્યાલય ક્યાં છે?",
+        "options": ["મુંબઈ", "કોલકાતા", "ગુવાહાટી", "ચેન્નાઈ"],
+        "explanation": "CISFએ પ્રાદેશિક કમાન્ડને બદલે કાર્યાત્મક સેક્ટર અપનાવ્યા: પાવર-I (નવી દિલ્હી), પાવર-II (કોલકાતા), પેટ્રોલિયમ અને નેચરલ ગેસ (ગુવાહાટી), વેસ્ટ કોસ્ટ પોર્ટ (મુંબઈ), ઈસ્ટ કોસ્ટ પોર્ટ (ચેન્નાઈ) અને GBMM & MRTS (નવી દિલ્હી)."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "Ishan Kishan set an Indian record for most T20I runs in a calendar year (1,220 in 2026). Whose record of 1,164 runs from 2022 did he break?",
+      "options": ["Virat Kohli", "Suryakumar Yadav", "Abhishek Sharma", "Shubman Gill"],
+      "answer": 1,
+      "explanation": "Kishan broke the record in the fifth T20I against New Zealand at Seddon Park, Hamilton, on 1 November 2026. India won the five-match series 3–2.",
+      "gu": {
+        "question": "ઈશાન કિશને એક કેલેન્ડર વર્ષમાં સૌથી વધુ T20I રન (2026માં 1,220)નો ભારતીય રેકોર્ડ બનાવ્યો. તેમણે 2022ના 1,164 રનનો કોનો રેકોર્ડ તોડ્યો?",
+        "options": ["વિરાટ કોહલી", "સૂર્યકુમાર યાદવ", "અભિષેક શર્મા", "શુભમન ગિલ"],
+        "explanation": "કિશને 1 નવેમ્બર 2026ના રોજ હેમિલ્ટનના સેડન પાર્કમાં ન્યૂઝીલેન્ડ સામેની પાંચમી T20Iમાં આ રેકોર્ડ તોડ્યો. ભારતે પાંચ મેચની શ્રેણી 3–2થી જીતી."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "PV Sindhu became the first Indian woman to win the Hylo Open women's singles title, and Lakshya Sen won the men's title. In which country is the Hylo Open held?",
+      "options": ["Denmark", "France", "Germany", "Netherlands"],
+      "answer": 2,
+      "explanation": "The Hylo Open is held in Saarbrücken, Germany. Sindhu beat Denmark's Line Kjaersfeldt 21-12, 21-14 in the final on 1 November 2026.",
+      "gu": {
+        "question": "પી. વી. સિંધુ હાયલો ઓપન મહિલા સિંગલ્સ ખિતાબ જીતનાર પ્રથમ ભારતીય મહિલા બન્યા અને લક્ષ્ય સેને પુરુષ ખિતાબ જીત્યો. હાયલો ઓપન કયા દેશમાં યોજાય છે?",
+        "options": ["ડેનમાર્ક", "ફ્રાન્સ", "જર્મની", "નેધરલેન્ડ્સ"],
+        "explanation": "હાયલો ઓપન જર્મનીના સારબ્રુકેનમાં યોજાય છે. 1 નવેમ્બર 2026ના રોજ ફાઇનલમાં સિંધુએ ડેનમાર્કની લાઇન ક્યેર્સફેલ્ટને 21-12, 21-14થી હરાવી."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "India's gross GST collection in October 2026 rose about 22.9% year-on-year to around how much?",
+      "options": ["₹2.31 lakh crore", "₹1.87 lakh crore", "₹2.04 lakh crore", "₹2.62 lakh crore"],
+      "answer": 0,
+      "explanation": "The Finance Ministry released the figure on 1 November 2026, citing strong domestic activity and higher tax revenue from imports.",
+      "gu": {
+        "question": "ઑક્ટોબર 2026માં ભારતનું કુલ GST કલેક્શન વાર્ષિક ધોરણે લગભગ 22.9% વધીને આશરે કેટલું થયું?",
+        "options": ["₹2.31 લાખ કરોડ", "₹1.87 લાખ કરોડ", "₹2.04 લાખ કરોડ", "₹2.62 લાખ કરોડ"],
+        "explanation": "નાણા મંત્રાલયે 1 નવેમ્બર 2026ના રોજ આ આંકડો જાહેર કર્યો, જેમાં મજબૂત સ્થાનિક આર્થિક પ્રવૃત્તિ અને આયાત પરની વધુ કર આવકને કારણ ગણાવ્યું."
+      }
+    },
+    {
+      "category": "International",
+      "question": "Bhutan dedicated Stupa No. 76, one of 108 stupas consecrated on 1 November 2026, to PM Narendra Modi. Where were these stupas built?",
+      "options": ["Paro", "Gelephu Mindfulness City", "Thimphu", "Punakha"],
+      "answer": 1,
+      "explanation": "King Jigme Khesar Namgyel Wangchuck led the consecration. The stupas (Jangchub Chortens) stand along the Mau (Aie) river near Bhutan's border with Assam, forming an about 11.7 km spiritual corridor.",
+      "gu": {
+        "question": "ભૂતાને 1 નવેમ્બર 2026ના રોજ પ્રતિષ્ઠિત કરેલા 108 સ્તૂપોમાંથી સ્તૂપ નં. 76 વડાપ્રધાન નરેન્દ્ર મોદીને સમર્પિત કર્યો. આ સ્તૂપો ક્યાં બનાવાયા છે?",
+        "options": ["પારો", "ગેલેફુ માઇન્ડફુલનેસ સિટી", "થિમ્પુ", "પુનાખા"],
+        "explanation": "રાજા જિગ્મે ખેસર નામગ્યેલ વાંગચુકે પ્રતિષ્ઠા વિધિનું નેતૃત્વ કર્યું. આ સ્તૂપો (જંગચુબ ચોર્ટેન) આસામ સરહદ નજીક માઉ (આઈ) નદીના કિનારે લગભગ 11.7 કિમી લાંબો આધ્યાત્મિક કોરિડોર બનાવે છે."
+      }
+    },
+    {
+      "category": "Important Days",
+      "question": "Which UN day is observed on 2 November, with the 2026 theme 'Threats Evolve. Impunity Endures.'?",
+      "options": ["International Day to End Impunity for Crimes against Journalists", "World Press Freedom Day", "International Day for Universal Access to Information", "World Freedom Day"],
+      "answer": 0,
+      "explanation": "It was proclaimed by UN General Assembly resolution A/RES/68/163 in 2013, after the killing of two French journalists in Mali, and first observed in 2014. World Press Freedom Day is on 3 May.",
+      "gu": {
+        "question": "2026ની થીમ 'Threats Evolve. Impunity Endures.' સાથે 2 નવેમ્બરે કયો UN દિવસ ઉજવાય છે?",
+        "options": ["પત્રકારો સામેના ગુનાઓમાં સજામુક્તિ સમાપ્ત કરવાનો આંતરરાષ્ટ્રીય દિવસ", "વિશ્વ પ્રેસ સ્વાતંત્ર્ય દિવસ", "માહિતીની સાર્વત્રિક પહોંચ માટેનો આંતરરાષ્ટ્રીય દિવસ", "વિશ્વ સ્વાતંત્ર્ય દિવસ"],
+        "explanation": "માલીમાં બે ફ્રેન્ચ પત્રકારોની હત્યા બાદ 2013માં UN મહાસભાના ઠરાવ A/RES/68/163 દ્વારા તેની ઘોષણા થઈ અને 2014થી ઉજવાય છે. વિશ્વ પ્રેસ સ્વાતંત્ર્ય દિવસ 3 મેના રોજ છે."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "Tiger Triumph 2026, a humanitarian assistance and disaster relief exercise that opened in Visakhapatnam on 2 November 2026, is held between India and which country?",
+      "options": ["United States", "Australia", "Japan", "France"],
+      "answer": 0,
+      "explanation": "This fifth edition of the India–US tri-service exercise is a tabletop exercise, and the NDRF is taking part for the first time.",
+      "gu": {
+        "question": "2 નવેમ્બર 2026ના રોજ વિશાખાપટ્ટનમમાં શરૂ થયેલો માનવીય સહાય અને આપત્તિ રાહત અભ્યાસ 'ટાઇગર ટ્રાયમ્ફ 2026' ભારત અને કયા દેશ વચ્ચે યોજાય છે?",
+        "options": ["અમેરિકા", "ઑસ્ટ્રેલિયા", "જાપાન", "ફ્રાન્સ"],
+        "explanation": "ભારત-અમેરિકાના ત્રણેય સેનાઓના આ અભ્યાસની પાંચમી આવૃત્તિ ટેબલટૉપ અભ્યાસ છે અને તેમાં NDRF પ્રથમ વખત ભાગ લઈ રહ્યું છે."
+      }
+    },
+    {
+      "category": "Personalities",
+      "question": "Ved Rahi, who died at the age of 93, was a noted writer in which language?",
+      "options": ["Kashmiri", "Dogri", "Punjabi", "Pahari"],
+      "answer": 1,
+      "explanation": "Born in Jammu in 1933, Ved Rahi wrote for about 25 Hindi films and directed Veer Savarkar (2001). He received the Sahitya Akademi Award (1983) and the Sahitya Akademi Fellowship (2024).",
+      "gu": {
+        "question": "93 વર્ષની વયે અવસાન પામેલા વેદ રાહી કઈ ભાષાના જાણીતા લેખક હતા?",
+        "options": ["કાશ્મીરી", "ડોગરી", "પંજાબી", "પહાડી"],
+        "explanation": "1933માં જમ્મુમાં જન્મેલા વેદ રાહીએ લગભગ 25 હિન્દી ફિલ્મો માટે લેખન કર્યું અને 'વીર સાવરકર' (2001)નું દિગ્દર્શન કર્યું. તેમને સાહિત્ય અકાદમી પુરસ્કાર (1983) અને સાહિત્ય અકાદમી ફેલોશિપ (2024) મળ્યા હતા."
+      }
+    },
+    {
+      "category": "National",
+      "question": "Who took charge as the 55th Director General of the Geological Survey of India (GSI)?",
+      "options": ["Varsha Ashok Agalwe", "Janardan Prasad", "S. Raju", "Dinesh Vitthalrao Ganvir"],
+      "answer": 3,
+      "explanation": "Dinesh V. Ganvir, earlier head of the GSI Central Region in Nagpur, succeeds Varsha Ashok Agalwe, the 54th DG and the first woman to hold the post.",
+      "gu": {
+        "question": "ભારતીય ભૂસ્તરશાસ્ત્રીય સર્વેક્ષણ (GSI)ના 55મા મહાનિર્દેશક તરીકે કોણે કાર્યભાર સંભાળ્યો?",
+        "options": ["વર્ષા અશોક અગલવે", "જનાર્દન પ્રસાદ", "એસ. રાજુ", "દિનેશ વિઠ્ઠલરાવ ગણવીર"],
+        "explanation": "અગાઉ નાગપુર ખાતે GSI સેન્ટ્રલ રિજનના વડા રહેલા દિનેશ વી. ગણવીર, 54મા મહાનિર્દેશક અને આ પદ સંભાળનાર પ્રથમ મહિલા વર્ષા અશોક અગલવેના અનુગામી બન્યા."
+      }
+    }
+  ],
+  "sources": [
+    { "name": "GK Now: Current Affairs 2 November 2026", "url": "https://gknow.in/current-affairs-2-november-2026/" },
+    { "name": "SSBCrack Exams: Current Affairs 03 November 2026", "url": "https://ssbcrackexams.com/current-affairs-03-november-2026/" },
+    { "name": "CrackTarget: Current Affairs 3 November 2026", "url": "https://cracktarget.com/current-affairs-3-november-2026/" },
+    { "name": "AffairsCloud: Current Affairs 3 November 2026", "url": "https://affairscloud.com/current-affairs-3-november-2026/" }
+  ]
+}

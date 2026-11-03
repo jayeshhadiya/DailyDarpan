@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-03",
+  "questions": [
+    {
+      "category": "Defence",
+      "question": "The Indian Navy freed the hijacked fishing vessel FV Azini and rescued all 20 crew members off the coast of which country?",
+      "options": ["Yemen", "Oman", "Somalia", "Djibouti"],
+      "answer": 2,
+      "explanation": "The operation off north-east Somalia lasted over 48 hours and used a warship and maritime reconnaissance aircraft, with Marine Commandos airdropped by an IAF C-17. No crew were hurt.",
+      "gu": {
+        "question": "ભારતીય નૌકાદળે અપહૃત માછીમારી જહાજ FV Aziniને મુક્ત કરાવી તેના તમામ 20 ક્રૂ સભ્યોને કયા દેશના દરિયાકાંઠે બચાવ્યા?",
+        "options": ["યમન", "ઓમાન", "સોમાલિયા", "જિબુટી"],
+        "explanation": "ઉત્તર-પૂર્વ સોમાલિયા નજીકનું આ ઓપરેશન 48 કલાકથી વધુ ચાલ્યું. તેમાં યુદ્ધજહાજ અને દરિયાઈ જાસૂસી વિમાનનો ઉપયોગ થયો અને IAFના C-17 દ્વારા મરીન કમાન્ડોને ઉતારાયા. કોઈ ક્રૂ સભ્યને ઈજા થઈ નહીં."
+      }
+    },
+    {
+      "category": "International",
+      "question": "Which UN peacekeeping mission came to an end after 35 years when the UN Security Council did not renew its mandate?",
+      "options": ["MINURSO", "UNIFIL", "UNMISS", "MONUSCO"],
+      "answer": 0,
+      "explanation": "MINURSO, the UN Mission for the Referendum in Western Sahara, was set up in 1991 after a ceasefire between Morocco and the Polisario Front. The planned referendum on Western Sahara's status never took place.",
+      "gu": {
+        "question": "UN સુરક્ષા પરિષદે આદેશ (mandate) ન લંબાવતાં 35 વર્ષ પછી કયું UN શાંતિરક્ષક મિશન સમાપ્ત થયું?",
+        "options": ["MINURSO", "UNIFIL", "UNMISS", "MONUSCO"],
+        "explanation": "પશ્ચિમ સહારામાં જનમત માટેનું UN મિશન MINURSO, મોરોક્કો અને પોલિસારિયો ફ્રન્ટ વચ્ચેના યુદ્ધવિરામ પછી 1991માં સ્થપાયું હતું. પશ્ચિમ સહારાના દરજ્જા અંગેનો આયોજિત જનમત ક્યારેય યોજાયો નહીં."
+      }
+    },
+    {
+      "category": "Environment",
+      "question": "Severe Cyclonic Storm 'Murasu' crossed the Andhra Pradesh coast early on 3 November 2026 near which place?",
+      "options": ["Kakinada", "Machilipatnam", "Ongole", "Visakhapatnam"],
+      "answer": 2,
+      "explanation": "According to the IMD, the eye crossed near Ongole in Prakasam district around 5:30 am with winds of 110–120 km/h. The storm weakened into a cyclonic storm by the afternoon.",
+      "gu": {
+        "question": "તીવ્ર ચક્રવાતી તોફાન 'મુરાસુ' 3 નવેમ્બર 2026ની વહેલી સવારે આંધ્રપ્રદેશના દરિયાકાંઠે કયા સ્થળ નજીક ત્રાટક્યું?",
+        "options": ["કાકીનાડા", "મછલીપટ્ટનમ", "ઓંગોલ", "વિશાખાપટ્ટનમ"],
+        "explanation": "IMD મુજબ વાવાઝોડાની આંખ સવારે લગભગ 5:30 વાગ્યે પ્રકાશમ જિલ્લાના ઓંગોલ નજીકથી 110–120 કિમી/કલાકની ઝડપના પવન સાથે પસાર થઈ. બપોર સુધીમાં તે નબળું પડી ચક્રવાતી તોફાન બન્યું."
+      }
+    },
+    {
+      "category": "States",
+      "question": "PM Narendra Modi inaugurated and laid foundation stones for metro projects worth about ₹21,800 crore on 3 November 2026 in which city?",
+      "options": ["Nagpur", "Nashik", "Thane", "Pune"],
+      "answer": 3,
+      "explanation": "The projects include the Hinjawadi–Shivajinagar metro corridor, built under the PPP model. India's metro network now covers about 1,200 km across 26 cities.",
+      "gu": {
+        "question": "વડાપ્રધાન નરેન્દ્ર મોદીએ 3 નવેમ્બર 2026ના રોજ કયા શહેરમાં લગભગ ₹21,800 કરોડના મેટ્રો પ્રોજેક્ટ્સનું ઉદ્ઘાટન અને શિલાન્યાસ કર્યો?",
+        "options": ["નાગપુર", "નાશિક", "થાણે", "પુણે"],
+        "explanation": "આ પ્રોજેક્ટ્સમાં PPP મોડેલ હેઠળ બનેલ હિંજવડી–શિવાજીનગર મેટ્રો કોરિડોરનો સમાવેશ થાય છે. ભારતનું મેટ્રો નેટવર્ક હવે 26 શહેરોમાં લગભગ 1,200 કિમી છે."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "Who became the first Indian swimmer to win a medal at the Youth Olympic Games, taking bronze in the women's 100m freestyle at Dakar?",
+      "options": ["Dhinidhi Desinghu", "Hashika Ramachandra", "Bhavya Sachdeva", "Khushbu Rajakbhai Darjada"],
+      "answer": 0,
+      "explanation": "Dhinidhi Desinghu, 16, swam 56.27 seconds, a new national record. At the same Games in Dakar, Senegal, Khushbu Rajakbhai Darjada won silver in women's judo (63 kg).",
+      "gu": {
+        "question": "ડાકારમાં યુથ ઑલિમ્પિક ગેમ્સમાં મહિલા 100 મીટર ફ્રીસ્ટાઇલમાં કાંસ્યચંદ્રક જીતીને ચંદ્રક મેળવનાર પ્રથમ ભારતીય તરવૈયા કોણ બન્યા?",
+        "options": ["ધિનિધિ દેસિંઘુ", "હાશિકા રામચંદ્ર", "ભવ્યા સચદેવા", "ખુશ્બુ રાજકભાઈ દરજાડા"],
+        "explanation": "16 વર્ષની ધિનિધિ દેસિંઘુએ 56.27 સેકન્ડનો સમય નોંધાવ્યો, જે નવો રાષ્ટ્રીય વિક્રમ છે. સેનેગલના ડાકારમાં આ જ ગેમ્સમાં ખુશ્બુ રાજકભાઈ દરજાડાએ મહિલા જૂડો (63 કિગ્રા)માં રજતચંદ્રક જીત્યો."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "Uttarakhand's Prema Rawat set a record for the fastest fifty in women's T20 cricket on 2 November 2026. Off how many balls did she reach 50?",
+      "options": ["12", "14", "15", "18"],
+      "answer": 1,
+      "explanation": "She scored 50 not out off 14 balls against Hyderabad in the Senior Women's T20 Trophy in Pune. The earlier record of 15 balls was shared by Fatima Sana, Marie Kelly and Laura Harris.",
+      "gu": {
+        "question": "ઉત્તરાખંડની પ્રેમા રાવતે 2 નવેમ્બર 2026ના રોજ મહિલા T20 ક્રિકેટમાં સૌથી ઝડપી અર્ધસદીનો વિક્રમ બનાવ્યો. તેમણે કેટલા બોલમાં 50 રન પૂરા કર્યા?",
+        "options": ["12", "14", "15", "18"],
+        "explanation": "તેમણે પુણેમાં સિનિયર વિમેન્સ T20 ટ્રોફીમાં હૈદરાબાદ સામે 14 બોલમાં અણનમ 50 રન કર્યા. અગાઉનો 15 બોલનો વિક્રમ ફાતિમા સના, મેરી કેલી અને લૉરા હેરિસના નામે સંયુક્ત રીતે હતો."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "Which spacecraft is set to become the first human-made object to be one light-day away from Earth, on 18 November 2026?",
+      "options": ["Voyager 2", "Pioneer 10", "New Horizons", "Voyager 1"],
+      "answer": 3,
+      "explanation": "Voyager 1, launched on 5 September 1977, will then be about 25.9 billion km away, so a radio signal will take a full day to reach it. Voyager 2 is expected to reach the same mark around 2035.",
+      "gu": {
+        "question": "18 નવેમ્બર 2026ના રોજ પૃથ્વીથી એક પ્રકાશ-દિવસ દૂર પહોંચનાર પ્રથમ માનવસર્જિત વસ્તુ કયું અવકાશયાન બનશે?",
+        "options": ["વોયેજર 2", "પાયોનિયર 10", "ન્યૂ હોરાઇઝન્સ", "વોયેજર 1"],
+        "explanation": "5 સપ્ટેમ્બર 1977ના રોજ પ્રક્ષેપિત વોયેજર 1 ત્યારે લગભગ 25.9 અબજ કિમી દૂર હશે, તેથી રેડિયો સંદેશને ત્યાં પહોંચતાં પૂરો એક દિવસ લાગશે. વોયેજર 2 આશરે 2035માં આ અંતરે પહોંચશે એવો અંદાજ છે."
+      }
+    },
+    {
+      "category": "Energy",
+      "question": "India was elected President of the International Solar Alliance (ISA) for which consecutive term?",
+      "options": ["Second", "Fourth", "Third", "Fifth"],
+      "answer": 2,
+      "explanation": "Union Minister Pralhad Joshi announced it at the Bharat Renewable Energy Summit in New Delhi. The ISA was launched by India and France in 2015.",
+      "gu": {
+        "question": "ભારત સતત કેટલામી મુદત માટે આંતરરાષ્ટ્રીય સૌર ગઠબંધન (ISA)ના પ્રમુખ તરીકે ચૂંટાયું?",
+        "options": ["બીજી", "ચોથી", "ત્રીજી", "પાંચમી"],
+        "explanation": "કેન્દ્રીય મંત્રી પ્રહલાદ જોશીએ નવી દિલ્હીમાં ભારત રિન્યુએબલ એનર્જી સમિટમાં આ જાહેરાત કરી. ISAની શરૂઆત 2015માં ભારત અને ફ્રાન્સે કરી હતી."
+      }
+    },
+    {
+      "category": "Environment",
+      "question": "Where will COP31, the UN climate change conference, be held from 9 to 20 November 2026?",
+      "options": ["Belém, Brazil", "Antalya, Türkiye", "Adelaide, Australia", "Baku, Azerbaijan"],
+      "answer": 1,
+      "explanation": "Environment Minister Bhupender Yadav outlined India's priorities, including a decision on climate finance and finance as an obligation of developed countries under Article 9.1 of the Paris Agreement. COP30 was held in Belém and COP29 in Baku.",
+      "gu": {
+        "question": "9થી 20 નવેમ્બર 2026 દરમિયાન UN આબોહવા પરિવર્તન પરિષદ COP31 ક્યાં યોજાશે?",
+        "options": ["બેલેમ, બ્રાઝિલ", "અંતાલ્યા, તુર્કી", "એડિલેડ, ઑસ્ટ્રેલિયા", "બાકુ, અઝરબૈજાન"],
+        "explanation": "પર્યાવરણ મંત્રી ભૂપેન્દ્ર યાદવે ભારતની પ્રાથમિકતાઓ રજૂ કરી, જેમાં આબોહવા નાણાં અંગેનો નિર્ણય અને પેરિસ કરારના અનુચ્છેદ 9.1 હેઠળ વિકસિત દેશોની નાણાકીય જવાબદારીનો સમાવેશ થાય છે. COP30 બેલેમમાં અને COP29 બાકુમાં યોજાઈ હતી."
+      }
+    },
+    {
+      "category": "Culture",
+      "question": "The sacred Piprahwa relics of the Buddha went on exposition at Gaden Namgyal Lhatse (Tawang Monastery) in November 2026. In which state is it?",
+      "options": ["Sikkim", "Arunachal Pradesh", "Himachal Pradesh", "Uttarakhand"],
+      "answer": 1,
+      "explanation": "Chief Minister Pema Khandu received the relics. They stay in Tawang till 7 November, then go to Bomdila (8–13 November) and Namsai (14–20 November) before returning to New Delhi.",
+      "gu": {
+        "question": "ભગવાન બુદ્ધના પવિત્ર પિપરહવા અવશેષો નવેમ્બર 2026માં ગાદેન નામગ્યાલ લ્હાત્સે (તવાંગ મઠ) ખાતે દર્શન માટે મુકાયા. તે કયા રાજ્યમાં છે?",
+        "options": ["સિક્કિમ", "અરુણાચલ પ્રદેશ", "હિમાચલ પ્રદેશ", "ઉત્તરાખંડ"],
+        "explanation": "મુખ્યમંત્રી પેમા ખાંડુએ અવશેષોનું સ્વાગત કર્યું. તે 7 નવેમ્બર સુધી તવાંગમાં રહેશે, પછી બોમડિલા (8–13 નવેમ્બર) અને નામસાઈ (14–20 નવેમ્બર) થઈને નવી દિલ્હી પરત ફરશે."
+      }
+    }
+  ],
+  "sources": [
+    { "name": "SSBCrack Exams: Current Affairs 03 November 2026", "url": "https://ssbcrackexams.com/current-affairs-03-november-2026/" },
+    { "name": "CrackTarget: Current Affairs 3 November 2026", "url": "https://cracktarget.com/current-affairs-3-november-2026/" },
+    { "name": "Target Defence Academy: Current Affairs 3 November 2026", "url": "https://www.thetargetclasses.com/gk/current-affairs-3-november-2026/" }
+  ]
+}

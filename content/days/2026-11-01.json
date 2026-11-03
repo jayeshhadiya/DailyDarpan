@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-01",
+  "questions": [
+    {
+      "category": "Defence",
+      "question": "Who took over as Vice Chief of the Air Staff of the Indian Air Force with effect from 1 November 2026?",
+      "options": ["Air Marshal Mehtab Singh Deswal", "Air Marshal Inderpal Singh Walia", "Air Marshal Ashutosh Dixit", "Air Marshal Narmdeshwar Tiwari"],
+      "answer": 1,
+      "explanation": "Air Marshal Inderpal Singh Walia, earlier AOC-in-C of Eastern Air Command, succeeds Air Marshal Ashutosh Dixit, who became the 29th Chief of the Air Staff. Air Marshal Mehtab Singh Deswal took over Eastern Air Command (HQ: Upper Shillong).",
+      "gu": {
+        "question": "1 નવેમ્બર 2026થી ભારતીય વાયુસેનાના ઉપ વડા (Vice Chief of the Air Staff) તરીકે કોણે કાર્યભાર સંભાળ્યો?",
+        "options": ["એર માર્શલ મહેતાબ સિંહ દેસવાલ", "એર માર્શલ ઇન્દરપાલ સિંહ વાલિયા", "એર માર્શલ આશુતોષ દીક્ષિત", "એર માર્શલ નર્મદેશ્વર તિવારી"],
+        "explanation": "અગાઉ ઈસ્ટર્ન એર કમાન્ડના AOC-in-C રહેલા એર માર્શલ ઇન્દરપાલ સિંહ વાલિયા, 29મા વાયુસેના વડા બનેલા એર માર્શલ આશુતોષ દીક્ષિતના અનુગામી બન્યા. ઈસ્ટર્ન એર કમાન્ડ (મુખ્યાલય: અપર શિલોંગ)નો કાર્યભાર એર માર્શલ મહેતાબ સિંહ દેસવાલે સંભાળ્યો."
+      }
+    },
+    {
+      "category": "International",
+      "question": "Who became Bulgaria's first elected woman president after winning the runoff held on 1 November 2026?",
+      "options": ["Andrey Gyurov", "Kristalina Georgieva", "Iliana Iotova", "Rumen Radev"],
+      "answer": 2,
+      "explanation": "Iliana Iotova, the former Vice President and acting president, won about 57.58% of the vote, defeating Andrey Gyurov (39.47%).",
+      "gu": {
+        "question": "1 નવેમ્બર 2026ના રોજ યોજાયેલી બીજા તબક્કાની ચૂંટણી જીતીને બલ્ગેરિયાના પ્રથમ ચૂંટાયેલા મહિલા રાષ્ટ્રપતિ કોણ બન્યા?",
+        "options": ["આન્દ્રે ગ્યુરોવ", "ક્રિસ્ટાલીના જ્યોર્જીવા", "ઇલિયાના યોતોવા", "રુમેન રાદેવ"],
+        "explanation": "ભૂતપૂર્વ ઉપરાષ્ટ્રપતિ અને કાર્યકારી રાષ્ટ્રપતિ ઇલિયાના યોતોવાએ લગભગ 57.58% મત મેળવીને આન્દ્રે ગ્યુરોવ (39.47%)ને હરાવ્યા."
+      }
+    },
+    {
+      "category": "National",
+      "question": "On its 74th Foundation Day (1 November 2026), EPFO launched automatic settlement of eligible inoperative EPF accounts with balances up to how much?",
+      "options": ["₹500", "₹1,000", "₹5,000", "₹10,000"],
+      "answer": 1,
+      "explanation": "Union Minister Mansukh Mandaviya inaugurated the event in New Delhi. EPFO also launched its services on WhatsApp and presented the Bhavishya Nidhi Awards 2026.",
+      "gu": {
+        "question": "પોતાના 74મા સ્થાપના દિવસે (1 નવેમ્બર 2026) EPFOએ કેટલી રકમ સુધીના બેલેન્સવાળા યોગ્ય નિષ્ક્રિય EPF ખાતાઓની આપમેળે પતાવટ (automatic settlement) શરૂ કરી?",
+        "options": ["₹500", "₹1,000", "₹5,000", "₹10,000"],
+        "explanation": "કેન્દ્રીય મંત્રી મનસુખ માંડવિયાએ નવી દિલ્હીમાં કાર્યક્રમનું ઉદ્ઘાટન કર્યું. EPFOએ WhatsApp પર પોતાની સેવાઓ પણ શરૂ કરી અને ભવિષ્ય નિધિ પુરસ્કાર 2026 એનાયત કર્યા."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "Manisha Bhanwala won India's first women's gold at the Senior World Wrestling Championships 2026. Which city hosted the championships?",
+      "options": ["Belgrade", "Astana", "Oslo", "Tirana"],
+      "answer": 1,
+      "explanation": "The championships ran from 24 October to 1 November 2026 in Astana, Kazakhstan. India won 4 medals (1 gold, 2 silver, 1 bronze), all in women's freestyle. Bhanwala is the second Indian wrestler to become world champion, after Sushil Kumar (2010).",
+      "gu": {
+        "question": "મનીષા ભાનવાલાએ સિનિયર વર્લ્ડ રેસલિંગ ચેમ્પિયનશિપ 2026માં ભારતનો મહિલાઓમાં પ્રથમ સુવર્ણચંદ્રક જીત્યો. આ ચેમ્પિયનશિપ કયા શહેરમાં યોજાઈ હતી?",
+        "options": ["બેલગ્રેડ", "અસ્તાના", "ઓસ્લો", "તિરાના"],
+        "explanation": "આ ચેમ્પિયનશિપ 24 ઑક્ટોબરથી 1 નવેમ્બર 2026 દરમિયાન કઝાખસ્તાનના અસ્તાનામાં યોજાઈ. ભારતે 4 ચંદ્રક (1 સુવર્ણ, 2 રજત, 1 કાંસ્ય) જીત્યા, બધા મહિલા ફ્રીસ્ટાઇલમાં. સુશીલ કુમાર (2010) પછી વિશ્વ ચેમ્પિયન બનનાર ભાનવાલા બીજા ભારતીય કુસ્તીબાજ છે."
+      }
+    },
+    {
+      "category": "National",
+      "question": "Union Home Minister Amit Shah presented the President's Colour to which police force on its 60th Raising Day on 1 November 2026?",
+      "options": ["Delhi Police", "Puducherry Police", "Chandigarh Police", "Goa Police"],
+      "answer": 2,
+      "explanation": "The award marked the force's Diamond Jubilee. Chandigarh has been a Union Territory and the joint capital of Punjab and Haryana since 1 November 1966. The force has over 6,000 personnel.",
+      "gu": {
+        "question": "કેન્દ્રીય ગૃહમંત્રી અમિત શાહે 1 નવેમ્બર 2026ના રોજ કઈ પોલીસ દળને તેના 60મા સ્થાપના દિવસે રાષ્ટ્રપતિ ધ્વજ (President's Colour) એનાયત કર્યો?",
+        "options": ["દિલ્હી પોલીસ", "પુડુચેરી પોલીસ", "ચંડીગઢ પોલીસ", "ગોવા પોલીસ"],
+        "explanation": "આ સન્માન દળની હીરક જયંતી નિમિત્તે અપાયું. ચંડીગઢ 1 નવેમ્બર 1966થી કેન્દ્રશાસિત પ્રદેશ અને પંજાબ-હરિયાણાની સંયુક્ત રાજધાની છે. આ દળમાં 6,000થી વધુ કર્મચારીઓ છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "According to the World Bank's 'India Poverty and Equity Brief: October 2026', India's extreme poverty fell from 27.1% in 2011 to what in 2023?",
+      "options": ["2.6%", "5.3%", "9.2%", "12.1%"],
+      "answer": 0,
+      "explanation": "The brief says 496 million people moved above the USD 4.20-a-day lower-middle-income poverty line, and the share below it fell from 57.7% to 16.1%.",
+      "gu": {
+        "question": "વિશ્વ બેંકના 'India Poverty and Equity Brief: October 2026' મુજબ ભારતમાં અત્યંત ગરીબી 2011ના 27.1%થી ઘટીને 2023માં કેટલી થઈ?",
+        "options": ["2.6%", "5.3%", "9.2%", "12.1%"],
+        "explanation": "અહેવાલ મુજબ 49.6 કરોડ લોકો પ્રતિદિન USD 4.20ની નીચલી-મધ્યમ આવકની ગરીબી રેખાથી ઉપર આવ્યા અને તેનાથી નીચેના લોકોનો હિસ્સો 57.7%થી ઘટીને 16.1% થયો."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "IN-SPACe selected six private space companies, including Agnikul Cosmos and Digantara, for seed grants of up to ₹1 crore each under which programme?",
+      "options": ["AI INSPIRED", "Antariksh Shakti", "SpaceTech Udaan", "Gaganyaan Startup Mission"],
+      "answer": 0,
+      "explanation": "The programme covers Edge Intelligence in Orbit, Space for Earth Intelligence and Smart Access to Space, with a total outlay of up to ₹6 crore. IN-SPACe, set up in 2020, is headquartered in Ahmedabad, Gujarat.",
+      "gu": {
+        "question": "IN-SPACeએ અગ્નિકુલ કોસ્મોસ અને દિગંતારા સહિત છ ખાનગી અવકાશ કંપનીઓને કયા કાર્યક્રમ હેઠળ દરેકને ₹1 કરોડ સુધીની સીડ ગ્રાન્ટ માટે પસંદ કરી?",
+        "options": ["AI INSPIRED", "અંતરિક્ષ શક્તિ", "સ્પેસટેક ઉડાન", "ગગનયાન સ્ટાર્ટઅપ મિશન"],
+        "explanation": "આ કાર્યક્રમ Edge Intelligence in Orbit, Space for Earth Intelligence અને Smart Access to Space ક્ષેત્રોને આવરે છે અને તેનો કુલ ખર્ચ ₹6 કરોડ સુધીનો છે. 2020માં સ્થપાયેલ IN-SPACeનું મુખ્યાલય અમદાવાદ, ગુજરાતમાં છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "Who chairs the High-Level Committee on Banking for Viksit Bharat set up by the Ministry of Finance?",
+      "options": ["N S Vishwanathan", "Shirish Chandra Murmu", "Padmaja Chunduru", "Suresh N. Patel"],
+      "answer": 3,
+      "explanation": "Suresh N. Patel is a former Central Vigilance Commissioner. The committee has a six-month tenure and will review banking rules, including those for Regional Rural Banks and cooperative banks. It was announced in the Union Budget 2026-27.",
+      "gu": {
+        "question": "નાણા મંત્રાલયે રચેલી 'High-Level Committee on Banking for Viksit Bharat'ના અધ્યક્ષ કોણ છે?",
+        "options": ["એન. એસ. વિશ્વનાથન", "શિરીષ ચંદ્ર મુર્મુ", "પદ્મજા ચુંદુરુ", "સુરેશ એન. પટેલ"],
+        "explanation": "સુરેશ એન. પટેલ ભૂતપૂર્વ કેન્દ્રીય તકેદારી કમિશનર છે. સમિતિનો કાર્યકાળ છ મહિનાનો છે અને તે પ્રાદેશિક ગ્રામીણ બેંકો તથા સહકારી બેંકો સહિતના બેંકિંગ નિયમોની સમીક્ષા કરશે. તેની જાહેરાત કેન્દ્રીય બજેટ 2026-27માં થઈ હતી."
+      }
+    },
+    {
+      "category": "Important Days",
+      "question": "World Vegan Day is observed on 1 November. Who coined the term 'vegan' in 1944?",
+      "options": ["Louise Wallis", "Donald Watson", "Peter Singer", "Jane Goodall"],
+      "answer": 1,
+      "explanation": "Donald Watson coined the word in November 1944. World Vegan Day was started in 1994 by Louise Wallis, then Chair of The Vegan Society; 2026 marks the 32nd World Vegan Day.",
+      "gu": {
+        "question": "1 નવેમ્બરે વિશ્વ વીગન દિવસ ઉજવાય છે. 1944માં 'vegan' શબ્દ કોણે આપ્યો?",
+        "options": ["લુઇસ વૉલિસ", "ડોનાલ્ડ વૉટ્સન", "પીટર સિંગર", "જેન ગુડૉલ"],
+        "explanation": "ડોનાલ્ડ વૉટ્સને નવેમ્બર 1944માં આ શબ્દ આપ્યો. વિશ્વ વીગન દિવસની શરૂઆત 1994માં ધ વીગન સોસાયટીના તત્કાલીન અધ્યક્ષ લુઇસ વૉલિસે કરી હતી; 2026માં 32મો વિશ્વ વીગન દિવસ છે."
+      }
+    },
+    {
+      "category": "States",
+      "question": "The Asian Development Bank approved a USD 139.55 million loan for an urban livability project, its first engagement in which Union Territory?",
+      "options": ["Ladakh", "Lakshadweep", "Puducherry", "Andaman and Nicobar Islands"],
+      "answer": 2,
+      "explanation": "The Puducherry Integrated Urban Livability Improvement Project covers water supply (including brackish-water RO desalination plants), about 270 km of new sewers, a 50 MLD sewage treatment plant and pedestrian walkways.",
+      "gu": {
+        "question": "એશિયન ડેવલપમેન્ટ બેંકે શહેરી જીવનસુધારણા પ્રોજેક્ટ માટે USD 139.55 મિલિયનની લોન મંજૂર કરી, જે કયા કેન્દ્રશાસિત પ્રદેશમાં તેની પ્રથમ કામગીરી છે?",
+        "options": ["લદ્દાખ", "લક્ષદ્વીપ", "પુડુચેરી", "આંદામાન અને નિકોબાર ટાપુઓ"],
+        "explanation": "પુડુચેરી ઇન્ટિગ્રેટેડ અર્બન લિવેબિલિટી ઇમ્પ્રૂવમેન્ટ પ્રોજેક્ટમાં પાણી પુરવઠો (ખારા પાણીના RO ડિસેલિનેશન પ્લાન્ટ સહિત), લગભગ 270 કિમી નવી ગટર લાઇન, 50 MLD ગટર શુદ્ધિકરણ પ્લાન્ટ અને પદયાત્રી માર્ગોનો સમાવેશ થાય છે."
+      }
+    }
+  ],
+  "sources": [
+    { "name": "AffairsCloud: Current Affairs 1 & 2 November 2026", "url": "https://affairscloud.com/current-affairs-1-2-november-2026/" },
+    { "name": "AffairsCloud: Current Affairs 3 November 2026", "url": "https://affairscloud.com/current-affairs-3-november-2026/" }
+  ]
+}
