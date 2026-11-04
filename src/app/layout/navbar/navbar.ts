@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, effect, inject, signal } from '@angular/core';
-import { DOCUMENT, NgClass } from '@angular/common';
+import { DOCUMENT, Location, NgClass } from '@angular/common';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { filter, map } from 'rxjs';
@@ -84,9 +84,12 @@ export class Navbar {
     { lang: 'en', short: 'EN', name: 'English' },
   ];
   private router = inject(Router);
+  private location = inject(Location);
   private analytics = inject(AnalyticsService);
-  // Current address, updated after every navigation.
-  private url = toSignal(this.router.events.pipe(filter(e => e instanceof NavigationEnd), map(() => this.router.url)), { initialValue: this.router.url });
+  // The address in the address bar, updated after every navigation. Not router.url: an unknown address
+  // shows the 404 page without changing the address bar (skipLocationChange), and router.url is then
+  // '/404', so switching language would lose the address the visitor typed.
+  private url = toSignal(this.router.events.pipe(filter(e => e instanceof NavigationEnd), map(() => this.currentUrl())), { initialValue: this.currentUrl() });
   paintBucket = paintBucket;
   iconButton = 'mx-1 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600';
   darkMode = inject(DarkModeService);
@@ -94,6 +97,10 @@ export class Navbar {
   colors = themeColorData;
   icon = computed(() => this.darkMode.isDark() ? sun : moon);
   private document = inject(DOCUMENT);
+
+  private currentUrl(): string {
+    return this.location.path(true) || '/';
+  }
 
   switchUrl(lang: Lang): string {
     return this.lang.switchUrl(this.url(), lang);

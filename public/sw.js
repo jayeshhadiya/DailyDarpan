@@ -2,9 +2,10 @@
 // Registered by App on the live site.
 //   Pages: from the network when online (always the newest quiz); the saved copy when offline.
 //   Code, styles and fonts: file names change with every build, so a saved copy is always right.
-//   Other files (icons, images, PDFs): the saved copy at once, refreshed in the background.
+//   Monthly PDFs: from the network when online (a fixed month is never shown stale); the saved copy when offline.
+//   Other files (icons, images): the saved copy at once, refreshed in the background.
 // Change VERSION to throw away everything saved by an older version.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const PAGES = `pages-${VERSION}`;
 const FILES = `files-${VERSION}`;
 const OFFLINE = '/offline.html';
@@ -28,17 +29,22 @@ async function trim(name, max) {
   await Promise.all(keys.slice(0, Math.max(0, keys.length - max)).map((key) => cache.delete(key)));
 }
 
-async function networkFirst(request) {
-  const cache = await caches.open(PAGES);
+// `offline` is the page to show when there is neither a network nor a saved copy (pages only).
+async function networkFirst(request, name, max, offline) {
+  const cache = await caches.open(name);
   try {
     const response = await fetch(request);
-    if (response.ok) {
+    // 206 (part of a file) can't be saved.
+    if (response.ok && response.status !== 206) {
       await cache.put(request, response.clone());
-      trim(PAGES, 80);
+      trim(name, max);
     }
     return response;
-  } catch {
-    return (await cache.match(request, { ignoreSearch: true })) ?? (await cache.match(OFFLINE));
+  } catch (error) {
+    const saved = await cache.match(request, { ignoreSearch: true });
+    if (saved) return saved;
+    if (offline) return (await caches.open(PAGES).then((pages) => pages.match(offline)));
+    throw error;
   }
 }
 
@@ -46,7 +52,7 @@ async function cacheFirst(request, refresh) {
   const cache = await caches.open(FILES);
   const saved = await cache.match(request);
   const update = fetch(request).then(async (response) => {
-    if (response.ok) {
+    if (response.ok && response.status !== 206) {
       await cache.put(request, response.clone());
       trim(FILES, 150);
     }
@@ -64,8 +70,10 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   const sameSite = url.origin === self.location.origin;
-  if (request.mode === 'navigate' && sameSite) {
-    event.respondWith(networkFirst(request));
+  if (sameSite && url.pathname.startsWith('/pdf/')) {
+    event.respondWith(networkFirst(request, FILES, 150));
+  } else if (request.mode === 'navigate' && sameSite) {
+    event.respondWith(networkFirst(request, PAGES, 80, OFFLINE));
   } else if (sameSite && /^\/(?:main|chunk|polyfills|styles)-[^/]+\.(?:js|css)$/.test(url.pathname)) {
     event.respondWith(cacheFirst(request, false));
   } else if (url.origin === 'https://fonts.gstatic.com') {

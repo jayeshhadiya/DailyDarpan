@@ -25,7 +25,7 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
       <p class="max-w-xl text-gray-600 dark:text-gray-400">{{ t.monthlyPdfsIntro }}</p>
     </header>
     <div class="mt-6">
-      <ca-share [text]="t.shareMonthText(lang.monthLabel(selected().key), selectedTotal(), pageUrl())" [url]="pageUrl()"/>
+      <ca-share content="month" [text]="t.shareMonthText(lang.monthLabel(selected().key), selectedTotal(), pageUrl())" [url]="pageUrl()"/>
     </div>
 
     <ul class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">

@@ -46,6 +46,16 @@ export function localizeQuestion(q: CurrentAffairsQuestion, lang: Lang): Questio
   return { question: text.question, options: text.options, explanation: text.explanation, category: q.category, answer: q.answer };
 }
 
+// A short id for a question, made from its English text, options and answer. Saved answers are kept
+// under it, so fixing a past day (reordering, adding or removing questions, or reordering options)
+// never puts a visitor's old pick on a different question.
+export function questionId(q: CurrentAffairsQuestion): string {
+  const text = [q.question, ...q.options, q.answer].join('\u0000');
+  let hash = 5381;
+  for (let i = 0; i < text.length; i++) hash = (hash * 33) ^ text.charCodeAt(i);
+  return (hash >>> 0).toString(36);
+}
+
 // True when every question of the day can be shown in `lang`.
 export function isTranslated(day: CurrentAffairsDay, lang: Lang): boolean {
   return lang === 'en' || day.questions.every(q => q.gu);

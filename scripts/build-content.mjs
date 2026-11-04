@@ -26,6 +26,14 @@ const dayFiles = readdirSync(daysDir).flatMap((name) => {
   return [];
 });
 
+// YYYY-MM-DD of a day that exists. Date.parse accepts 2026-02-30 (it rolls over to 2 March),
+// so the date must come back unchanged from a round trip.
+const isRealDate = (date) => {
+  if (typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date)) return false;
+  const time = new Date(`${date}T00:00:00Z`);
+  return !isNaN(time.getTime()) && time.toISOString().slice(0, 10) === date;
+};
+
 const errors = [];
 // Where each date's file is, to catch the same day twice and to build the loaders.
 const fileOf = {};
@@ -41,16 +49,22 @@ const days = dayFiles
       fail(`not valid JSON (${error.message})`);
       return null;
     }
+    if (!day || typeof day !== 'object' || Array.isArray(day)) {
+      fail('must be an object with "date" and "questions"');
+      return null;
+    }
     if (`${day.date}.json` !== file) fail(`"date" must match the file name (got "${day.date}")`);
     if (folder && !file.startsWith(`${folder}-`)) fail(`is in the ${folder} folder but is not a day of that month`);
     if (fileOf[day.date]) fail(`the same day is also in content/days/${fileOf[day.date]}`);
     fileOf[day.date] = path;
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(day.date ?? '') || isNaN(Date.parse(day.date))) fail('"date" must be a real YYYY-MM-DD date');
+    // Date.parse accepts days that don't exist (2026-02-30), so the date must survive a round trip.
+    if (!isRealDate(day.date)) fail('"date" must be a real YYYY-MM-DD date');
     if (!Array.isArray(day.questions) || !day.questions.length) fail('needs at least one question');
     (day.questions ?? []).forEach((q, i) => {
       const at = `question ${i + 1}`;
       if (!q.question?.trim()) fail(`${at} has no "question" text`);
-      if (!Array.isArray(q.options) || q.options.length < 2) fail(`${at} needs at least 2 options`);
+      // Options are lettered A–F on the site and in the PDFs.
+      if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 6) fail(`${at} needs 2 to 6 options`);
       else if (new Set(q.options).size !== q.options.length) fail(`${at} has the same option twice`);
       if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer >= (q.options?.length ?? 0)) {
         fail(`${at} "answer" must be the index of the right option (0 = first)`);

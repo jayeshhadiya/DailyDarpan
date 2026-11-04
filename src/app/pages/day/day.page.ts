@@ -1,7 +1,7 @@
 import { Component, ElementRef, ViewEncapsulation, afterRenderEffect, computed, effect, inject, input, signal, viewChild } from '@angular/core';
 import { DatePipe, formatDate } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { isTranslated, localizeQuestion } from '@content/content';
+import { isTranslated, localizeQuestion, questionId } from '@content/content';
 import { daySummaries } from '@content/content.generated';
 import { CurrentAffairsDay } from '@content/content.schema';
 import { AnalyticsService } from '@core/services/analytics.service';
@@ -175,8 +175,12 @@ export class DayPage {
   translated = computed(() => isTranslated(this.day(), this.lang.lang()));
   // Questions opened with "Show answers", keyed by "date:index" so each day keeps its own.
   private revealed = signal<Record<string, boolean>>({});
-  // Every question answered by the student (not just revealed with "Show answers").
-  finished = computed(() => this.answeredCount() === this.day().questions.length);
+  // Ids that saved answers are kept under (see questionId), one per question.
+  private ids = computed(() => this.day().questions.map(questionId));
+  // Every question answered or opened with "Show answers", with at least one answered by the student.
+  // Revealed questions count as wrong, so the score stays honest and the quiz can still be finished.
+  finished = computed(() =>
+    this.answeredCount() > 0 && this.day().questions.every((_, i) => this.isDone(i)));
   verdict = computed(() => {
     const share = this.score() / this.day().questions.length;
     const t = this.lang.t();
@@ -243,7 +247,7 @@ export class DayPage {
   }
 
   choice(index: number): number | undefined {
-    return this.progress.answer(this.day().date, index);
+    return this.progress.answer(this.day().date, this.ids()[index]);
   }
 
   isDone(index: number): boolean {
@@ -252,20 +256,26 @@ export class DayPage {
 
   choose(index: number, option: number): void {
     if (this.isDone(index)) return;
-    const date = this.day().date;
-    this.progress.setAnswer(date, index, option);
-    if (this.finished()) {
-      this.progress.finish(date, this.score(), this.day().questions.length);
-      if (!this.reported.has(date)) {
-        this.reported.add(date);
-        this.analytics.event('quiz_complete', { quiz_date: date, score: this.score(), total: this.day().questions.length });
-      }
-    }
+    this.progress.setAnswer(this.day().date, this.ids()[index], option);
+    this.recordIfFinished();
   }
 
   revealAll(): void {
     const keys = this.day().questions.map((_, i) => this.key(i));
     this.revealed.update(map => ({ ...map, ...Object.fromEntries(keys.map(k => [k, true])) }));
+    this.recordIfFinished();
+  }
+
+  // Saves the score and the streak day once the last question is answered or revealed.
+  private recordIfFinished(): void {
+    if (!this.finished()) return;
+    const date = this.day().date;
+    const total = this.day().questions.length;
+    this.progress.finish(date, this.score(), total);
+    if (!this.reported.has(date)) {
+      this.reported.add(date);
+      this.analytics.event('quiz_complete', { quiz_date: date, score: this.score(), total });
+    }
   }
 
   reset(): void {

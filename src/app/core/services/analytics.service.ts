@@ -51,5 +51,5 @@ export type AnalyticsEvent =
   | 'telegram_join'
   // The ગુજ / EN picker used: { to }
   | 'language_switch'
-  // A share button used: { method: telegram | whatsapp | x | linkedin | native | copy, content: quiz | score }
+  // A share button used: { method: telegram | whatsapp | x | linkedin | native | copy, content: quiz | score | month }
   | 'share';
