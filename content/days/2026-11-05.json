@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-05",
+  "questions": [
+    {
+      "category": "Energy",
+      "question": "The Union Cabinet approved a ₹14,500 crore Viability Gap Funding scheme in November 2026 to build how much grid-scale energy storage by FY 2030–31?",
+      "options": ["50 GWh", "75 GWh", "92 GWh", "120 GWh"],
+      "answer": 2,
+      "explanation": "The 92 GWh is split into 60 GWh of pumped hydro, 30 GWh of battery storage (BESS) and 2 GWh of emerging technologies, with an estimated investment of ₹97,600 crore. BESS projects need at least 40% domestic content.",
+      "gu": {
+        "question": "કેન્દ્રીય મંત્રીમંડળે નવેમ્બર 2026માં મંજૂર કરેલી ₹14,500 કરોડની વાયેબિલિટી ગેપ ફંડિંગ યોજના હેઠળ FY 2030–31 સુધીમાં કેટલી ગ્રીડ-સ્કેલ ઊર્જા સંગ્રહ ક્ષમતા ઊભી કરાશે?",
+        "options": ["50 GWh", "75 GWh", "92 GWh", "120 GWh"],
+        "explanation": "92 GWhમાં 60 GWh પમ્પ્ડ હાઇડ્રો, 30 GWh બેટરી સ્ટોરેજ (BESS) અને 2 GWh નવી ટેકનોલોજીનો સમાવેશ છે; અંદાજિત રોકાણ ₹97,600 કરોડ છે. BESS પ્રોજેક્ટ્સમાં ઓછામાં ઓછું 40% સ્વદેશી ઘટક જરૂરી છે."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "Hockey captain Harmanpreet Singh scored his 250th international goal on 5 November 2026, becoming the second Indian man to reach the mark. Who holds the Indian record?",
+      "options": ["Balbir Singh Sr.", "Dhyan Chand", "Dhanraj Pillay", "Sandeep Singh"],
+      "answer": 1,
+      "explanation": "Dhyan Chand holds the record with 570 goals. Harmanpreet scored from a penalty corner in the semifinal of the Asian Champions Trophy Punjab 2026 in Mohali, which India won 8–1 against South Korea.",
+      "gu": {
+        "question": "હોકી કેપ્ટન હરમનપ્રીત સિંહે 5 નવેમ્બર 2026ના રોજ પોતાનો 250મો આંતરરાષ્ટ્રીય ગોલ કર્યો અને આ સિદ્ધિ મેળવનાર બીજા ભારતીય પુરુષ ખેલાડી બન્યા. ભારતીય રેકોર્ડ કોના નામે છે?",
+        "options": ["બલબીર સિંહ સિનિયર", "ધ્યાનચંદ", "ધનરાજ પિલ્લે", "સંદીપ સિંહ"],
+        "explanation": "ધ્યાનચંદ 570 ગોલ સાથે રેકોર્ડ ધરાવે છે. હરમનપ્રીતે મોહાલીમાં એશિયન ચેમ્પિયન્સ ટ્રોફી પંજાબ 2026ની સેમિફાઇનલમાં પેનલ્ટી કોર્નરથી ગોલ કર્યો; ભારતે દક્ષિણ કોરિયાને 8–1થી હરાવ્યું."
+      }
+    },
+    {
+      "category": "Awards",
+      "question": "Nirmala Lakshman won the Sharjah Award for Best International Non-Fiction Book on 4 November 2026 for a book about which community?",
+      "options": ["The Tamils", "The Malayalis", "The Parsis", "The Sikhs"],
+      "answer": 0,
+      "explanation": "Her book 'The Tamils: A Portrait of a Community' (Aleph Book Company, 2025) won at the 45th Sharjah International Book Fair. Sheikha Bodour bint Sultan Al Qasimi presented the award. Lakshman is a Director of The Hindu Group.",
+      "gu": {
+        "question": "નિર્મલા લક્ષ્મણને 4 નવેમ્બર 2026ના રોજ કયા સમુદાય વિશેના પુસ્તક માટે 'શારજાહ એવોર્ડ ફોર બેસ્ટ ઇન્ટરનેશનલ નોન-ફિક્શન બુક' મળ્યો?",
+        "options": ["તમિલ", "મલયાલી", "પારસી", "શીખ"],
+        "explanation": "તેમના પુસ્તક 'The Tamils: A Portrait of a Community' (અલેફ બુક કંપની, 2025)ને 45મા શારજાહ ઇન્ટરનેશનલ બુક ફેરમાં એવોર્ડ મળ્યો. શેખા બુદૂર બિન્ત સુલતાન અલ કાસિમીએ એવોર્ડ આપ્યો. લક્ષ્મણ ધ હિન્દુ ગ્રુપના ડિરેક્ટર છે."
+      }
+    },
+    {
+      "category": "Awards",
+      "question": "Edmund Richardson won the Baillie Gifford Prize for Non-Fiction 2026 for a book on which historical figure?",
+      "options": ["Julius Caesar", "Cleopatra", "Alexander the Great", "Genghis Khan"],
+      "answer": 2,
+      "explanation": "'Alexander: God, King, Man' is the first ancient-history book to win the £50,000 prize. The prize began in 1999 as the Samuel Johnson Prize and was renamed in 2016.",
+      "gu": {
+        "question": "એડમન્ડ રિચાર્ડસનને કઈ ઐતિહાસિક વ્યક્તિ પરના પુસ્તક માટે બેલી ગિફોર્ડ પ્રાઇઝ ફોર નોન-ફિક્શન 2026 મળ્યું?",
+        "options": ["જુલિયસ સીઝર", "ક્લિયોપેટ્રા", "સિકંદર (એલેક્ઝાન્ડર ધ ગ્રેટ)", "ચંગીઝ ખાન"],
+        "explanation": "'Alexander: God, King, Man' £50,000નું આ ઇનામ જીતનાર પ્રથમ પ્રાચીન ઇતિહાસનું પુસ્તક છે. આ ઇનામ 1999માં સેમ્યુઅલ જોન્સન પ્રાઇઝ તરીકે શરૂ થયું હતું અને 2016માં તેનું નામ બદલાયું."
+      }
+    },
+    {
+      "category": "Culture",
+      "question": "Finance Minister Nirmala Sitharaman released a ₹250 commemorative coin on 3 November 2026 to mark the 250th birth anniversary of which composer?",
+      "options": ["Tyagaraja", "Syama Sastri", "Purandara Dasa", "Muthuswami Dikshitar"],
+      "answer": 3,
+      "explanation": "Muthuswami Dikshitar (1775–1835), born in Tiruvarur, was one of the Trinity of Carnatic music with Tyagaraja and Syama Sastri. His works include the Navagraha Kritis. The coin was released at IIT-BHU, Varanasi.",
+      "gu": {
+        "question": "નાણામંત્રી નિર્મલા સીતારમણે 3 નવેમ્બર 2026ના રોજ કયા સંગીતકારની 250મી જન્મજયંતી નિમિત્તે ₹250નો સ્મારક સિક્કો બહાર પાડ્યો?",
+        "options": ["ત્યાગરાજ", "શ્યામા શાસ્ત્રી", "પુરંદર દાસ", "મુથુસ્વામી દીક્ષિતર"],
+        "explanation": "તિરુવરુરમાં જન્મેલા મુથુસ્વામી દીક્ષિતર (1775–1835) ત્યાગરાજ અને શ્યામા શાસ્ત્રી સાથે કર્ણાટક સંગીતની ત્રિમૂર્તિમાંના એક હતા. તેમની રચનાઓમાં નવગ્રહ કૃતિઓનો સમાવેશ થાય છે. સિક્કો IIT-BHU, વારાણસીમાં બહાર પડાયો."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "DRDO test-fired which surface-to-surface quasi-ballistic missile from ITR Chandipur, Odisha on 3 November 2026, hitting two simulated targets about 500 km away?",
+      "options": ["Prithvi-II", "Pralay", "Agni-Prime", "Nirbhay"],
+      "answer": 1,
+      "explanation": "Pralay is a solid-fuelled, road-mobile missile with a range of 150–500 km and a payload of 350–1,000 kg. It can manoeuvre in flight, including in the final phase.",
+      "gu": {
+        "question": "DRDOએ 3 નવેમ્બર 2026ના રોજ ઓડિશાના ITR ચાંદીપુરથી કઈ સપાટીથી સપાટી પર પ્રહાર કરતી ક્વાસી-બેલિસ્ટિક મિસાઇલનું પરીક્ષણ કર્યું, જેણે આશરે 500 કિમી દૂરના બે કાલ્પનિક લક્ષ્યોને ભેદ્યાં?",
+        "options": ["પૃથ્વી-II", "પ્રલય", "અગ્નિ-પ્રાઇમ", "નિર્ભય"],
+        "explanation": "પ્રલય ઘન ઇંધણવાળી, રસ્તા પરથી છોડી શકાતી મિસાઇલ છે, જેની રેન્જ 150–500 કિમી અને પેલોડ 350–1,000 કિગ્રા છે. તે ઉડાન દરમિયાન, અંતિમ તબક્કામાં પણ, દિશા બદલી શકે છે."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "NASA's Swift Observatory re-entered Earth's atmosphere on 4 November 2026 after about 22 years. What was it mainly built to study?",
+      "options": ["Gamma-ray bursts", "Exoplanet atmospheres", "Solar wind", "Dark matter maps"],
+      "answer": 0,
+      "explanation": "Launched on 20 November 2004, Swift carried the BAT, XRT and UVOT instruments and contributed to about 7,000 research papers. It came down over North Sumatra, Indonesia.",
+      "gu": {
+        "question": "આશરે 22 વર્ષ પછી NASAની સ્વિફ્ટ ઓબ્ઝર્વેટરી 4 નવેમ્બર 2026ના રોજ પૃથ્વીના વાતાવરણમાં પાછી ફરી. તે મુખ્યત્વે શેના અભ્યાસ માટે બનાવાઈ હતી?",
+        "options": ["ગામા-રે બર્સ્ટ", "બાહ્યગ્રહોનું વાતાવરણ", "સૌર પવન", "ડાર્ક મેટરના નકશા"],
+        "explanation": "20 નવેમ્બર 2004ના રોજ લોન્ચ થયેલી સ્વિફ્ટમાં BAT, XRT અને UVOT ઉપકરણો હતાં અને તેણે આશરે 7,000 સંશોધનપત્રોમાં યોગદાન આપ્યું. તે ઇન્ડોનેશિયાના ઉત્તર સુમાત્રા પર નીચે આવી."
+      }
+    },
+    {
+      "category": "International",
+      "question": "In the QS World University Rankings: Asia 2027, which was India's highest-ranked institution, at 66th?",
+      "options": ["IISc Bengaluru", "IIT Bombay", "IIT Delhi", "IIT Madras"],
+      "answer": 2,
+      "explanation": "The University of Hong Kong topped the list. India has 325 ranked universities, second only to mainland China (448). IISc was 79th, IIT Bombay 83rd and IIT Madras 85th.",
+      "gu": {
+        "question": "QS વર્લ્ડ યુનિવર્સિટી રેન્કિંગ્સ: એશિયા 2027માં 66મા ક્રમ સાથે ભારતની સર્વોચ્ચ ક્રમાંકિત સંસ્થા કઈ હતી?",
+        "options": ["IISc બેંગલુરુ", "IIT બોમ્બે", "IIT દિલ્હી", "IIT મદ્રાસ"],
+        "explanation": "યુનિવર્સિટી ઓફ હોંગકોંગ પ્રથમ સ્થાને રહી. ભારતની 325 યુનિવર્સિટીઓ યાદીમાં છે, જે મેઇનલેન્ડ ચીન (448) પછી બીજા ક્રમે છે. IISc 79મા, IIT બોમ્બે 83મા અને IIT મદ્રાસ 85મા ક્રમે રહી."
+      }
+    },
+    {
+      "category": "National",
+      "question": "India plans what would be the world's highest railway station, at about 5,256 m beneath Tanglang La. On which proposed line would it be?",
+      "options": ["Jammu–Srinagar–Baramulla", "Rishikesh–Karnaprayag", "Sivok–Rangpo", "Bilaspur–Manali–Leh"],
+      "answer": 3,
+      "explanation": "The 489-km broad-gauge line is estimated at about ₹1.31 lakh crore, with nearly 270 km in tunnels. The station would beat China's Tanggula (about 5,068 m). The Defence Ministry sees the line as strategically important for Ladakh.",
+      "gu": {
+        "question": "ભારત તંગલાંગ લા નીચે આશરે 5,256 મીટરની ઊંચાઈએ વિશ્વનું સૌથી ઊંચું રેલવે સ્ટેશન બનાવવાની યોજના ધરાવે છે. તે કઈ પ્રસ્તાવિત રેલવે લાઇન પર હશે?",
+        "options": ["જમ્મુ–શ્રીનગર–બારામુલ્લા", "ઋષિકેશ–કર્ણપ્રયાગ", "સિવોક–રંગપો", "બિલાસપુર–મનાલી–લેહ"],
+        "explanation": "489 કિમીની આ બ્રોડગેજ લાઇનનો અંદાજિત ખર્ચ આશરે ₹1.31 લાખ કરોડ છે, જેમાં લગભગ 270 કિમી ટનલ હશે. આ સ્ટેશન ચીનના તાંગુલા (આશરે 5,068 મીટર)ને પાછળ છોડશે. સંરક્ષણ મંત્રાલય લદ્દાખ માટે આ લાઇનને વ્યૂહાત્મક રીતે મહત્વની માને છે."
+      }
+    },
+    {
+      "category": "Important Days",
+      "question": "What is the theme of World Tsunami Awareness Day, observed on 5 November 2026?",
+      "options": ["Be Tsunami Ready: Resilience Starts With You", "Fight Inequality for a Resilient Future", "Early Warning for All", "Build Back Better"],
+      "answer": 0,
+      "explanation": "The UN General Assembly designated the day in December 2015 (resolution 70/203) on Japan's initiative; it was first observed in 2016. UNDRR leads the observance.",
+      "gu": {
+        "question": "5 નવેમ્બર 2026ના રોજ ઉજવાયેલા વિશ્વ સુનામી જાગૃતિ દિવસની થીમ શી છે?",
+        "options": ["Be Tsunami Ready: Resilience Starts With You", "Fight Inequality for a Resilient Future", "Early Warning for All", "Build Back Better"],
+        "explanation": "સંયુક્ત રાષ્ટ્ર મહાસભાએ જાપાનની પહેલ પર ડિસેમ્બર 2015માં (ઠરાવ 70/203) આ દિવસ જાહેર કર્યો; તે પ્રથમ વખત 2016માં ઉજવાયો. UNDRR તેની ઉજવણીનું નેતૃત્વ કરે છે."
+      }
+    }
+  ],
+  "sources": [
+    { "name": "SSBCrack Exams: Current Affairs 05 November 2026", "url": "https://ssbcrackexams.com/current-affairs-05-november-2026/" },
+    { "name": "AffairsCloud: Current Affairs 5 November 2026", "url": "https://affairscloud.com/current-affairs-5-november-2026/" },
+    { "name": "Bankersadda: Daily Current Affairs 5th November 2026", "url": "https://www.bankersadda.com/daily-current-affairs-and-gk-updates-5th-november-2026/" }
+  ]
+}
