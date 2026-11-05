@@ -3,14 +3,14 @@ import { DOCUMENT } from '@angular/common';
 import { ResolveFn } from '@angular/router';
 import { Lang, STRINGS } from '@i18n/strings';
 
-// The language being shown. Gujarati pages live at /…, English pages at /en/…;
+// The language being shown. English pages live at /…, Gujarati pages at /gu/…;
 // the route tree sets the language through langResolver before any page renders.
 @Injectable({
   providedIn: 'root'
 })
 export class LangService {
   private document = inject(DOCUMENT);
-  readonly lang = signal<Lang>('gu');
+  readonly lang = signal<Lang>('en');
   // UI text for the current language.
   readonly t = computed(() => STRINGS[this.lang()]);
   // Locale id for Angular's date pipe ('gu' is registered in app.config.ts).
@@ -23,17 +23,17 @@ export class LangService {
 
   // An app path ('/', '/about', '/current-affairs/…') in the current language.
   path(path: string, lang: Lang = this.lang()): string {
-    if (lang === 'gu') return path;
-    return path === '/' ? '/en' : `/en${path}`;
+    if (lang === 'en') return path;
+    return path === '/' ? '/gu' : `/gu${path}`;
   }
 
   // The same address in another language, keeping query string and fragment.
   switchUrl(url: string, lang: Lang): string {
-    let guUrl = url.replace(/^\/en(?=[/?#]|$)/, '');
-    if (!guUrl.startsWith('/')) guUrl = '/' + guUrl;
-    if (lang === 'gu') return guUrl;
-    // The home page ('/', '/?…', '/#…') sits directly at /en; every other path gets the prefix.
-    return '/en' + (/^\/([?#]|$)/.test(guUrl) ? guUrl.slice(1) : guUrl);
+    let enUrl = url.replace(/^\/gu(?=[/?#]|$)/, '');
+    if (!enUrl.startsWith('/')) enUrl = '/' + enUrl;
+    if (lang === 'en') return enUrl;
+    // The home page ('/', '/?…', '/#…') sits directly at /gu; every other path gets the prefix.
+    return '/gu' + (/^\/([?#]|$)/.test(enUrl) ? enUrl.slice(1) : enUrl);
   }
 
   // "October 2026" or "ઑક્ટોબર 2026" from "2026-10".

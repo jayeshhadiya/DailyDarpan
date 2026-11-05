@@ -49,10 +49,10 @@ export class MetaService {
     ];
     tags.forEach(tag => this.meta.updateTag(tag, tag.property ? `property='${tag.property}'` : `name='${tag.name}'`));
     this.setLink('canonical', url);
-    // Tell search engines this page exists in both languages; Gujarati is the default.
+    // Tell search engines this page exists in both languages; English is the default.
     this.setLink('alternate', this.url('gu'), 'gu');
     this.setLink('alternate', this.url('en'), 'en');
-    this.setLink('alternate', this.url('gu'), 'x-default');
+    this.setLink('alternate', this.url('en'), 'x-default');
     // Every page starts with just the site's own details; pages add theirs with setStructuredData().
     this.setStructuredData([]);
   }

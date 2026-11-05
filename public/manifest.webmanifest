@@ -2,7 +2,7 @@
   "name": "DailyDarpan · દૈનિક કરન્ટ અફેર્સ",
   "short_name": "DailyDarpan",
   "description": "દૈનિક કરન્ટ અફેર્સ ક્વિઝ ગુજરાતી અને અંગ્રેજીમાં: રોજ 10 પ્રશ્નો, જવાબ અને સમજૂતી સાથે.",
-  "lang": "gu",
+  "lang": "en",
   "id": "/",
   "start_url": "/?source=app",
   "scope": "/",

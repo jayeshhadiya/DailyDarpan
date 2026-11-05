@@ -9,8 +9,8 @@ const dayParams = async () => daySummaries.map(day => ({ date: day.date }));
 export const serverRoutes: ServerRoute[] = [
   { path: 'current-affairs/month/:month', renderMode: RenderMode.Prerender, getPrerenderParams: monthParams },
   { path: 'current-affairs/:date', renderMode: RenderMode.Prerender, getPrerenderParams: dayParams },
-  { path: 'en/current-affairs/month/:month', renderMode: RenderMode.Prerender, getPrerenderParams: monthParams },
-  { path: 'en/current-affairs/:date', renderMode: RenderMode.Prerender, getPrerenderParams: dayParams },
+  { path: 'gu/current-affairs/month/:month', renderMode: RenderMode.Prerender, getPrerenderParams: monthParams },
+  { path: 'gu/current-affairs/:date', renderMode: RenderMode.Prerender, getPrerenderParams: dayParams },
   // Includes /404, built as /404/index.html and copied to 404.html, which Vercel serves (with a 404 status) for unknown addresses.
   { path: '**', renderMode: RenderMode.Prerender }
 ];

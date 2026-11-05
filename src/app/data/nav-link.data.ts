@@ -3,7 +3,7 @@ import { latestQuizPath, months } from '@content/content';
 export interface NavLink {
   // Key of the link text in STRINGS.
   label: 'navHome' | 'navToday' | 'navMonthly' | 'navAbout';
-  // Gujarati (default) path; LangService.path() adds /en for English.
+  // English (default) path; LangService.path() adds /gu for Gujarati.
   path: string;
 }
 

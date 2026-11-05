@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { dayResolver, monthResolver } from '@content/content';
 import { langResolver } from '@i18n/lang.service';
 
-// The same pages in each language: Gujarati at /…, English at /en/….
+// The same pages in each language: English at /…, Gujarati at /gu/….
 const pages: Routes = [
   {
     path: '',
@@ -41,6 +41,6 @@ const pages: Routes = [
 ];
 
 export const routes: Routes = [
-  { path: 'en', resolve: { lang: langResolver('en') }, children: pages },
-  { path: '', resolve: { lang: langResolver('gu') }, children: pages },
+  { path: 'gu', resolve: { lang: langResolver('gu') }, children: pages },
+  { path: '', resolve: { lang: langResolver('en') }, children: pages },
 ];

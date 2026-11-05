@@ -1,7 +1,7 @@
 // Reads every day in content/days (new days in content/days/YYYY-MM-DD.json, finished months in
 // content/days/YYYY-MM/), checks it for mistakes, and generates:
 //   src/app/content/content.generated.ts  list of days + one lazy loader per day
-//   public/sitemap.xml (Gujarati pages at /…, English at /en/…) and public/robots.txt
+//   public/sitemap.xml (English pages at /…, Gujarati at /gu/…) and public/robots.txt
 //   public/pdf/*.pdf  the monthly compilation PDFs of every complete month (see build-pdfs.mjs)
 //   public/og/*.jpg and public/icons/*.png  link preview images and app icons (see build-images.mjs)
 // Once a month is complete, its day files are moved into their month folder (content/days/2026-10/).
@@ -134,7 +134,7 @@ export const monthPdfs: string[] = ${JSON.stringify(completeMonths)};
 mkdirSync(join(root, 'src/app/content'), { recursive: true });
 writeFileSync(join(root, 'src/app/content/content.generated.ts'), generated);
 
-const guPages = [
+const enPages = [
   { path: '/', lastmod: days[0]?.date },
   { path: '/about' },
   { path: '/privacy' },
@@ -142,8 +142,8 @@ const guPages = [
   // days is newest first, so the first match is the month's latest day.
   ...months.map((month) => ({ path: `/current-affairs/month/${month}`, lastmod: days.find((day) => day.date.startsWith(month)).date })),
 ];
-// Every page in Gujarati (the default) and in English under /en.
-const pages = [...guPages, ...guPages.map((page) => ({ ...page, path: page.path === '/' ? '/en' : `/en${page.path}` }))];
+// Every page in English (the default) and in Gujarati under /gu.
+const pages = [...enPages, ...enPages.map((page) => ({ ...page, path: page.path === '/' ? '/gu' : `/gu${page.path}` }))];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map((page) => `  <url><loc>${siteUrl}${page.path}</loc>${page.lastmod ? `<lastmod>${page.lastmod}</lastmod>` : ''}</url>`).join('\n')}
