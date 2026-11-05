@@ -1,0 +1,53 @@
+{
+  "id": "board-post-name-2026",
+  "board": "GSSSB",
+  "advtNo": "GSSSB/202627/000",
+  "published": "2026-11-05",
+  "startDate": "2026-11-06",
+  "lastDate": "2026-11-20",
+  "totalVacancies": 100,
+  "notificationUrl": "https://ojas.gujarat.gov.in/",
+  "applyUrl": "https://ojas.gujarat.gov.in/",
+
+  "title": "GSSSB Post Name Recruitment 2026",
+  "organization": "Gujarat Subordinate Service Selection Board (GSSSB)",
+  "summary": "Two or three sentences: who is hiring, for which post, how many vacancies and the last date.",
+  "posts": [
+    { "name": "Post name", "vacancies": "100 (General 40, EWS 10, SEBC 27, SC 7, ST 16)", "payScale": "Level 5 (₹29,200–92,300)" }
+  ],
+  "importantDates": [
+    { "event": "Online application starts", "date": "6 November 2026" },
+    { "event": "Last date to apply", "date": "20 November 2026, 11:59 pm" },
+    { "event": "Exam date", "date": "To be announced" }
+  ],
+  "education": ["Graduate in any subject from a recognised university", "Basic knowledge of computers"],
+  "ageLimit": "18 to 35 years as on 20 November 2026",
+  "ageRelaxation": [
+    { "category": "SC / ST / SEBC / EWS (men)", "relaxation": "5 years" },
+    { "category": "Women (all categories)", "relaxation": "5 years" }
+  ],
+  "fees": [
+    { "category": "General", "amount": "₹500" },
+    { "category": "SC / ST / SEBC / EWS / Women / PwD / Ex-servicemen", "amount": "₹400 (refunded after the exam)" }
+  ],
+  "salary": "₹40,800 fixed per month for the first 5 years, then Level 5 of the 7th Pay Commission.",
+  "selectionProcess": ["Computer-based test (MCQ)", "Document verification"],
+  "examPattern": [
+    { "paper": "Part A", "subjects": "Reasoning and quantitative aptitude", "questions": "40", "marks": "60", "duration": "60 minutes (Part A + B)" },
+    { "paper": "Part B", "subjects": "General knowledge, Gujarati, English", "questions": "60", "marks": "90", "duration": "" }
+  ],
+  "examNotes": ["0.25 mark is cut for every wrong answer", "At least 40% marks needed in each part"],
+  "syllabus": [
+    { "topic": "Reasoning", "details": "Series, coding-decoding, blood relations, directions" },
+    { "topic": "General knowledge", "details": "History, geography and culture of Gujarat, Indian Constitution, current affairs" }
+  ],
+  "howToApply": ["Open ojas.gujarat.gov.in and choose the advertisement", "Fill in the form, upload photo and signature", "Confirm the application and pay the fee"],
+
+  "gu": {
+    "title": "GSSSB જગ્યાનું નામ ભરતી 2026",
+    "summary": "Every English section can be repeated here in Gujarati; leave a section out to show the English one.",
+    "posts": [
+      { "name": "જગ્યાનું નામ", "vacancies": "100 (સામાન્ય 40, EWS 10, SEBC 27, SC 7, ST 16)", "payScale": "લેવલ 5 (₹29,200–92,300)" }
+    ]
+  }
+}

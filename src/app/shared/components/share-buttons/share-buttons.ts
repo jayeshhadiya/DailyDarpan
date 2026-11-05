@@ -41,8 +41,8 @@ import { Icon } from '@shared/components/icon/icon';
 export class ShareButtons {
   text = input.required<string>();
   url = input.required<string>();
-  // What is shared, for analytics: a quiz, a score or a month's PDF page.
-  content = input<'quiz' | 'score' | 'month'>('quiz');
+  // What is shared, for analytics: a quiz, a score, a month's PDF page or an exam notification.
+  content = input<'quiz' | 'score' | 'month' | 'exam'>('quiz');
   lang = inject(LangService);
   private analytics = inject(AnalyticsService);
   button = 'flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-300 transition-colors hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400';

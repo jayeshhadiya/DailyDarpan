@@ -1,7 +1,7 @@
 # DailyDarpan
 
 Daily current affairs quiz for India's competitive exams: 10 MCQs a day with answers and explanations,
-day-wise pages and monthly PDFs, in Gujarati (default, at `/`) and English (at `/en`). Built with Angular and Tailwind, prerendered to plain HTML
+day-wise pages and monthly PDFs, in English (default, at `/`) and Gujarati (at `/gu`). Built with Angular and Tailwind, prerendered to plain HTML
 so it can be hosted free on Vercel.
 
 ## Run it
@@ -56,6 +56,28 @@ Commit the moved files.
 
 Each day's file is added the next morning (on 31 October you add `2026-10-30.json`), so the site calls the
 newest day the "latest quiz" rather than "today's quiz".
+
+## Add an exam notification
+
+When a recruitment notification comes out, add it by hand from the official notification PDF:
+
+1. Copy `content/exams/_template.json` to a new file named after the notification, e.g.
+   `content/exams/gsssb-food-safety-officer-2026.json`. The file name is the page address
+   (`/exams/gsssb-food-safety-officer-2026`); use lowercase letters, digits and dashes, and set `"id"` to the same name.
+2. Fill in the basics: `board` (short name shown on the card, e.g. `GSSSB`), `published`, `notificationUrl` (the official PDF) and
+   `title`. Dates the site uses are `YYYY-MM-DD`: `published`, `startDate` and `lastDate` (the list shows "Open" until the end of
+   `lastDate`, India time, then "Closed"). `advtNo`, `totalVacancies` and `applyUrl` are optional.
+3. Fill in whichever sections the notification has; leave out any it doesn't, and that section isn't shown:
+   `organization`, `summary`, `posts`, `importantDates`, `education`, `ageLimit`, `ageRelaxation`, `fees`, `salary`,
+   `selectionProcess`, `examPattern`, `examNotes`, `syllabus`, `howToApply`. Dates inside `importantDates` are plain text,
+   written as they should be read ("20 November 2026, 11:59 pm").
+4. `gu` holds the Gujarati text and takes the same sections. A section left out of `gu` is shown in English on Gujarati
+   pages, with a note. A translated list (`posts`, `fees`…) must have the same rows in the same order as the English.
+5. Run `npm run content` to check the file. It reports mistakes such as a date that doesn't exist, an unknown field, a
+   broken link or a Gujarati list with a different number of rows, and lists notifications not yet in Gujarati.
+
+The list page (`/exams`, newest `published` first), the notification's page, the "Exams" menu link and `sitemap.xml` all
+update automatically. Every page says to check the official notification before applying. Files starting with `_` are skipped.
 
 ## Monthly PDFs
 
@@ -113,20 +135,22 @@ All UI text (buttons, headings, messages) in both languages is in `src/app/i18n/
 | Path | What it is |
 |---|---|
 | `content/days/` | One file per day: the only place questions live. Finished months sit in `YYYY-MM/` folders |
+| `content/exams/` | One file per exam notification (`_template.json` to copy from) |
 | `scripts/build-content.mjs` | Checks the content and generates the day index, `public/sitemap.xml` and `public/robots.txt` (runs before `start` and `build`) |
+| `scripts/build-exams.mjs` | Checks the exam notifications and generates their index (called by `build-content.mjs`) |
 | `scripts/build-pdfs.mjs` | Makes the monthly compilation PDFs in `public/pdf` (called by `build-content.mjs`) |
 | `scripts/build-images.mjs` | Draws the link preview pictures in `public/og` and the app icons (called by `build-content.mjs`) |
-| `src/app/content/` | Question types, month grouping and route resolvers; `content.generated.ts` is generated, don't edit it |
-| `src/app/i18n/` | UI text in Gujarati and English, and `LangService` (current language, `/en` links, month names) |
-| `src/app/pages/` | Home, day quiz, month compilation, about and 404 pages |
-| `src/app/app.routes.server.ts` | Which pages are prerendered (every day and month) |
+| `src/app/content/` | Question types, month grouping and route resolvers; `content.generated.ts` and `exams.generated.ts` are generated, don't edit them |
+| `src/app/i18n/` | UI text in Gujarati and English, and `LangService` (current language, `/gu` links, month names) |
+| `src/app/pages/` | Home, day quiz, month compilation, exam notifications, about and 404 pages |
+| `src/app/app.routes.server.ts` | Which pages are prerendered (every day, month and exam notification) |
 
 Each day's questions are a separate small file that the browser downloads only when that day or month is opened,
 so the site stays fast as the archive grows.
 
-Addresses: `/current-affairs/YYYY-MM-DD` for a day, `/current-affairs/month/YYYY-MM` for a month, with `/en` in
-front for English. Each page links to its other-language version (hreflang) so search engines index both.
-The Gujarati addresses match the old portfolio section, so links shared before the move keep working once they redirect here.
+Addresses: `/current-affairs/YYYY-MM-DD` for a day, `/current-affairs/month/YYYY-MM` for a month, `/exams/<id>` for an exam notification, with `/gu` in
+front for Gujarati. Each page links to its other-language version (hreflang) so search engines index both.
+The un-prefixed addresses match the old portfolio section, so links shared before the move keep working once they redirect here.
 
 ## Deploy to Vercel (free)
 
@@ -134,7 +158,7 @@ The site is on Vercel at https://dailydarpan.online. `vercel.json` holds the bui
 `npm run build`, output `dist/current-affairs/browser`), so nothing needs setting in the Vercel dashboard. Every push
 to the main branch deploys automatically.
 
-- Unknown addresses get the 404 page with a real 404 status (`/en/…` gets the English one); the rules are in `routes` in `vercel.json`.
+- Unknown addresses get the 404 page with a real 404 status (`/gu/…` gets the Gujarati one); the rules are in `routes` in `vercel.json`.
 - `www.dailydarpan.online` redirects to `dailydarpan.online` (set under Project → Domains). Keep it that way: the
   canonical links and sitemap use `url` from `src/app/data/site.json`, which has no `www`.
 - DNS is at Hostinger: an `A` record for `@` and a `CNAME` for `www`, with the values Vercel shows under Domains.

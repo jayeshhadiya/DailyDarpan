@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { dayResolver, monthResolver } from '@content/content';
+import { examResolver } from '@content/exams';
 import { langResolver } from '@i18n/lang.service';
 
 // The same pages in each language: English at /…, Gujarati at /gu/….
@@ -21,6 +22,15 @@ const pages: Routes = [
     path: 'current-affairs/:date',
     resolve: { day: dayResolver },
     loadComponent: () => import('@pages/day/day.page').then(m => m.DayPage)
+  },
+  {
+    path: 'exams',
+    loadComponent: () => import('@pages/exams/exams.page').then(m => m.ExamsPage)
+  },
+  {
+    path: 'exams/:id',
+    resolve: { exam: examResolver },
+    loadComponent: () => import('@pages/exam/exam.page').then(m => m.ExamPage)
   },
   {
     path: 'about',

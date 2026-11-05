@@ -1,6 +1,7 @@
 // Reads every day in content/days (new days in content/days/YYYY-MM-DD.json, finished months in
 // content/days/YYYY-MM/), checks it for mistakes, and generates:
 //   src/app/content/content.generated.ts  list of days + one lazy loader per day
+//   src/app/content/exams.generated.ts  exam notifications from content/exams (see build-exams.mjs)
 //   public/sitemap.xml (English pages at /…, Gujarati at /gu/…) and public/robots.txt
 //   public/pdf/*.pdf  the monthly compilation PDFs of every complete month (see build-pdfs.mjs)
 //   public/og/*.jpg and public/icons/*.png  link preview images and app icons (see build-images.mjs)
@@ -9,6 +10,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, renameSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildExams } from './build-exams.mjs';
 import { buildShareImages } from './build-images.mjs';
 import { buildMonthPdfs } from './build-pdfs.mjs';
 
@@ -81,6 +83,9 @@ const days = dayFiles
   .filter(Boolean)
   .sort((a, b) => b.date.localeCompare(a.date));
 
+const examsBuilt = buildExams(root);
+errors.push(...examsBuilt.errors);
+
 if (errors.length) {
   console.error(`Content has ${errors.length} problem(s):\n  ${errors.join('\n  ')}`);
   process.exit(1);
@@ -141,6 +146,8 @@ const enPages = [
   ...days.map((day) => ({ path: `/current-affairs/${day.date}`, lastmod: day.date })),
   // days is newest first, so the first match is the month's latest day.
   ...months.map((month) => ({ path: `/current-affairs/month/${month}`, lastmod: days.find((day) => day.date.startsWith(month)).date })),
+  { path: '/exams', lastmod: examsBuilt.summaries[0]?.published },
+  ...examsBuilt.summaries.map((exam) => ({ path: `/exams/${exam.id}`, lastmod: exam.published })),
 ];
 // Every page in English (the default) and in Gujarati under /gu.
 const pages = [...enPages, ...enPages.map((page) => ({ ...page, path: page.path === '/' ? '/gu' : `/gu${page.path}` }))];
@@ -185,6 +192,8 @@ const built = await buildMonthPdfs(completeMonths.map((month) => {
 const untranslated = days.filter((day) => day.questions.some((q) => !q.gu)).map((day) => day.date);
 console.log(`Content OK: ${days.length} days, ${summaries.reduce((sum, day) => sum + day.count, 0)} questions, ${months.length} months`);
 if (archived.length) console.log(`Moved ${archived.length} day file(s) into their month folder: ${[...new Set(archived.map((date) => `content/days/${date.slice(0, 7)}/`))].join(', ')}`);
+console.log(`Exam notifications: ${examsBuilt.summaries.length}`);
+if (examsBuilt.untranslated.length) console.log(`Exam notifications not in Gujarati yet (shown in English on Gujarati pages): ${examsBuilt.untranslated.join(', ')}`);
 console.log(`Monthly PDFs: ${completeMonths.length ? `${completeMonths.join(', ')} (${built} rebuilt)` : 'none yet (no month is complete)'}`);
 console.log(`Share images: ${imagesBuilt} drawn`);
 if (untranslated.length) console.log(`Not fully in Gujarati yet (shown in English on Gujarati pages): ${untranslated.join(', ')}`);
