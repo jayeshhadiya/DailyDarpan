@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { dayResolver, monthResolver } from '@content/content';
+import { dayResolver, latestDayResolver, monthResolver } from '@content/content';
 import { examResolver } from '@content/exams';
 import { langResolver } from '@i18n/lang.service';
 
@@ -7,6 +7,7 @@ import { langResolver } from '@i18n/lang.service';
 const pages: Routes = [
   {
     path: '',
+    resolve: { teaser: latestDayResolver },
     loadComponent: () => import('@pages/home/home.page').then(m => m.HomePage)
   },
   {

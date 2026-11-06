@@ -44,9 +44,9 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
       <ca-share [text]="t.shareQuizText(shortDate(), day().questions.length, pageUrl())" [url]="pageUrl()"/>
     </div>
 
-    @if (days.length > 1) {
+    @if (monthDays().length > 1) {
       <nav #chips class="relative flex gap-2 overflow-x-auto border-b border-gray-200 dark:border-gray-800 py-3" [attr.aria-label]="t.chooseDay">
-        @for (d of days; track d.date) {
+        @for (d of monthDays(); track d.date) {
           <a [routerLink]="lang.path('/current-affairs/' + d.date)" [class]="dayClass(d.date === day().date)"
             [attr.aria-current]="d.date === day().date ? 'date' : null">{{ d.date | date: 'd MMM' : undefined : locale }}</a>
         }
@@ -150,6 +150,8 @@ import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
 export class DayPage {
   // Oldest first, so the day chips read left to right.
   days = [...daySummaries].reverse();
+  // The day chips show only the month of the day being viewed; the date picker reaches other months.
+  monthDays = computed(() => this.days.filter(d => d.date.startsWith(this.day().date.slice(0, 7))));
   dates = daySummaries.map(day => day.date);
   letters = ['A', 'B', 'C', 'D', 'E', 'F'];
   lang = inject(LangService);

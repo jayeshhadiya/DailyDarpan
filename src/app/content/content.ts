@@ -71,6 +71,10 @@ export const dayResolver: ResolveFn<CurrentAffairsDay | RedirectCommand> = async
   return load ? load() : notFound();
 };
 
+// The home page shows the newest day's first question as a teaser.
+export const latestDayResolver: ResolveFn<CurrentAffairsDay | undefined> = async () =>
+  latestDay ? dayLoaders[latestDay.date]() : undefined;
+
 // The month page shows PDF cards only, so it needs the month, not its questions.
 export const monthResolver: ResolveFn<CurrentAffairsMonth | RedirectCommand> = route =>
   months.find(m => m.key === route.paramMap.get('month')) ?? notFound();
