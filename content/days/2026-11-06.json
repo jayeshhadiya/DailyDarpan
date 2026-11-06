@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-06",
+  "questions": [
+    {
+      "category": "Sports",
+      "question": "India won the 9th Men's Asian Champions Trophy hockey in Mohali in November 2026, its sixth title. Which team did India beat 4–1 in the final?",
+      "options": ["Malaysia", "South Korea", "Japan", "Pakistan"],
+      "answer": 2,
+      "explanation": "It was India's third title in a row. Malaysia took bronze by beating South Korea 5–2. The final was played at the Olympian Balbir Singh Senior International Hockey Stadium, Mohali, and midfielder Nilakanta Sharma retired after the tournament.",
+      "gu": {
+        "question": "નવેમ્બર 2026માં મોહાલીમાં ભારતે 9મી મેન્સ એશિયન ચેમ્પિયન્સ ટ્રોફી હોકી જીતી, જે તેનું છઠ્ઠું ટાઇટલ છે. ફાઇનલમાં ભારતે કઈ ટીમને 4–1થી હરાવી?",
+        "options": ["મલેશિયા", "દક્ષિણ કોરિયા", "જાપાન", "પાકિસ્તાન"],
+        "explanation": "આ ભારતનું સતત ત્રીજું ટાઇટલ હતું. મલેશિયાએ દક્ષિણ કોરિયાને 5–2થી હરાવી કાંસ્ય જીત્યો. ફાઇનલ મોહાલીના ઓલિમ્પિયન બલબીર સિંહ સિનિયર ઇન્ટરનેશનલ હોકી સ્ટેડિયમમાં રમાઈ અને મિડફિલ્ડર નીલકાંત શર્માએ ટુર્નામેન્ટ પછી નિવૃત્તિ લીધી."
+      }
+    },
+    {
+      "category": "International",
+      "question": "Which country became the 116th member of the International Solar Alliance (ISA) on 4 November 2026, during the 9th ISA Assembly in New Delhi?",
+      "options": ["The Bahamas", "Barbados", "Jamaica", "Fiji"],
+      "answer": 0,
+      "explanation": "High Commissioner Peter Nicholas Symonette Jr. handed over the Instrument of Accession. India and France launched the ISA at COP21 in Paris in 2015; its Framework Agreement came into force on 6 December 2017 and its headquarters is in Gurugram, Haryana.",
+      "gu": {
+        "question": "4 નવેમ્બર 2026ના રોજ નવી દિલ્હીમાં 9મી ISA એસેમ્બલી દરમિયાન કયો દેશ ઇન્ટરનેશનલ સોલર એલાયન્સ (ISA)નો 116મો સભ્ય બન્યો?",
+        "options": ["બહામાસ", "બાર્બાડોસ", "જમૈકા", "ફિજી"],
+        "explanation": "હાઇ કમિશનર પીટર નિકોલસ સાયમોનેટ જુનિયરે પ્રવેશપત્ર (Instrument of Accession) સોંપ્યું. ભારત અને ફ્રાન્સે 2015માં પેરિસમાં COP21 દરમિયાન ISA શરૂ કર્યું; તેનો ફ્રેમવર્ક કરાર 6 ડિસેમ્બર 2017થી અમલમાં આવ્યો અને મુખ્યાલય ગુરુગ્રામ, હરિયાણામાં છે."
+      }
+    },
+    {
+      "category": "National",
+      "question": "Union Home Minister Amit Shah inaugurated a ₹594 crore memorial to the martyrs of the 1857 First War of Independence on 5 November 2026. In which city is it?",
+      "options": ["Meerut", "Jhansi", "Barrackpore", "Ambala"],
+      "answer": 3,
+      "explanation": "The memorial in Ambala Cantonment, Haryana, covers 22 acres and has 22 galleries on the uprising, using virtual reality, holography and interactive projections. It also has an open-air theatre for 2,500 people with a light-and-sound show.",
+      "gu": {
+        "question": "કેન્દ્રીય ગૃહમંત્રી અમિત શાહે 5 નવેમ્બર 2026ના રોજ 1857ના પ્રથમ સ્વાતંત્ર્ય સંગ્રામના શહીદોના ₹594 કરોડના સ્મારકનું ઉદ્ઘાટન કર્યું. તે કયા શહેરમાં છે?",
+        "options": ["મેરઠ", "ઝાંસી", "બેરકપુર", "અંબાલા"],
+        "explanation": "હરિયાણાના અંબાલા કેન્ટોનમેન્ટમાં આવેલું આ સ્મારક 22 એકરમાં ફેલાયેલું છે અને તેમાં વિપ્લવ વિશેની 22 ગેલેરીઓ છે, જેમાં વર્ચ્યુઅલ રિયાલિટી, હોલોગ્રાફી અને ઇન્ટરેક્ટિવ પ્રોજેક્શનનો ઉપયોગ થયો છે. ત્યાં 2,500 લોકો માટે લાઇટ-એન્ડ-સાઉન્ડ શો સાથેનું ઓપન-એર થિયેટર પણ છે."
+      }
+    },
+    {
+      "category": "Schemes",
+      "question": "The Union Cabinet approved the ₹4,371.10 crore VISTAR scheme for FY27 to FY31. Which ministry's statistical and data systems will it modernise?",
+      "options": ["Ministry of Electronics and IT", "Ministry of Statistics and Programme Implementation", "Ministry of Finance", "Ministry of Home Affairs"],
+      "answer": 1,
+      "explanation": "The Central Sector Scheme aims for AI-ready, interoperable datasets. Its three parts are statistical operations and ecosystem strengthening, Support for Statistical Strengthening (SSS 2.0), and the Eighth Economic Census. MoSPI plans 59 surveys in the 16th Finance Commission cycle, up from 43.",
+      "gu": {
+        "question": "કેન્દ્રીય મંત્રીમંડળે FY27થી FY31 માટે ₹4,371.10 કરોડની VISTAR યોજના મંજૂર કરી. તે કયા મંત્રાલયની આંકડાકીય અને ડેટા પ્રણાલીઓનું આધુનિકીકરણ કરશે?",
+        "options": ["ઇલેક્ટ્રોનિક્સ અને IT મંત્રાલય", "આંકડા અને કાર્યક્રમ અમલીકરણ મંત્રાલય", "નાણાં મંત્રાલય", "ગૃહ મંત્રાલય"],
+        "explanation": "આ સેન્ટ્રલ સેક્ટર યોજનાનો હેતુ AI-રેડી અને એકબીજા સાથે જોડી શકાય તેવા ડેટાસેટ્સ છે. તેના ત્રણ ભાગ છે: આંકડાકીય કામગીરી અને તંત્રનું સશક્તિકરણ, સપોર્ટ ફોર સ્ટેટિસ્ટિકલ સ્ટ્રેન્થનિંગ (SSS 2.0) અને આઠમી આર્થિક વસ્તીગણતરી. MoSPI 16મા નાણાપંચના ગાળામાં 43ને બદલે 59 સર્વે કરશે."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "EKA-1, an indigenous AI foundation model released under the IndiaAI Mission, supports English and how many Scheduled Languages?",
+      "options": ["12", "18", "22", "24"],
+      "answer": 2,
+      "explanation": "EKA-1 is an open sparse hybrid model with 26.3 billion parameters, trained on 7.5 trillion tokens. The compact Dhīr 2B and Dhīr 5B models were released with it. They were built by Soket Labs and ZenteiQ AiTech and are available through AIKosh.",
+      "gu": {
+        "question": "IndiaAI મિશન હેઠળ બહાર પડાયેલું સ્વદેશી AI ફાઉન્ડેશન મોડેલ EKA-1 અંગ્રેજી ઉપરાંત કેટલી અનુસૂચિત ભાષાઓને સપોર્ટ કરે છે?",
+        "options": ["12", "18", "22", "24"],
+        "explanation": "EKA-1 26.3 અબજ પેરામીટર ધરાવતું ઓપન સ્પાર્સ હાઇબ્રિડ મોડેલ છે, જેને 7.5 ટ્રિલિયન ટોકન્સ પર તાલીમ અપાઈ છે. તેની સાથે નાનાં મોડેલ Dhīr 2B અને Dhīr 5B પણ બહાર પડાયાં. તે સોકેટ લેબ્સ અને ઝેન્ટીક્યુ AiTech દ્વારા બનાવાયાં છે અને AIKosh પર ઉપલબ્ધ છે."
+      }
+    },
+    {
+      "category": "Environment",
+      "question": "A new catfish species, Exostoma nasibarbatum, was identified in the Bupal stream near the India–Myanmar border. In which state is the stream?",
+      "options": ["Manipur", "Mizoram", "Nagaland", "Arunachal Pradesh"],
+      "answer": 0,
+      "explanation": "Researchers from Dhanamanjuri University, Imphal, found it in Chandel district. It belongs to the family Sisoridae, and its name comes from the Latin nasus (nose) and barba (beard), after its long nasal barbels. It lives in cold, fast-flowing streams at 12–14°C.",
+      "gu": {
+        "question": "ભારત–મ્યાનમાર સરહદ પાસેના બુપાલ ઝરણામાં કેટફિશની નવી પ્રજાતિ Exostoma nasibarbatum ઓળખાઈ. આ ઝરણું કયા રાજ્યમાં છે?",
+        "options": ["મણિપુર", "મિઝોરમ", "નાગાલેન્ડ", "અરુણાચલ પ્રદેશ"],
+        "explanation": "ઇમ્ફાલની ધનમંજુરી યુનિવર્સિટીના સંશોધકોએ તેને ચંદેલ જિલ્લામાં શોધી. તે Sisoridae કુળની છે અને તેનું નામ લેટિન nasus (નાક) અને barba (દાઢી) પરથી, તેના લાંબા નાસિકા-મૂછ (બાર્બલ) માટે પડ્યું છે. તે 12–14°C તાપમાનવાળાં ઠંડાં, ઝડપી વહેતાં ઝરણાંમાં રહે છે."
+      }
+    },
+    {
+      "category": "International",
+      "question": "The Bay of Bengal Network of Ocean Researchers for Fisheries (BOB-NOR) was launched in Kochi on 5 November 2026. Which of these is NOT one of its four founding countries?",
+      "options": ["Sri Lanka", "Bangladesh", "Myanmar", "Maldives"],
+      "answer": 2,
+      "explanation": "The founding countries are India, Sri Lanka, Bangladesh and the Maldives, with the Bay of Bengal Programme Inter-Governmental Organisation (BOBP-IGO) coordinating. It was launched at ICAR-CMFRI, Kochi, and will use satellite, oceanographic and fisheries data to study climate effects on fish stocks.",
+      "gu": {
+        "question": "બે ઓફ બંગાળ નેટવર્ક ઓફ ઓશન રિસર્ચર્સ ફોર ફિશરીઝ (BOB-NOR) 5 નવેમ્બર 2026ના રોજ કોચીમાં શરૂ થયું. નીચેનામાંથી કયો દેશ તેના ચાર સ્થાપક દેશોમાં નથી?",
+        "options": ["શ્રીલંકા", "બાંગ્લાદેશ", "મ્યાનમાર", "માલદીવ"],
+        "explanation": "સ્થાપક દેશો ભારત, શ્રીલંકા, બાંગ્લાદેશ અને માલદીવ છે, અને બે ઓફ બંગાળ પ્રોગ્રામ ઇન્ટર-ગવર્નમેન્ટલ ઓર્ગેનાઇઝેશન (BOBP-IGO) સંકલન કરે છે. તે ICAR-CMFRI, કોચીમાં શરૂ થયું અને માછલીના જથ્થા પર આબોહવાની અસર સમજવા ઉપગ્રહ, સમુદ્રવિજ્ઞાન અને મત્સ્યોદ્યોગના ડેટાનો ઉપયોગ કરશે."
+      }
+    },
+    {
+      "category": "Awards",
+      "question": "Aldrei Ong won the James Dyson Global Sustainability Award 2026 for 'Sentinel', a sensor that detects hidden damage in concrete buildings. Which country is he from?",
+      "options": ["Indonesia", "Malaysia", "Vietnam", "The Philippines"],
+      "answer": 3,
+      "explanation": "Ong is a structural engineer and a De La Salle University graduate; the prize is £30,000. Sentinel turns an ordinary concrete spacer block into a monitoring device: its self-sensing concrete changes electrical resistance when cracks form, which is useful after earthquakes.",
+      "gu": {
+        "question": "કોંક્રિટની ઇમારતોમાં છુપાયેલું નુકસાન શોધતા સેન્સર 'Sentinel' માટે એલ્ડ્રેઇ ઓંગને જેમ્સ ડાયસન ગ્લોબલ સસ્ટેનેબિલિટી એવોર્ડ 2026 મળ્યો. તેઓ કયા દેશના છે?",
+        "options": ["ઇન્ડોનેશિયા", "મલેશિયા", "વિયેતનામ", "ફિલિપાઇન્સ"],
+        "explanation": "ઓંગ સ્ટ્રક્ચરલ એન્જિનિયર અને ડી લા સાલ યુનિવર્સિટીના સ્નાતક છે; ઇનામ £30,000નું છે. Sentinel સામાન્ય કોંક્રિટ સ્પેસર બ્લોકને દેખરેખ ઉપકરણમાં ફેરવે છે: તિરાડ પડે ત્યારે તેના સેલ્ફ-સેન્સિંગ કોંક્રિટનો વિદ્યુત અવરોધ બદલાય છે, જે ભૂકંપ પછી ઉપયોગી છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "NPCI launched NPCI Tech Solutions Limited (NTSL), its fourth wholly-owned subsidiary, in November 2026. Who was named its MD and CEO?",
+      "options": ["Dilip Asbe", "Vishal Kanvaty", "Ritesh Shukla", "Nupur Chaturvedi"],
+      "answer": 1,
+      "explanation": "Kanvaty was NPCI's Chief Technology Officer. NTSL will work on AI, blockchain, digital public infrastructure and Global Capability Centre services. The other subsidiaries are NIPL, NBBL and NBSL. NPCI was set up in 2008 and is based in Mumbai; Dilip Asbe is its MD and CEO.",
+      "gu": {
+        "question": "NPCIએ નવેમ્બર 2026માં તેની ચોથી સંપૂર્ણ માલિકીની પેટાકંપની NPCI ટેક સોલ્યુશન્સ લિમિટેડ (NTSL) શરૂ કરી. તેના MD અને CEO તરીકે કોની નિમણૂક થઈ?",
+        "options": ["દિલીપ અસબે", "વિશાલ કાનવટી", "રિતેશ શુક્લા", "નૂપુર ચતુર્વેદી"],
+        "explanation": "કાનવટી NPCIના ચીફ ટેકનોલોજી ઓફિસર હતા. NTSL AI, બ્લોકચેન, ડિજિટલ પબ્લિક ઇન્ફ્રાસ્ટ્રક્ચર અને ગ્લોબલ કેપેબિલિટી સેન્ટર સેવાઓ પર કામ કરશે. અન્ય પેટાકંપનીઓ NIPL, NBBL અને NBSL છે. NPCI 2008માં સ્થપાયું અને મુંબઈમાં છે; દિલીપ અસબે તેના MD અને CEO છે."
+      }
+    },
+    {
+      "category": "Important Days",
+      "question": "6 November is the International Day for Preventing the Exploitation of the Environment in War and Armed Conflict. In which year did the UN General Assembly establish it?",
+      "options": ["1992", "1997", "2001", "2010"],
+      "answer": 2,
+      "explanation": "The UNGA declared the day on 5 November 2001 (resolution A/RES/56/4), and it was first observed on 6 November 2002, so 2026 is the 25th observance. In 2016 the UN Environment Assembly adopted a resolution on protecting the environment in areas affected by armed conflict.",
+      "gu": {
+        "question": "6 નવેમ્બર યુદ્ધ અને સશસ્ત્ર સંઘર્ષમાં પર્યાવરણના શોષણને રોકવા માટેનો આંતરરાષ્ટ્રીય દિવસ છે. સંયુક્ત રાષ્ટ્ર મહાસભાએ તે કયા વર્ષે જાહેર કર્યો?",
+        "options": ["1992", "1997", "2001", "2010"],
+        "explanation": "મહાસભાએ 5 નવેમ્બર 2001ના રોજ (ઠરાવ A/RES/56/4) આ દિવસ જાહેર કર્યો અને તે પ્રથમ વખત 6 નવેમ્બર 2002ના રોજ ઉજવાયો, એટલે 2026માં તેની 25મી ઉજવણી છે. 2016માં UN પર્યાવરણ સભાએ સશસ્ત્ર સંઘર્ષથી પ્રભાવિત વિસ્તારોમાં પર્યાવરણના રક્ષણ અંગે ઠરાવ પસાર કર્યો."
+      }
+    }
+  ],
+  "sources": [
+    { "name": "SSBCrack Exams: Current Affairs 06 November 2026", "url": "https://ssbcrackexams.com/current-affairs-06-november-2026/" },
+    { "name": "AffairsCloud: Current Affairs 6 November 2026", "url": "https://affairscloud.com/current-affairs-6-november-2026/" },
+    { "name": "Bankersadda: Daily Current Affairs 6th November 2026", "url": "https://www.bankersadda.com/daily-current-affairs-and-gk-updates-6th-november-2026/" }
+  ]
+}
