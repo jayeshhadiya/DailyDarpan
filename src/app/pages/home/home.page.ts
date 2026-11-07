@@ -9,31 +9,38 @@ import { ProgressService } from '@core/services/progress.service';
 import { LangService } from '@i18n/lang.service';
 import { DatePicker } from '@shared/components/date-picker/date-picker';
 import { TelegramJoin } from '@shared/components/telegram-join/telegram-join';
+import { VisitorCount } from '@shared/components/visitor-count/visitor-count';
 
 // Home page: a hero with the newest day's first question to try right away, what the site is,
 // and the day-wise archive.
 @Component({
   selector: 'home-page',
   encapsulation: ViewEncapsulation.None,
-  imports: [DatePipe, RouterLink, DatePicker, TelegramJoin],
+  imports: [DatePipe, RouterLink, DatePicker, TelegramJoin, VisitorCount],
   template: `
   @let t = lang.t();
   @let locale = lang.locale();
   <div class="mx-auto max-w-5xl">
     <!-- Hero: headline and buttons, with today's first question beside them. -->
-    <header class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary-50 via-white to-amber-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-900 px-5 py-10 ring-1 ring-primary-100 dark:ring-gray-800 sm:px-10 lg:py-14">
-      <div class="home-blob -left-20 -top-24 bg-primary-300/50 dark:bg-primary-700/30" aria-hidden="true"></div>
-      <div class="home-blob -bottom-28 -right-16 bg-amber-200/60 dark:bg-amber-700/20 [animation-delay:-4s]" aria-hidden="true"></div>
+    <!-- Only the blob layer clips; clipping the whole header would cut off the "Choose a day" pop-up on desktop. -->
+    <header class="relative rounded-3xl bg-gradient-to-br from-primary-50 via-white to-amber-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-900 px-5 py-10 ring-1 ring-primary-100 dark:ring-gray-800 sm:px-10 lg:py-14">
+      <div class="pointer-events-none absolute inset-0 overflow-hidden rounded-3xl" aria-hidden="true">
+        <div class="home-blob -left-20 -top-24 bg-primary-300/50 dark:bg-primary-700/30"></div>
+        <div class="home-blob -bottom-28 -right-16 bg-amber-200/60 dark:bg-amber-700/20 [animation-delay:-4s]"></div>
+      </div>
 
       <div class="relative grid items-center gap-10 lg:grid-cols-2">
         <div class="flex flex-col items-center gap-5 text-center lg:items-start lg:text-left">
-          <span class="inline-flex items-center gap-2 rounded-full bg-white/80 dark:bg-gray-800/80 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-700 dark:text-primary-300 shadow-sm ring-1 ring-primary-200 dark:ring-gray-700">
-            <span class="relative flex h-2 w-2" aria-hidden="true">
-              <span class="absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 motion-safe:animate-ping"></span>
-              <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+          <div class="flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/80 dark:bg-gray-800/80 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-primary-700 dark:text-primary-300 shadow-sm ring-1 ring-primary-200 dark:ring-gray-700">
+              <span class="relative flex h-2 w-2" aria-hidden="true">
+                <span class="absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 motion-safe:animate-ping"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+              </span>
+              {{ t.updatedDaily }}
             </span>
-            {{ t.updatedDaily }}
-          </span>
+            <ca-visitor-count/>
+          </div>
           <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             {{ t.heroLead }}
             <span class="home-highlight bg-gradient-to-r from-primary-500 via-fuchsia-500 to-amber-500 bg-clip-text text-transparent">{{ t.heroHighlight }}</span>

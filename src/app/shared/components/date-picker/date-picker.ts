@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewEncapsulation, computed, inject, input, signal } from '@angular/core';
+import { Component, DOCUMENT, ElementRef, HostListener, ViewEncapsulation, computed, effect, inject, input, signal, viewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LangService } from '@i18n/lang.service';
 
@@ -12,7 +12,7 @@ interface Cell { date: string; day: number; }
   encapsulation: ViewEncapsulation.None,
   template: `
   <div class="relative inline-block">
-    <button type="button" (click)="toggle()" [attr.aria-expanded]="open()" aria-haspopup="dialog" [class]="buttonClass()">
+    <button #toggleButton type="button" (click)="toggle()" [attr.aria-expanded]="open()" aria-haspopup="dialog" [class]="buttonClass()">
       <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>
       </svg>
@@ -70,10 +70,24 @@ export class DatePicker {
   private router = inject(Router);
   lang = inject(LangService);
   private host = inject(ElementRef<HTMLElement>);
+  private document = inject(DOCUMENT);
+  private toggleButton = viewChild.required<ElementRef<HTMLButtonElement>>('toggleButton');
   navClass = 'flex h-10 w-10 sm:h-8 sm:w-8 items-center justify-center rounded-lg text-lg text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-30 disabled:hover:bg-transparent';
   open = signal(false);
   // First day of the month on show, as "YYYY-MM".
   month = signal('');
+
+  constructor() {
+    // On phones the calendar is a bottom sheet over the page: stop the page behind it from scrolling.
+    effect(onCleanup => {
+      const view = this.document.defaultView;
+      if (!this.open() || !view?.matchMedia('(max-width: 639px)').matches) return;
+      const body = this.document.body;
+      const previous = body.style.overflow;
+      body.style.overflow = 'hidden';
+      onCleanup(() => body.style.overflow = previous);
+    });
+  }
 
   available = computed(() => new Set(this.dates()));
   private sorted = computed(() => [...this.dates()].sort());
@@ -129,6 +143,9 @@ export class DatePicker {
 
   @HostListener('document:keydown.escape')
   onEscape(): void {
+    if (!this.open()) return;
     this.open.set(false);
+    // Give keyboard users their place back.
+    this.toggleButton().nativeElement.focus();
   }
 }

@@ -12,6 +12,7 @@
       "headers": { "Cache-Control": "public, max-age=31536000, immutable" },
       "continue": true
     },
+    { "src": "^/api/visits$", "dest": "/api/visits", "headers": { "Cache-Control": "no-store" } },
     { "handle": "filesystem" },
     { "src": "^/gu/.*$", "status": 404, "dest": "/gu/404/index.html" },
     { "src": "^/.*$", "status": 404, "dest": "/404.html" }

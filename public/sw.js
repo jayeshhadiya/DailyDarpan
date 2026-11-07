@@ -5,7 +5,7 @@
 //   Monthly PDFs: from the network when online (a fixed month is never shown stale); the saved copy when offline.
 //   Other files (icons, images): the saved copy at once, refreshed in the background.
 // Change VERSION to throw away everything saved by an older version.
-const VERSION = 'v2';
+const VERSION = 'v3';
 const PAGES = `pages-${VERSION}`;
 const FILES = `files-${VERSION}`;
 const OFFLINE = '/offline.html';
@@ -70,6 +70,8 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   const sameSite = url.origin === self.location.origin;
+  // Live data (the visit counter): always from the network, never saved.
+  if (sameSite && url.pathname.startsWith('/api/')) return;
   if (sameSite && url.pathname.startsWith('/pdf/')) {
     event.respondWith(networkFirst(request, FILES, 150));
   } else if (request.mode === 'navigate' && sameSite) {

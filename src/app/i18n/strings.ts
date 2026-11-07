@@ -49,6 +49,7 @@ const en = {
 
   // Home
   updatedDaily: 'Updated daily',
+  visits: (n: string) => `${n} visits`,
   heroTitle: 'Daily Current Affairs for Competitive Exams',
   heroText: "Every day, 10 multiple-choice questions on India's most important news, with answers and short explanations. Five minutes a day keeps your current affairs ready for the exam.",
   stats: (days: number, questions: number) => `${days} ${days === 1 ? 'day' : 'days'} · ${questions} questions so far`,
@@ -276,6 +277,7 @@ const gu: typeof en = {
   weekdays: ['સો', 'મં', 'બુ', 'ગુ', 'શુ', 'શ', 'ર'],
 
   updatedDaily: 'દરરોજ અપડેટ',
+  visits: n => `${n} મુલાકાતો`,
   heroTitle: 'સ્પર્ધાત્મક પરીક્ષાઓ માટે દૈનિક કરન્ટ અફેર્સ',
   heroText: 'દરરોજ ભારતના સૌથી મહત્વના સમાચારો પર 10 બહુવિકલ્પી પ્રશ્નો, જવાબો અને ટૂંકી સમજૂતી સાથે. દિવસની પાંચ મિનિટ તમારા કરન્ટ અફેર્સને પરીક્ષા માટે તૈયાર રાખે છે.',
   stats: (days, questions) => `${days} દિવસ · અત્યાર સુધીમાં ${questions} પ્રશ્નો`,
