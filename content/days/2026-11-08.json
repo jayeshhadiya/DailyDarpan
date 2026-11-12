@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-08",
+  "questions": [
+    {
+      "category": "Personalities",
+      "question": "Who took charge in November 2026 as India's Ambassador to Nepal, succeeding Naveen Srivastava?",
+      "options": ["Vinay Mohan Kwatra", "Sudhakar Dalela", "Pranay Verma", "Vikram Misri"],
+      "answer": 1,
+      "explanation": "Dalela, a 1993-batch Indian Foreign Service officer, was appointed on 16 October 2026 and arrived in Kathmandu on 3 November. He was earlier India's Ambassador to Bhutan and, just before this posting, Secretary (Economic Relations) in the Ministry of External Affairs. Srivastava had been ambassador since 25 June 2022. India and Nepal share an open border of about 1,751 km.",
+      "gu": {
+        "question": "નવેમ્બર 2026માં નવીન શ્રીવાસ્તવના સ્થાને નેપાળ ખાતે ભારતના રાજદૂત તરીકે કોણે ચાર્જ સંભાળ્યો?",
+        "options": ["વિનય મોહન ક્વાત્રા", "સુધાકર દલેલા", "પ્રણય વર્મા", "વિક્રમ મિસ્રી"],
+        "explanation": "1993 બેચના ભારતીય વિદેશ સેવાના અધિકારી દલેલાની નિમણૂક 16 ઓક્ટોબર 2026ના રોજ થઈ અને તેઓ 3 નવેમ્બરે કાઠમંડુ પહોંચ્યા. અગાઉ તેઓ ભૂતાનમાં ભારતના રાજદૂત હતા અને આ નિમણૂક પહેલાં વિદેશ મંત્રાલયમાં સચિવ (આર્થિક સંબંધો) હતા. શ્રીવાસ્તવ 25 જૂન 2022થી રાજદૂત હતા. ભારત અને નેપાળ આશરે 1,751 કિમીની ખુલ્લી સરહદ ધરાવે છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "On 6 November 2026 the government approved 12 more applications under the Electronics Components Manufacturing Scheme (ECMS). What investment do they involve?",
+      "options": ["About ₹3,500 crore", "About ₹5,200 crore", "About ₹7,503 crore", "About ₹9,800 crore"],
+      "answer": 2,
+      "explanation": "MeitY Secretary S. Krishnan announced the approvals. The projects are expected to produce goods worth ₹39,045 crore and create 7,127 direct jobs in seven states: Gujarat, Karnataka, Madhya Pradesh, Maharashtra, Punjab, Tamil Nadu and Uttar Pradesh. Products include multilayer PCBs, relays, heat sinks and specialty ceramics, as well as materials such as copper foil. The Semicon 2.0 portal was launched the same day.",
+      "gu": {
+        "question": "6 નવેમ્બર 2026ના રોજ સરકારે ઇલેક્ટ્રોનિક્સ કમ્પોનન્ટ્સ મેન્યુફેક્ચરિંગ સ્કીમ (ECMS) હેઠળ વધુ 12 અરજીઓ મંજૂર કરી. તેમાં કેટલું રોકાણ સામેલ છે?",
+        "options": ["આશરે ₹3,500 કરોડ", "આશરે ₹5,200 કરોડ", "આશરે ₹7,503 કરોડ", "આશરે ₹9,800 કરોડ"],
+        "explanation": "MeitYના સચિવ એસ. કૃષ્ણને આ મંજૂરીઓની જાહેરાત કરી. આ પ્રોજેક્ટ્સથી ₹39,045 કરોડનું ઉત્પાદન અને સાત રાજ્યોમાં 7,127 પ્રત્યક્ષ રોજગારી અપેક્ષિત છે: ગુજરાત, કર્ણાટક, મધ્ય પ્રદેશ, મહારાષ્ટ્ર, પંજાબ, તમિલનાડુ અને ઉત્તર પ્રદેશ. ઉત્પાદનોમાં મલ્ટિલેયર PCB, રિલે, હીટ સિંક અને સ્પેશિયાલિટી સિરામિક્સ તેમજ કોપર ફોઇલ જેવી સામગ્રીનો સમાવેશ થાય છે. એ જ દિવસે Semicon 2.0 પોર્ટલ પણ શરૂ કરાયું."
+      }
+    },
+    {
+      "category": "Science & Tech",
+      "question": "Earth has temporarily captured a roughly 1-metre asteroid as a 'mini-moon', first spotted by Hungarian astronomer Krisztián Sárneczky on 20 August 2026. What is its designation?",
+      "options": ["2026 QQ8", "2024 PT5", "Kamo'oalewa", "2020 CD3"],
+      "answer": 0,
+      "explanation": "The Minor Planet Center announced it on 29 October 2026 after follow-up with the University of Hawaii 2.2 m telescope and the Lowell Discovery Telescope. It was captured in April 2026 after entering Earth's Hill sphere and will escape in a few months; its next close approach is expected in 2058. 2024 PT5 was the mini-moon of 2024, and Kamo'oalewa is a quasi-satellite of Earth.",
+      "gu": {
+        "question": "પૃથ્વીએ આશરે 1 મીટરના એક લઘુગ્રહને કામચલાઉ 'મિની-મૂન' તરીકે પકડ્યો છે, જેને હંગેરિયન ખગોળશાસ્ત્રી ક્રિસ્ટિયન શાર્નેત્સ્કીએ 20 ઓગસ્ટ 2026ના રોજ પ્રથમ જોયો. તેનું નામ (હોદ્દો) શું છે?",
+        "options": ["2026 QQ8", "2024 PT5", "કામોઓઆલેવા", "2020 CD3"],
+        "explanation": "હવાઈ યુનિવર્સિટીના 2.2 મીટર ટેલિસ્કોપ અને લોવેલ ડિસ્કવરી ટેલિસ્કોપથી પુષ્ટિ પછી માઇનર પ્લેનેટ સેન્ટરે 29 ઓક્ટોબર 2026ના રોજ તેની જાહેરાત કરી. પૃથ્વીના હિલ સ્ફિયરમાં પ્રવેશતાં એપ્રિલ 2026માં તે પકડાયો અને થોડા મહિનામાં છૂટો પડી જશે; તેનો આગામી નજીકનો પસાર 2058માં અપેક્ષિત છે. 2024 PT5 વર્ષ 2024નો મિની-મૂન હતો અને કામોઓઆલેવા પૃથ્વીનો ક્વાસી-સેટેલાઇટ (અર્ધ-ઉપગ્રહ) છે."
+      }
+    },
+    {
+      "category": "Environment",
+      "question": "A new flowering plant, Disporum kamakhasiense, was described in the journal Novon in November 2026. In which two states was it found?",
+      "options": ["Arunachal Pradesh and Nagaland", "Sikkim and West Bengal", "Manipur and Mizoram", "Assam and Meghalaya"],
+      "answer": 3,
+      "explanation": "It was recorded in Garbhanga Reserve Forest (Kamrup) and Laisong (Dima Hasao) in Assam, and Barapani in Meghalaya. Its name joins Kamrupa, the ancient name of Assam, with the Khasi Hills. The perennial herb of the family Colchicaceae has white star-shaped flowers and grows on cliffs under bamboo at about 200–1,100 m; its closest relative is Disporum calcaratum.",
+      "gu": {
+        "question": "નવેમ્બર 2026માં Novon જર્નલમાં નવી ફૂલછોડ પ્રજાતિ Disporum kamakhasienseનું વર્ણન થયું. તે કયાં બે રાજ્યોમાં મળી?",
+        "options": ["અરુણાચલ પ્રદેશ અને નાગાલેન્ડ", "સિક્કિમ અને પશ્ચિમ બંગાળ", "મણિપુર અને મિઝોરમ", "આસામ અને મેઘાલય"],
+        "explanation": "તે આસામના ગરભંગા રિઝર્વ ફોરેસ્ટ (કામરૂપ) અને લાઇસોંગ (દીમા હસાઓ) તથા મેઘાલયના બારાપાની વિસ્તારમાં નોંધાઈ. તેનું નામ આસામના પ્રાચીન નામ કામરૂપ અને ખાસી ટેકરીઓ પરથી બન્યું છે. Colchicaceae કુળની આ બહુવર્ષાયુ વનસ્પતિને સફેદ તારા આકારનાં ફૂલ આવે છે અને તે આશરે 200–1,100 મીટરની ઊંચાઈએ વાંસ નીચે ખડકો પર ઊગે છે; તેની સૌથી નજીકની સંબંધી Disporum calcaratum છે."
+      }
+    },
+    {
+      "category": "Schemes",
+      "question": "Union Minister Dr Virendra Kumar launched the 'Vayo Samman Rashtriya Abhiyan', a national intergenerational bonding campaign, on 4 November 2026. Under which scheme was it launched?",
+      "options": ["Atal Vayo Abhyuday Yojana (AVYAY)", "PM-DAKSH", "SMILE", "NAMASTE"],
+      "answer": 0,
+      "explanation": "The Ministry of Social Justice and Empowerment campaign follows a 5C model: Connect, Converse, Co-create, Contribute and Continue. Its Vayo SAATHI volunteer track is open to citizens aged 18 and above, who register on the SCW SAMAVESH portal or the JEEVAN app. India's 60+ population is projected to grow from about 10 crore in 2011 to 23 crore by 2036.",
+      "gu": {
+        "question": "કેન્દ્રીય મંત્રી ડૉ. વીરેન્દ્ર કુમારે 4 નવેમ્બર 2026ના રોજ પેઢીઓ વચ્ચે જોડાણ વધારવાનું રાષ્ટ્રીય અભિયાન 'વયો સન્માન રાષ્ટ્રીય અભિયાન' શરૂ કર્યું. તે કઈ યોજના હેઠળ શરૂ કરાયું?",
+        "options": ["અટલ વયો અભ્યુદય યોજના (AVYAY)", "PM-DAKSH", "SMILE", "NAMASTE"],
+        "explanation": "સામાજિક ન્યાય અને અધિકારિતા મંત્રાલયનું આ અભિયાન 5C મોડેલ અનુસરે છે: કનેક્ટ, કન્વર્સ, કો-ક્રિએટ, કોન્ટ્રિબ્યુટ અને કન્ટિન્યુ. તેના વયો SAATHI સ્વયંસેવક વિભાગમાં 18 વર્ષ અને તેથી વધુ વયના નાગરિકો SCW SAMAVESH પોર્ટલ કે JEEVAN એપ પર નોંધણી કરી શકે છે. ભારતની 60+ વયની વસ્તી 2011માં આશરે 10 કરોડથી વધીને 2036 સુધીમાં 23 કરોડ થવાનો અંદાજ છે."
+      }
+    },
+    {
+      "category": "Agriculture",
+      "question": "On 6 November 2026 the Centre ordered weekly declaration of rice and paddy stocks and allowed five southern states to impose stock limits. Which of these is NOT one of those five states?",
+      "options": ["Kerala", "Telangana", "Odisha", "Karnataka"],
+      "answer": 2,
+      "explanation": "The five states are Andhra Pradesh, Karnataka, Kerala, Tamil Nadu and Telangana, and the limits can stay until 31 January 2027. Traders, wholesalers, retailers, big chains, processors and millers must report stocks in six categories (Basmati, non-Basmati premium, non-Basmati, parboiled, broken rice and paddy) on the Food Stock Portal every Friday. Violations attract action under the Essential Commodities Act, 1955.",
+      "gu": {
+        "question": "6 નવેમ્બર 2026ના રોજ કેન્દ્રએ ચોખા અને ડાંગરના જથ્થાની સાપ્તાહિક જાહેરાત ફરજિયાત કરી અને દક્ષિણનાં પાંચ રાજ્યોને સ્ટોક મર્યાદા લાદવાની મંજૂરી આપી. નીચેનામાંથી કયું રાજ્ય આ પાંચમાં નથી?",
+        "options": ["કેરળ", "તેલંગાણા", "ઓડિશા", "કર્ણાટક"],
+        "explanation": "પાંચ રાજ્યો આંધ્ર પ્રદેશ, કર્ણાટક, કેરળ, તમિલનાડુ અને તેલંગાણા છે, અને આ મર્યાદા 31 જાન્યુઆરી 2027 સુધી રહી શકે છે. વેપારીઓ, જથ્થાબંધ અને છૂટક વેપારીઓ, મોટી ચેઇન, પ્રોસેસર્સ અને મિલરોએ છ શ્રેણીઓ (બાસમતી, નોન-બાસમતી પ્રીમિયમ, નોન-બાસમતી, ઉકાળેલા (પારબોઇલ્ડ) ચોખા, કણકી અને ડાંગર)માં દર શુક્રવારે ફૂડ સ્ટોક પોર્ટલ પર જથ્થો જણાવવો પડશે. ઉલ્લંઘન બદલ આવશ્યક ચીજવસ્તુ અધિનિયમ, 1955 હેઠળ કાર્યવાહી થશે."
+      }
+    },
+    {
+      "category": "National",
+      "question": "Union MoS Dr Jitendra Singh launched the nationwide Digital Life Certificate (DLC) Campaign 5.0, running from 1 to 30 November 2026, on 6 November. Which department runs it?",
+      "options": ["Department of Financial Services", "Department of Pension and Pensioners' Welfare", "Department of Personnel and Training", "Department of Social Justice and Empowerment"],
+      "answer": 1,
+      "explanation": "DLCs are generated through Jeevan Pramaan, a biometric-enabled digital service, so pensioners need not visit banks or offices. About 40 lakh DLCs were generated in the first five days, up about 60% from the same period last year, and face authentication rose to nearly 80% of submissions. Camps are being held at nearly 3,000 locations, with doorstep service for those who cannot attend. Last year's campaign generated 1.92 crore DLCs.",
+      "gu": {
+        "question": "કેન્દ્રીય રાજ્યમંત્રી ડૉ. જિતેન્દ્ર સિંહે 6 નવેમ્બરે 1થી 30 નવેમ્બર 2026 સુધી ચાલતા દેશવ્યાપી ડિજિટલ લાઇફ સર્ટિફિકેટ (DLC) અભિયાન 5.0નો પ્રારંભ કર્યો. આ અભિયાન કયો વિભાગ ચલાવે છે?",
+        "options": ["નાણાકીય સેવાઓ વિભાગ", "પેન્શન અને પેન્શનર્સ કલ્યાણ વિભાગ", "કર્મચારી અને તાલીમ વિભાગ", "સામાજિક ન્યાય અને અધિકારિતા વિભાગ"],
+        "explanation": "DLC બાયોમેટ્રિક આધારિત ડિજિટલ સેવા જીવન પ્રમાણ દ્વારા બને છે, તેથી પેન્શનરોને બેંક કે કચેરીએ જવું પડતું નથી. પ્રથમ પાંચ દિવસમાં આશરે 40 લાખ DLC બન્યાં, જે ગયા વર્ષના સમાન ગાળા કરતાં આશરે 60% વધુ છે, અને ફેસ ઓથેન્ટિકેશનનો હિસ્સો લગભગ 80% થયો. લગભગ 3,000 સ્થળોએ કેમ્પ યોજાય છે અને આવી ન શકનારા માટે ઘરઆંગણે સેવા ઉપલબ્ધ છે. ગયા વર્ષના અભિયાનમાં 1.92 કરોડ DLC બન્યાં હતાં."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "Indian Grandmaster Pranav V won the FIDE World Junior (Under-20) Blitz Championship 2026 with 10½ points from 13 rounds. Which city hosted it?",
+      "options": ["Doha", "Astana", "Batumi", "Al Ain"],
+      "answer": 3,
+      "explanation": "The World Junior Rapid and Blitz Championships were held in Al Ain, UAE, from 1 to 7 November 2026. Eldiyar Orozbaev of Kyrgyzstan was second with 9½ points, and Russia's Valeria Kleymenova won the girls' blitz title. Pranav also took silver in the open rapid event and is the 2025 World Junior (classical) champion, a title he won in Petrovac, Montenegro.",
+      "gu": {
+        "question": "ભારતીય ગ્રાન્ડમાસ્ટર પ્રણવ V.એ 13 રાઉન્ડમાંથી 10½ પોઇન્ટ સાથે FIDE વર્લ્ડ જુનિયર (અંડર-20) બ્લિટ્ઝ ચેમ્પિયનશિપ 2026 જીતી. તેનું આયોજન કયા શહેરમાં થયું હતું?",
+        "options": ["દોહા", "અસ્તાના", "બાતુમી", "અલ ઐન"],
+        "explanation": "વર્લ્ડ જુનિયર રેપિડ અને બ્લિટ્ઝ ચેમ્પિયનશિપ 1થી 7 નવેમ્બર 2026 દરમિયાન UAEના અલ ઐનમાં યોજાઈ. કિર્ગિસ્તાનના એલ્દિયાર ઓરોઝબાયેવ 9½ પોઇન્ટ સાથે બીજા સ્થાને રહ્યા અને રશિયાની વાલેરિયા ક્લેમેનોવાએ છોકરીઓનું બ્લિટ્ઝ ટાઇટલ જીત્યું. પ્રણવે ઓપન રેપિડમાં રજત પણ જીત્યો; તેઓ 2025ના વર્લ્ડ જુનિયર (ક્લાસિકલ) ચેમ્પિયન છે, જે ટાઇટલ તેમણે મોન્ટેનેગ્રોના પેટ્રોવાકમાં જીત્યું હતું."
+      }
+    },
+    {
+      "category": "Awards",
+      "question": "Indian non-profit REACH became the first Indian civil society organisation to win the Kochon Prize, presented in Indonesia on 5 November 2026. The prize honours work against which disease?",
+      "options": ["Malaria", "Tuberculosis", "HIV/AIDS", "Leprosy"],
+      "answer": 1,
+      "explanation": "The Kochon Prize (US$65,000) is given by Korea's Kochon Foundation with the Stop TB Partnership and is the largest award devoted only to TB. REACH (Resource group for Education and Advocacy for Community Health) shared the 2026 prize with the Centre for Health Solutions (Kenya) and the Marshall Islands TB Control Program. India carries about a quarter of the world's TB cases.",
+      "gu": {
+        "question": "ભારતની બિનનફાકારક સંસ્થા REACH 5 નવેમ્બર 2026ના રોજ ઇન્ડોનેશિયામાં એનાયત થયેલું કોચોન પ્રાઇઝ જીતનારી પ્રથમ ભારતીય નાગરિક સમાજ સંસ્થા બની. આ પુરસ્કાર કયા રોગ સામેના કાર્ય માટે અપાય છે?",
+        "options": ["મેલેરિયા", "ક્ષય રોગ (TB)", "HIV/AIDS", "રક્તપિત્ત"],
+        "explanation": "કોચોન પ્રાઇઝ (US$65,000) કોરિયાનું કોચોન ફાઉન્ડેશન સ્ટોપ TB પાર્ટનરશિપ સાથે મળીને આપે છે અને તે ફક્ત TB માટેનો સૌથી મોટો પુરસ્કાર છે. REACH (રિસોર્સ ગ્રુપ ફોર એજ્યુકેશન એન્ડ એડવોકસી ફોર કમ્યુનિટી હેલ્થ)એ 2026નું ઇનામ સેન્ટર ફોર હેલ્થ સોલ્યુશન્સ (કેન્યા) અને માર્શલ આઇલેન્ડ્સ TB કંટ્રોલ પ્રોગ્રામ સાથે વહેંચ્યું. વિશ્વના આશરે ચોથા ભાગના TB કેસ ભારતમાં છે."
+      }
+    },
+    {
+      "category": "Important Days",
+      "question": "World Radiography Day is observed on 8 November, the anniversary of the discovery of X-rays in 1895. Who discovered them?",
+      "options": ["Henri Becquerel", "Marie Curie", "Wilhelm Conrad Röntgen", "J.J. Thomson"],
+      "answer": 2,
+      "explanation": "Röntgen discovered X-rays on 8 November 1895 at the University of Würzburg, Germany, and won the first Nobel Prize in Physics in 1901. The day is promoted by the International Society of Radiographers and Radiological Technologists (ISRRT) and national societies to recognise radiographers and medical imaging. Element 111, roentgenium, is named after him.",
+      "gu": {
+        "question": "વિશ્વ રેડિયોગ્રાફી દિવસ 8 નવેમ્બરે ઉજવાય છે, જે 1895માં X-કિરણોની શોધની વર્ષગાંઠ છે. X-કિરણોની શોધ કોણે કરી હતી?",
+        "options": ["હેન્રી બેકરલ", "મેરી ક્યુરી", "વિલ્હેમ કોનરાડ રોન્ટજન", "જે.જે. થોમસન"],
+        "explanation": "રોન્ટજને 8 નવેમ્બર 1895ના રોજ જર્મનીની વુર્ઝબર્ગ યુનિવર્સિટીમાં X-કિરણોની શોધ કરી અને 1901માં ભૌતિકશાસ્ત્રનું પ્રથમ નોબેલ પારિતોષિક મેળવ્યું. રેડિયોગ્રાફર્સ અને મેડિકલ ઇમેજિંગના યોગદાનને બિરદાવવા ઇન્ટરનેશનલ સોસાયટી ઓફ રેડિયોગ્રાફર્સ એન્ડ રેડિયોલોજિકલ ટેક્નોલોજિસ્ટ્સ (ISRRT) અને રાષ્ટ્રીય સંસ્થાઓ આ દિવસ ઉજવે છે. તત્ત્વ ક્રમાંક 111, રોન્ટજેનિયમ, તેમના નામ પરથી રખાયું છે."
+      }
+    }
+  ],
+  "sources": [
+    { "name": "AffairsCloud: Current Affairs 7, 8 & 9 November 2026", "url": "https://affairscloud.com/?p=337146" },
+    { "name": "C4S Courses: Daily Current Affairs 07–08 November 2026", "url": "https://c4scourses.in/current-affairs/daily-current-affairs-dca-0708-november-2026/" },
+    { "name": "FIDE: World Junior Blitz Championship 2026: Pranav V and Kleymenova claim titles in Al Ain", "url": "https://www.fide.com/?p=51386" },
+    { "name": "The Week (PTI): Nearly 40 lakh digital life certificates in 5 days", "url": "https://www.theweek.in/wire-updates/national/2026/11/06/nearly-40-lakh-digital-life-certificates-in-5-days-centre-s-campaign-gets-overwhelming-response.html" }
+  ]
+}

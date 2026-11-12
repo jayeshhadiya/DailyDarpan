@@ -1,0 +1,179 @@
+{
+  "id": "gsssb-cce-group-a-b-2026",
+  "board": "GSSSB",
+  "advtNo": "468/202627",
+  "published": "2026-11-03",
+  "startDate": "2026-11-05",
+  "lastDate": "2026-11-30",
+  "totalVacancies": 1237,
+  "notificationUrl": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GSSSB_202627_468.pdf",
+  "applyUrl": "https://ojas.gujarat.gov.in/",
+
+  "title": "GSSSB Combined Competitive Exam (Group A and B, Class-3) Recruitment 2026",
+  "organization": "Gujarat Subordinate Service Selection Board (GSSSB), Gandhinagar",
+  "summary": "GSSSB is filling 1,237 Class-3 posts through one combined competitive exam: 243 Group-A posts (Sub Registrar, Assistant Tribal Development Officer, Social Welfare Inspector, Office Superintendent, Office Assistant, Head Clerk and Senior Clerk) and 994 Junior Clerk posts in Group-B. Any graduate aged 20 to 35 can apply on OJAS from 5 to 30 November 2026. Selection is through a common MCQ preliminary exam followed by a main exam: written (descriptive) for Group-A and MCQ for Group-B.",
+  "posts": [
+    { "name": "Sub Registrar, Grade-1 (Group-A), office of the Inspector General of Registration", "vacancies": "6 (General 4, EWS 0, SEBC 1, SC 0, ST 1)", "payScale": "₹49,600 fixed for 5 years" },
+    { "name": "Sub Registrar, Grade-2 (Group-A), office of the Inspector General of Registration", "vacancies": "15 (General 4, EWS 2, SEBC 0, SC 3, ST 6)", "payScale": "₹40,800 fixed for 5 years" },
+    { "name": "Assistant Tribal Development Officer (Group-A), office of the Director, Tribal Development", "vacancies": "50 (General 21, EWS 5, SEBC 11, SC 5, ST 8)", "payScale": "₹49,600 fixed for 5 years" },
+    { "name": "Social Welfare Inspector (Group-A), office of the Director, Developing Castes Welfare", "vacancies": "89 (General 35, EWS 10, SEBC 23, SC 8, ST 13)", "payScale": "₹40,800 fixed for 5 years" },
+    { "name": "Office Superintendent (Group-A), office of the Director of Prohibition and Excise", "vacancies": "7 (General 5, EWS 0, SEBC 1, SC 0, ST 1)", "payScale": "₹49,600 fixed for 5 years" },
+    { "name": "Office Assistant (Group-A), Gujarat Public Service Commission", "vacancies": "15 (General 3, EWS 2, SEBC 5, SC 3, ST 2)", "payScale": "₹26,000 fixed for 5 years" },
+    { "name": "Head Clerk (Group-A), office of the Director, Tribal Development", "vacancies": "10 (General 5, EWS 1, SEBC 3, SC 1, ST 0)", "payScale": "₹40,800 fixed for 5 years" },
+    { "name": "Senior Clerk (Group-A), various heads of department", "vacancies": "51 (General 25, EWS 5, SEBC 10, SC 2, ST 9)", "payScale": "₹26,000 fixed for 5 years" },
+    { "name": "Junior Clerk (Group-B), various heads of department", "vacancies": "994 (General 454, EWS 106, SEBC 241, SC 46, ST 147)", "payScale": "₹26,000 fixed for 5 years" }
+  ],
+  "importantDates": [
+    { "event": "Notification date", "date": "3 November 2026" },
+    { "event": "Online application starts", "date": "5 November 2026, 2:00 pm" },
+    { "event": "Last date to apply", "date": "30 November 2026, 11:59 pm" },
+    { "event": "Last date to pay the fee", "date": "2 December 2026, 11:59 pm" },
+    { "event": "Preliminary and main exam dates", "date": "To be announced on gsssb.gujarat.gov.in" }
+  ],
+  "education": [
+    "A bachelor's degree from a university set up under a central or state act, an institution recognised as one, or a deemed university under Section 3 of the UGC Act, 1956; or an equivalent qualification recognised by the government",
+    "Basic knowledge of computers as laid down in the Gujarat Civil Services Classification and Recruitment (General) Rules, 1967. You can apply without the certificate, but must show it before appointment",
+    "Adequate knowledge of Gujarati or Hindi or both",
+    "Education, age, caste, non-creamy-layer and EWS certificates are counted as on 30 November 2026",
+    "Of the 1,237 posts, 72 Group-A and 320 Group-B posts are reserved for women within the category counts, and 10% of posts are reserved for ex-servicemen; 13 Group-A and 12 Group-B posts are reserved for candidates with a disability"
+  ],
+  "ageLimit": "20 to 35 years as on 30 November 2026.",
+  "ageRelaxation": [
+    { "category": "Women, general category", "relaxation": "5 years" },
+    { "category": "Men, reserved categories", "relaxation": "5 years" },
+    { "category": "Women, reserved categories", "relaxation": "10 years (up to 45)" },
+    { "category": "Men with a disability, general category", "relaxation": "10 years (up to 45)" },
+    { "category": "Women with a disability, general category", "relaxation": "15 years (up to 45)" },
+    { "category": "Men with a disability, reserved categories", "relaxation": "15 years (up to 45)" },
+    { "category": "Women with a disability, reserved categories", "relaxation": "20 years (up to 45)" },
+    { "category": "Ex-servicemen", "relaxation": "Length of service plus 3 years" }
+  ],
+  "fees": [
+    { "category": "General (unreserved)", "amount": "₹500 (refunded if you appear in the exam)" },
+    { "category": "Reserved: women of all categories, SEBC, SC, ST, EWS, candidates with a disability and ex-servicemen", "amount": "₹400 (refunded if you appear in the exam)" }
+  ],
+  "salary": "Fixed pay for the first five years: ₹49,600 a month for Sub Registrar Grade-1, Assistant Tribal Development Officer and Office Superintendent; ₹40,800 for Sub Registrar Grade-2, Social Welfare Inspector and Head Clerk; ₹26,000 for Senior Clerk, Office Assistant and Junior Clerk. After five years of satisfactory service, regular appointment in the pay scale due under the rules at that time, subject to the Supreme Court's final decision in SLP No. 14124/2012 and 14125/2012.",
+  "selectionProcess": [
+    "Stage 1: one common MCQ preliminary exam for Group-A and Group-B (150 marks). It is only a screening test; its marks don't count in the final list",
+    "Separate lists for Group-A and Group-B: about seven times the posts in each category, by merit, are called to the main exam",
+    "Stage 2: main exam, descriptive (three papers) for Group-A and MCQ for Group-B",
+    "Separate final selection lists for Group-A and Group-B on the main exam marks, followed by checking of original certificates",
+    "No waiting list will be prepared, as this is a combined advertisement for several cadres"
+  ],
+  "examPattern": [
+    { "paper": "Preliminary (Group-A and B)", "subjects": "English (15), Gujarati (15), general awareness and current affairs (30), quantitative aptitude (30), reasoning (60)", "questions": "150", "marks": "150", "duration": "120 minutes" },
+    { "paper": "Main, Group-A: Paper I", "subjects": "Gujarati language skill (descriptive)", "questions": "", "marks": "100", "duration": "3 hours" },
+    { "paper": "Main, Group-A: Paper II", "subjects": "English language skill (descriptive)", "questions": "", "marks": "100", "duration": "3 hours" },
+    { "paper": "Main, Group-A: Paper III", "subjects": "General studies (descriptive, in Gujarati)", "questions": "56", "marks": "150", "duration": "3 hours" },
+    { "paper": "Main, Group-B", "subjects": "Constitution, economy, public administration, ethics, government schemes, current affairs, Gujarat history, geography and culture, Gujarati and English, science and IT (MCQ)", "questions": "", "marks": "200", "duration": "120 minutes" }
+  ],
+  "examNotes": [
+    "Preliminary exam: 1 mark per question, and 0.25 mark is cut for each wrong answer",
+    "Candidates with a disability get 20 extra minutes for every hour of the preliminary exam",
+    "Everyone who applies and pays the fee may sit the preliminary exam provisionally; eligibility is checked later",
+    "At least 40% marks are needed in each stage and in every paper of that stage, in every category",
+    "Group-A Paper III has 56 questions: ten 1-mark (10–20 words), ten 2-mark (20–30 words), thirty 3-mark (30–50 words) and six 5-mark (about 100 words)",
+    "Widows (not remarried) and candidates who have represented at a recognised national/international, inter-university or All India school level sports event get 5% extra marks"
+  ],
+  "syllabus": [
+    { "topic": "Preliminary", "details": "English 15, Gujarati 15, general awareness and current affairs 30, quantitative aptitude 30, reasoning 60 marks" },
+    { "topic": "Group-B main (200 marks)", "details": "Indian state system and Constitution 20, Indian and state economy and NITI Aayog 20, public administration and governance 20, discipline and ethics in public service 10, government schemes 30, regional, national and international events and current affairs 30, history and geography of Gujarat 20, cultural heritage of Gujarat (art and literature) 10, Gujarati and English 20, science, environment and IT 20" },
+    { "topic": "Group-A Paper I: Gujarati (100)", "details": "Essay (15), expansion of ideas (10), précis (10), prose comprehension (10), press statement (5), letter (5), letter to the editor (10), report writing (10), English to Gujarati translation (10), grammar: idioms, proverbs, samas, chhand, alankar, one-word substitution, spelling, sandhi, sentence types (15)" },
+    { "topic": "Group-A Paper II: English (100)", "details": "Essay (15), formal letter (10), report (10), writing on visual information (10), formal speech (5), précis (5), reading comprehension (20), grammar: tenses, voice, narration, articles, prepositions, phrasal verbs, idioms, administrative glossary, synonyms/antonyms and more (20), translation (5)" },
+    { "topic": "Group-A Paper III: General studies (150)", "details": "History of India and Gujarat (15), cultural heritage (15), geography (15), science and technology (10), regional, national and international events (30), Indian state system and Constitution (20), public administration and governance (20), discipline in public service and ethics (10), Indian economy and planning, economy of Gujarat (15)" }
+  ],
+  "howToApply": [
+    "Register once on ojas.gujarat.gov.in (One Time Registration, OTR) if you haven't already; only OTR-registered candidates can apply",
+    "Go to Online Application → Apply, choose GSSSB, then advertisement 468/202627 and click Apply now",
+    "Fill in personal and educational details, accept the assurance and save to get an application number",
+    "Upload a recent passport-size photo with a white background and the date it was taken (not more than a year before the last date), 5 cm × 3.6 cm, and your signature, 2.5 cm × 7.5 cm (JPG, up to 15 KB each). Use the same photo at every stage",
+    "Check everything, then confirm the application and note the confirmation number. Nothing can be changed after confirming; if you apply more than once, only the last confirmed application counts",
+    "Pay the fee online (debit card, net banking, UPI or wallet) by 2 December 2026 and keep the receipt; print the application form before the last date",
+    "Help line: 079-23258916"
+  ],
+
+  "gu": {
+    "title": "GSSSB સંયુક્ત સ્પર્ધાત્મક પરીક્ષા (ગ્રુપ A અને B, વર્ગ-3) ભરતી 2026",
+    "organization": "ગુજરાત ગૌણ સેવા પસંદગી મંડળ (GSSSB), ગાંધીનગર",
+    "summary": "GSSSB એક જ સંયુક્ત સ્પર્ધાત્મક પરીક્ષાથી વર્ગ-3ની કુલ 1,237 જગ્યાઓ ભરે છે: ગ્રુપ-Aની 243 જગ્યાઓ (સબ રજિસ્ટ્રાર, મદદનીશ આદિજાતિ વિકાસ અધિકારી, સમાજ કલ્યાણ નિરીક્ષક, કચેરી અધિક્ષક, ઓફિસ આસિસ્ટન્ટ, હેડ ક્લાર્ક અને સિનિયર ક્લાર્ક) અને ગ્રુપ-Bમાં જુનિયર ક્લાર્કની 994 જગ્યાઓ. 20 થી 35 વર્ષના કોઈ પણ સ્નાતક OJAS પર 5 થી 30 નવેમ્બર 2026 સુધી અરજી કરી શકશે. પસંદગી સંયુક્ત MCQ પ્રાથમિક પરીક્ષા અને પછી મુખ્ય પરીક્ષાથી થશે: ગ્રુપ-A માટે વર્ણનાત્મક અને ગ્રુપ-B માટે MCQ.",
+    "posts": [
+      { "name": "સબ રજિસ્ટ્રાર, ગ્રેડ-1 (ગ્રુપ-A), નોંધણી સર નિરીક્ષકની કચેરી", "vacancies": "6 (બિનઅનામત 4, આ.ન.વર્ગ 0, સા.શૈ.પ.વર્ગ 1, અનુ. જાતિ 0, અનુ. જનજાતિ 1)", "payScale": "5 વર્ષ માટે ₹49,600 ફિક્સ" },
+      { "name": "સબ રજિસ્ટ્રાર, ગ્રેડ-2 (ગ્રુપ-A), નોંધણી સર નિરીક્ષકની કચેરી", "vacancies": "15 (બિનઅનામત 4, આ.ન.વર્ગ 2, સા.શૈ.પ.વર્ગ 0, અનુ. જાતિ 3, અનુ. જનજાતિ 6)", "payScale": "5 વર્ષ માટે ₹40,800 ફિક્સ" },
+      { "name": "મદદનીશ આદિજાતિ વિકાસ અધિકારી (ગ્રુપ-A), નિયામક, આદિજાતિ વિકાસની કચેરી", "vacancies": "50 (બિનઅનામત 21, આ.ન.વર્ગ 5, સા.શૈ.પ.વર્ગ 11, અનુ. જાતિ 5, અનુ. જનજાતિ 8)", "payScale": "5 વર્ષ માટે ₹49,600 ફિક્સ" },
+      { "name": "સમાજ કલ્યાણ નિરીક્ષક (ગ્રુપ-A), નિયામક, વિકસતી જાતિ કલ્યાણની કચેરી", "vacancies": "89 (બિનઅનામત 35, આ.ન.વર્ગ 10, સા.શૈ.પ.વર્ગ 23, અનુ. જાતિ 8, અનુ. જનજાતિ 13)", "payScale": "5 વર્ષ માટે ₹40,800 ફિક્સ" },
+      { "name": "કચેરી અધિક્ષક (ગ્રુપ-A), નશાબંધી અને આબકારી નિયામકની કચેરી", "vacancies": "7 (બિનઅનામત 5, આ.ન.વર્ગ 0, સા.શૈ.પ.વર્ગ 1, અનુ. જાતિ 0, અનુ. જનજાતિ 1)", "payScale": "5 વર્ષ માટે ₹49,600 ફિક્સ" },
+      { "name": "ઓફિસ આસિસ્ટન્ટ (ગ્રુપ-A), ગુજરાત જાહેર સેવા આયોગ", "vacancies": "15 (બિનઅનામત 3, આ.ન.વર્ગ 2, સા.શૈ.પ.વર્ગ 5, અનુ. જાતિ 3, અનુ. જનજાતિ 2)", "payScale": "5 વર્ષ માટે ₹26,000 ફિક્સ" },
+      { "name": "હેડ ક્લાર્ક (ગ્રુપ-A), નિયામક, આદિજાતિ વિકાસની કચેરી", "vacancies": "10 (બિનઅનામત 5, આ.ન.વર્ગ 1, સા.શૈ.પ.વર્ગ 3, અનુ. જાતિ 1, અનુ. જનજાતિ 0)", "payScale": "5 વર્ષ માટે ₹40,800 ફિક્સ" },
+      { "name": "સિનિયર ક્લાર્ક (ગ્રુપ-A), વિવિધ ખાતાના વડા", "vacancies": "51 (બિનઅનામત 25, આ.ન.વર્ગ 5, સા.શૈ.પ.વર્ગ 10, અનુ. જાતિ 2, અનુ. જનજાતિ 9)", "payScale": "5 વર્ષ માટે ₹26,000 ફિક્સ" },
+      { "name": "જુનિયર ક્લાર્ક (ગ્રુપ-B), વિવિધ ખાતાના વડા", "vacancies": "994 (બિનઅનામત 454, આ.ન.વર્ગ 106, સા.શૈ.પ.વર્ગ 241, અનુ. જાતિ 46, અનુ. જનજાતિ 147)", "payScale": "5 વર્ષ માટે ₹26,000 ફિક્સ" }
+    ],
+    "importantDates": [
+      { "event": "જાહેરાતની તારીખ", "date": "3 નવેમ્બર 2026" },
+      { "event": "ઓનલાઇન અરજી શરૂ", "date": "5 નવેમ્બર 2026, બપોરે 2:00" },
+      { "event": "અરજીની છેલ્લી તારીખ", "date": "30 નવેમ્બર 2026, રાત્રે 11:59" },
+      { "event": "ફી ભરવાની છેલ્લી તારીખ", "date": "2 ડિસેમ્બર 2026, રાત્રે 11:59" },
+      { "event": "પ્રાથમિક અને મુખ્ય પરીક્ષાની તારીખ", "date": "gsssb.gujarat.gov.in પર જાહેર થશે" }
+    ],
+    "education": [
+      "કેન્દ્ર કે રાજ્યના અધિનિયમથી સ્થપાયેલી યુનિવર્સિટી, તે તરીકે માન્ય સંસ્થા અથવા UGC અધિનિયમ, 1956ની કલમ-3 હેઠળની ડીમ્ડ યુનિવર્સિટીમાંથી સ્નાતકની પદવી, અથવા સરકારે માન્ય કરેલી તેની સમકક્ષ લાયકાત",
+      "ગુજરાત મુલ્કી સેવા વર્ગીકરણ અને ભરતી (સામાન્ય) નિયમો, 1967 મુજબ કોમ્પ્યૂટરનું પાયાનું જ્ઞાન. પ્રમાણપત્ર વગર પણ અરજી કરી શકાય, પરંતુ નિમણૂક પહેલાં રજૂ કરવું ફરજિયાત",
+      "ગુજરાતી અથવા હિન્દી અથવા બંને ભાષાનું પૂરતું જ્ઞાન",
+      "શૈક્ષણિક લાયકાત, વય, જાતિ, નોન-ક્રીમીલેયર અને EWS પ્રમાણપત્ર માટે 30 નવેમ્બર 2026ની સ્થિતિ ગણાશે",
+      "કુલ 1,237 જગ્યાઓ પૈકી કૅટેગરીની સંખ્યામાં જ ગ્રુપ-Aની 72 અને ગ્રુપ-Bની 320 જગ્યાઓ મહિલાઓ માટે અનામત છે, 10% જગ્યાઓ માજી સૈનિક માટે અનામત છે અને ગ્રુપ-Aની 13 તથા ગ્રુપ-Bની 12 જગ્યાઓ દિવ્યાંગ ઉમેદવારો માટે અનામત છે"
+    ],
+    "ageLimit": "30 નવેમ્બર 2026ના રોજ 20 થી 35 વર્ષ.",
+    "ageRelaxation": [
+      { "category": "સામાન્ય કૅટેગરીનાં મહિલા", "relaxation": "5 વર્ષ" },
+      { "category": "અનામત કૅટેગરીના પુરુષ", "relaxation": "5 વર્ષ" },
+      { "category": "અનામત કૅટેગરીનાં મહિલા", "relaxation": "10 વર્ષ (મહત્તમ 45 વર્ષ)" },
+      { "category": "સામાન્ય કૅટેગરીના દિવ્યાંગ પુરુષ", "relaxation": "10 વર્ષ (મહત્તમ 45 વર્ષ)" },
+      { "category": "સામાન્ય કૅટેગરીનાં દિવ્યાંગ મહિલા", "relaxation": "15 વર્ષ (મહત્તમ 45 વર્ષ)" },
+      { "category": "અનામત કૅટેગરીના દિવ્યાંગ પુરુષ", "relaxation": "15 વર્ષ (મહત્તમ 45 વર્ષ)" },
+      { "category": "અનામત કૅટેગરીનાં દિવ્યાંગ મહિલા", "relaxation": "20 વર્ષ (મહત્તમ 45 વર્ષ)" },
+      { "category": "માજી સૈનિક", "relaxation": "બજાવેલી ફરજનો સમયગાળો ઉપરાંત 3 વર્ષ" }
+    ],
+    "fees": [
+      { "category": "બિનઅનામત વર્ગ", "amount": "₹500 (પરીક્ષામાં હાજર રહેનારને પરત મળશે)" },
+      { "category": "અનામત વર્ગ: તમામ કૅટેગરીનાં મહિલા, સા.શૈ.પ.વર્ગ, અનુ. જાતિ, અનુ. જનજાતિ, આ.ન.વર્ગ, દિવ્યાંગ અને માજી સૈનિક", "amount": "₹400 (પરીક્ષામાં હાજર રહેનારને પરત મળશે)" }
+    ],
+    "salary": "પ્રથમ પાંચ વર્ષ માટે માસિક ફિક્સ પગાર: સબ રજિસ્ટ્રાર ગ્રેડ-1, મદદનીશ આદિજાતિ વિકાસ અધિકારી અને કચેરી અધિક્ષકને ₹49,600; સબ રજિસ્ટ્રાર ગ્રેડ-2, સમાજ કલ્યાણ નિરીક્ષક અને હેડ ક્લાર્કને ₹40,800; સિનિયર ક્લાર્ક, ઓફિસ આસિસ્ટન્ટ અને જુનિયર ક્લાર્કને ₹26,000. પાંચ વર્ષની સંતોષકારક સેવા બાદ તે સમયના નિયમો મુજબ મળવાપાત્ર પગારધોરણમાં નિયમિત નિમણૂક, જે સુપ્રીમ કોર્ટના SLP No. 14124/2012 અને 14125/2012ના આખરી ચુકાદાને આધીન રહેશે.",
+    "selectionProcess": [
+      "તબક્કો-1: ગ્રુપ-A અને ગ્રુપ-B માટે એક સંયુક્ત MCQ પ્રાથમિક પરીક્ષા (150 ગુણ). આ માત્ર સ્ક્રીનીંગ ટેસ્ટ છે; તેના ગુણ આખરી પસંદગી યાદીમાં ગણાશે નહીં",
+      "ગ્રુપ-A અને ગ્રુપ-B માટે અલગ યાદી: મેરિટ મુજબ કૅટેગરીવાર જગ્યાના આશરે સાત ગણા ઉમેદવારોને મુખ્ય પરીક્ષા માટે બોલાવાશે",
+      "તબક્કો-2: મુખ્ય પરીક્ષા, ગ્રુપ-A માટે વર્ણનાત્મક (ત્રણ પેપર) અને ગ્રુપ-B માટે MCQ",
+      "મુખ્ય પરીક્ષાના ગુણના આધારે ગ્રુપ-A અને ગ્રુપ-B માટે અલગ આખરી પસંદગી યાદી, ત્યાર બાદ અસલ પ્રમાણપત્રોની ચકાસણી",
+      "અલગ-અલગ સંવર્ગોની સંયુક્ત જાહેરાત હોવાથી પ્રતીક્ષા યાદી (વેઇટિંગ લિસ્ટ) બનાવાશે નહીં"
+    ],
+    "examPattern": [
+      { "paper": "પ્રાથમિક (ગ્રુપ-A અને B)", "subjects": "અંગ્રેજી (15), ગુજરાતી (15), સામાન્ય જ્ઞાન અને વર્તમાન પ્રવાહો (30), ગાણિતિક કસોટીઓ (30), તાર્કિક કસોટીઓ (60)", "questions": "150", "marks": "150", "duration": "120 મિનિટ" },
+      { "paper": "મુખ્ય, ગ્રુપ-A: પેપર I", "subjects": "ગુજરાતી ભાષા કૌશલ્ય (વર્ણનાત્મક)", "questions": "", "marks": "100", "duration": "3 કલાક" },
+      { "paper": "મુખ્ય, ગ્રુપ-A: પેપર II", "subjects": "અંગ્રેજી ભાષા કૌશલ્ય (વર્ણનાત્મક)", "questions": "", "marks": "100", "duration": "3 કલાક" },
+      { "paper": "મુખ્ય, ગ્રુપ-A: પેપર III", "subjects": "સામાન્ય અભ્યાસ (વર્ણનાત્મક, ગુજરાતી માધ્યમ)", "questions": "56", "marks": "150", "duration": "3 કલાક" },
+      { "paper": "મુખ્ય, ગ્રુપ-B", "subjects": "બંધારણ, અર્થતંત્ર, જાહેર વહીવટ, નીતિશાસ્ત્ર, સરકારી યોજનાઓ, વર્તમાન પ્રવાહો, ગુજરાતનો ઇતિહાસ, ભૂગોળ અને સંસ્કૃતિ, ગુજરાતી અને અંગ્રેજી, વિજ્ઞાન અને IT (MCQ)", "questions": "", "marks": "200", "duration": "120 મિનિટ" }
+    ],
+    "examNotes": [
+      "પ્રાથમિક પરીક્ષા: પ્રશ્નદીઠ 1 ગુણ અને દરેક ખોટા જવાબ માટે 0.25 ગુણ કપાશે",
+      "દિવ્યાંગ ઉમેદવારોને પ્રાથમિક પરીક્ષામાં દર કલાકે 20 મિનિટ વધારાનો સમય મળશે",
+      "ફી સાથે અરજી કરનાર દરેક ઉમેદવારને અરજીની ચકાસણી વગર કામચલાઉ ધોરણે પ્રાથમિક પરીક્ષામાં બેસવા દેવાશે; લાયકાત પછીથી ચકાસાશે",
+      "દરેક તબક્કાની પરીક્ષામાં અને તે તબક્કાના દરેક પેપરમાં ઓછામાં ઓછા 40% ગુણ જરૂરી, તમામ કૅટેગરી માટે",
+      "ગ્રુપ-A પેપર IIIમાં 56 પ્રશ્નો: 1 ગુણના 10 (10–20 શબ્દો), 2 ગુણના 10 (20–30 શબ્દો), 3 ગુણના 30 (30–50 શબ્દો) અને 5 ગુણના 6 (આશરે 100 શબ્દો)",
+      "પુનઃલગ્ન ન કરેલાં વિધવા ઉમેદવારો અને માન્ય રાષ્ટ્રીય/આંતરરાષ્ટ્રીય, આંતર યુનિવર્સિટી કે અખિલ ભારત શાળા સંઘની રમત સ્પર્ધામાં પ્રતિનિધિત્વ કરેલ ઉમેદવારોને 5% વધારાના ગુણ મળશે"
+    ],
+    "syllabus": [
+      { "topic": "પ્રાથમિક પરીક્ષા", "details": "અંગ્રેજી 15, ગુજરાતી 15, સામાન્ય જ્ઞાન અને વર્તમાન પ્રવાહો 30, ગાણિતિક કસોટીઓ 30, તાર્કિક કસોટીઓ 60 ગુણ" },
+      { "topic": "ગ્રુપ-B મુખ્ય પરીક્ષા (200 ગુણ)", "details": "ભારતીય રાજ્ય વ્યવસ્થા અને બંધારણ 20, ભારતીય અને રાજ્યનું અર્થતંત્ર તથા નીતિ આયોગ 20, જાહેર વહીવટ અને શાસન 20, જાહેર સેવામાં શિસ્ત અને નીતિશાસ્ત્ર 10, સરકારી યોજનાઓ 30, પ્રાદેશિક, રાષ્ટ્રીય અને આંતરરાષ્ટ્રીય ઘટનાઓ તથા વર્તમાન પ્રવાહો 30, ગુજરાતનો ઇતિહાસ અને ભૂગોળ 20, ગુજરાતનો સાંસ્કૃતિક વારસો (કલા અને સાહિત્ય) 10, ગુજરાતી અને અંગ્રેજી 20, વિજ્ઞાન, પર્યાવરણ અને માહિતી ટેકનોલોજી 20" },
+      { "topic": "ગ્રુપ-A પેપર I: ગુજરાતી (100)", "details": "નિબંધ (15), વિચાર વિસ્તાર (10), સંક્ષેપીકરણ (10), ગદ્ય સમીક્ષા (10), પ્રચાર માધ્યમો માટે નિવેદન (5), પત્ર લેખન (5), ચર્ચાપત્ર (10), અહેવાલ લેખન (10), અંગ્રેજીમાંથી ગુજરાતી અનુવાદ (10), વ્યાકરણ: રૂઢિપ્રયોગ, કહેવતો, સમાસ, છંદ, અલંકાર, શબ્દસમૂહ માટે એક શબ્દ, જોડણી, સંધિ, વાક્યના પ્રકાર (15)" },
+      { "topic": "ગ્રુપ-A પેપર II: અંગ્રેજી (100)", "details": "Essay (15), formal letter (10), report (10), writing on visual information (10), formal speech (5), précis (5), reading comprehension (20), grammar: tenses, voice, narration, articles, prepositions, phrasal verbs, idioms, administrative glossary, synonyms/antonyms વગેરે (20), translation (5)" },
+      { "topic": "ગ્રુપ-A પેપર III: સામાન્ય અભ્યાસ (150)", "details": "ભારત અને ગુજરાતનો ઇતિહાસ (15), સાંસ્કૃતિક વારસો (15), ભૂગોળ (15), વિજ્ઞાન અને ટેકનોલોજી (10), પ્રાદેશિક, રાષ્ટ્રીય અને આંતરરાષ્ટ્રીય ઘટનાઓ (30), ભારતીય રાજ્ય વ્યવસ્થા અને બંધારણ (20), જાહેર વહીવટ અને શાસન (20), જાહેર સેવામાં શિસ્ત અને નીતિશાસ્ત્ર (10), ભારતીય અર્થતંત્ર અને આયોજન, ગુજરાતનું અર્થતંત્ર (15)" }
+    ],
+    "howToApply": [
+      "ojas.gujarat.gov.in પર OTR (One Time Registration) કર્યું ન હોય તો પહેલાં કરો; OTR કરેલ ઉમેદવારો જ અરજી કરી શકશે",
+      "Online Application → Apply પર જઈ GSSSB પસંદ કરો, જાહેરાત ક્રમાંક 468/202627 પસંદ કરી Apply now પર ક્લિક કરો",
+      "Personal Details અને Educational Details ભરો, Assurance સ્વીકારી save કરી Application Number મેળવો",
+      "સફેદ બેકગ્રાઉન્ડ અને ફોટો પડાવ્યાની તારીખવાળો (છેલ્લી તારીખથી એક વર્ષથી જૂનો નહીં) 5 સે.મી. × 3.6 સે.મી.નો ફોટો અને 2.5 સે.મી. × 7.5 સે.મી.ની સહી અપલોડ કરો (JPG, દરેક 15 KB સુધી). દરેક તબક્કે એ જ ફોટો વાપરવો",
+      "બધી વિગતો ચકાસી અરજી Confirm કરો અને Confirmation Number સાચવો. Confirm કર્યા પછી કોઈ ફેરફાર થઈ શકશે નહીં; એકથી વધુ અરજી કરી હોય તો છેલ્લી Confirm થયેલી અરજી જ માન્ય ગણાશે",
+      "2 ડિસેમ્બર 2026 સુધીમાં ફી ઓનલાઇન (ડેબિટ કાર્ડ, નેટ બેંકિંગ, UPI કે વૉલેટ) ભરી રસીદ સાચવો અને છેલ્લી તારીખ પહેલાં અરજીની પ્રિન્ટ કાઢો",
+      "માર્ગદર્શન માટે ફોન: 079-23258916"
+    ]
+  }
+}
