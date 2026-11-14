@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-14",
+  "questions": [
+    {
+      "category": "Sports",
+      "question": "Gunjan (women's 48 kg) and Lairenlakpam Ambekar Meetei (men's 50 kg) won India's first-ever boxing gold medals at the Youth Olympic Games on 12 November 2026. In which city were these Games held?",
+      "options": ["Nairobi", "Buenos Aires", "Dakar", "Gangwon"],
+      "answer": 2,
+      "explanation": "The 2026 Summer Youth Olympic Games were held in Dakar, Senegal, the first Olympic event ever staged in Africa. Gunjan beat Algeria's Bouthaina Bensalah 5–0, and Ambekar Meetei beat Ireland's Kristian Jubani 3–2 in the final. India won gold in both boxing events it reached the final in. The Youth Olympics are for athletes aged 15 to 18; Buenos Aires hosted the 2018 Summer edition and Gangwon (South Korea) the 2024 Winter edition.",
+      "gu": {
+        "question": "ગુંજન (મહિલા 48 કિગ્રા) અને લૈરેનલક્પમ અંબેકર મીતેઈ (પુરુષ 50 કિગ્રા)એ 12 નવેમ્બર 2026ના રોજ યુથ ઓલિમ્પિક ગેમ્સમાં ભારતના પ્રથમ બોક્સિંગ સુવર્ણ ચંદ્રક જીત્યા. આ રમતો કયા શહેરમાં યોજાઈ હતી?",
+        "options": ["નૈરોબી", "બ્યુનોસ આયર્સ", "ડાકાર", "ગંગવોન"],
+        "explanation": "2026ની સમર યુથ ઓલિમ્પિક ગેમ્સ સેનેગલના ડાકારમાં યોજાઈ હતી, જે આફ્રિકામાં યોજાયેલી પ્રથમ ઓલિમ્પિક સ્પર્ધા છે. ગુંજને અલ્જેરિયાની બુથૈના બેનસાલાહને 5–0થી અને અંબેકર મીતેઈએ ફાઇનલમાં આયર્લેન્ડના ક્રિસ્ટિયન જુબાનીને 3–2થી હરાવ્યા. ભારત જે બંને બોક્સિંગ ફાઇનલમાં પહોંચ્યું તેમાં સુવર્ણ જીત્યું. યુથ ઓલિમ્પિક 15થી 18 વર્ષના ખેલાડીઓ માટે છે; 2018ની સમર આવૃત્તિ બ્યુનોસ આયર્સમાં અને 2024ની વિન્ટર આવૃત્તિ ગંગવોન (દક્ષિણ કોરિયા)માં યોજાઈ હતી."
+      }
+    },
+    {
+      "category": "Sports",
+      "question": "On 14 November 2026, aged 15 years and 232 days, Vaibhav Sooryavanshi became the youngest captain in men's T20 cricket. Which team did he lead in the Syed Mushtaq Ali Trophy?",
+      "options": ["Bihar", "Rajasthan", "Jharkhand", "Uttar Pradesh"],
+      "answer": 0,
+      "explanation": "Sooryavanshi led Bihar against Saurashtra at the Holkar Stadium, Indore, in the Syed Mushtaq Ali Trophy 2026–27. He broke the record of Croatia's Zach Vukusic, who captained at 17 years and 311 days in August 2025. Suraj Kashyap is Bihar's vice-captain for the first two matches. Sooryavanshi, from Samastipur, Bihar, plays for Rajasthan Royals in the IPL.",
+      "gu": {
+        "question": "14 નવેમ્બર 2026ના રોજ 15 વર્ષ અને 232 દિવસની ઉંમરે વૈભવ સૂર્યવંશી પુરુષ T20 ક્રિકેટમાં સૌથી યુવા કેપ્ટન બન્યા. સૈયદ મુશ્તાક અલી ટ્રોફીમાં તેમણે કઈ ટીમનું નેતૃત્વ કર્યું?",
+        "options": ["બિહાર", "રાજસ્થાન", "ઝારખંડ", "ઉત્તર પ્રદેશ"],
+        "explanation": "સૂર્યવંશીએ સૈયદ મુશ્તાક અલી ટ્રોફી 2026–27માં ઇન્દોરના હોલકર સ્ટેડિયમ ખાતે સૌરાષ્ટ્ર સામે બિહારનું નેતૃત્વ કર્યું. તેમણે ક્રોએશિયાના ઝેક વુકુસિકનો રેકોર્ડ તોડ્યો, જેમણે ઓગસ્ટ 2025માં 17 વર્ષ અને 311 દિવસની ઉંમરે કેપ્ટનશીપ કરી હતી. પ્રથમ બે મેચ માટે સૂરજ કશ્યપ બિહારના ઉપ-કેપ્ટન છે. બિહારના સમસ્તીપુરના સૂર્યવંશી IPLમાં રાજસ્થાન રોયલ્સ તરફથી રમે છે."
+      }
+    },
+    {
+      "category": "Energy",
+      "question": "PM Narendra Modi dedicated India's largest underground LPG storage cavern, built for HPCL in Mangaluru, on 13 November 2026. What is its storage capacity?",
+      "options": ["60,000 tonnes", "80,000 tonnes", "1,20,000 tonnes", "1.5 million tonnes"],
+      "answer": 1,
+      "explanation": "Megha Engineering & Infrastructures Ltd (MEIL) built the 80,000-tonne cavern for Hindustan Petroleum Corporation Ltd at a cost of over ₹850 crore. It lies about 120 metres underground and a 9.4-km pipeline links it to New Mangalore Port. It is India's second underground LPG cavern, after Visakhapatnam. It is separate from the Strategic Petroleum Reserves, which store crude oil (Visakhapatnam, Mangaluru and Padur: 5.33 million tonnes in all). The same day, the PM opened the 7.5-km Kalena Agrahara–SG Palya stretch of the Bengaluru Metro Pink Line.",
+      "gu": {
+        "question": "પીએમ નરેન્દ્ર મોદીએ 13 નવેમ્બર 2026ના રોજ મેંગલુરુમાં HPCL માટે બનેલી ભારતની સૌથી મોટી ભૂગર્ભ LPG સંગ્રહ ગુફા રાષ્ટ્રને સમર્પિત કરી. તેની સંગ્રહ ક્ષમતા કેટલી છે?",
+        "options": ["60,000 ટન", "80,000 ટન", "1,20,000 ટન", "15 લાખ ટન"],
+        "explanation": "મેઘા એન્જિનિયરિંગ એન્ડ ઇન્ફ્રાસ્ટ્રક્ચર્સ લિ. (MEIL)એ હિન્દુસ્તાન પેટ્રોલિયમ કોર્પોરેશન લિ. માટે ₹850 કરોડથી વધુના ખર્ચે 80,000 ટનની આ ગુફા બનાવી છે. તે જમીનથી આશરે 120 મીટર નીચે છે અને 9.4 કિમીની પાઇપલાઇન તેને ન્યૂ મેંગલોર બંદર સાથે જોડે છે. વિશાખાપટ્ટનમ પછી આ ભારતની બીજી ભૂગર્ભ LPG ગુફા છે. તે ક્રૂડ ઓઇલ સંગ્રહ કરતા વ્યૂહાત્મક પેટ્રોલિયમ ભંડાર (વિશાખાપટ્ટનમ, મેંગલુરુ અને પાદુર: કુલ 53.3 લાખ ટન)થી અલગ છે. એ જ દિવસે વડાપ્રધાને બેંગલુરુ મેટ્રો પિંક લાઇનના 7.5 કિમીના કાલેના અગ્રહારા–એસજી પાલ્યા ભાગનું ઉદ્ઘાટન કર્યું."
+      }
+    },
+    {
+      "category": "Agriculture",
+      "question": "PI Industries' Pioxaniliprole (brand 'Pioxazon') was recognised by the Central Insecticides Board and Registration Committee as the first insecticide molecule discovered in India. To which chemical class does it belong?",
+      "options": ["Neonicotinoid", "Organophosphate", "Anthranilic diamide", "Synthetic pyrethroid"],
+      "answer": 2,
+      "explanation": "Pioxaniliprole is an anthranilic diamide that acts on the ryanodine receptors in insect muscles, upsetting calcium control and causing paralysis. CIBRC recognised it at its 476th meeting. It targets pests such as the yellow stem borer and leaf folder in rice, fall armyworm in maize and chilli, fruit borer in tomato and pod borer in Bengal gram. Its nationwide rollout began on 6 November 2026 for the rabi season. PI Industries has spent about ₹2,000 crore on research since 2014.",
+      "gu": {
+        "question": "પીઆઈ ઇન્ડસ્ટ્રીઝના પાયોક્ઝાનિલિપ્રોલ (બ્રાન્ડ 'પાયોક્ઝાઝોન')ને કેન્દ્રીય કીટનાશક બોર્ડ અને નોંધણી સમિતિએ ભારતમાં શોધાયેલા પ્રથમ કીટનાશક અણુ તરીકે માન્યતા આપી. તે કયા રાસાયણિક વર્ગનો છે?",
+        "options": ["નિયોનિકોટિનોઇડ", "ઓર્ગેનોફોસ્ફેટ", "એન્થ્રાનિલિક ડાયમાઇડ", "સિન્થેટિક પાયરેથ્રોઇડ"],
+        "explanation": "પાયોક્ઝાનિલિપ્રોલ એક એન્થ્રાનિલિક ડાયમાઇડ છે, જે જીવાતના સ્નાયુઓમાં રાયનોડિન રીસેપ્ટર પર અસર કરીને કેલ્શિયમ નિયંત્રણ ખોરવે છે અને લકવો કરે છે. CIBRCએ તેની 476મી બેઠકમાં તેને માન્યતા આપી. તે ડાંગરમાં પીળી ગાભમારાની ઇયળ અને પાન વાળનારી ઇયળ, મકાઈ અને મરચાંમાં ફોલ આર્મીવર્મ, ટામેટાંમાં ફળ કોરી ખાનારી ઇયળ અને ચણામાં પોપટા કોરી ખાનારી ઇયળ જેવી જીવાતો સામે છે. રવિ સિઝન માટે તેનું દેશવ્યાપી વેચાણ 6 નવેમ્બર 2026થી શરૂ થયું. પીઆઈ ઇન્ડસ્ટ્રીઝે 2014થી સંશોધન પાછળ આશરે ₹2,000 કરોડ ખર્ચ્યા છે."
+      }
+    },
+    {
+      "category": "States",
+      "question": "Which state topped the Access Equality Index 2026, released in November 2026 by the Centre for New Economics Studies of O.P. Jindal Global University?",
+      "options": ["Kerala", "Goa", "Andhra Pradesh", "Sikkim"],
+      "answer": 1,
+      "explanation": "Goa ranked first among 28 states with a score of 0.68, followed by Andhra Pradesh (0.66) and Sikkim (0.63). The index uses five pillars and 60 indicators, and states scoring above 0.42 are called 'Front-Runners'. Andhra Pradesh topped the socio-economic security pillar and did best compared with its income: it is 13th in per capita income, but its access score was 0.15 above what its income would predict, ahead of Kerala and Himachal Pradesh.",
+      "gu": {
+        "question": "ઓ.પી. જિંદાલ ગ્લોબલ યુનિવર્સિટીના સેન્ટર ફોર ન્યૂ ઇકોનોમિક્સ સ્ટડીઝ દ્વારા નવેમ્બર 2026માં જાહેર થયેલા એક્સેસ ઇક્વાલિટી ઇન્ડેક્સ 2026માં કયું રાજ્ય પ્રથમ ક્રમે રહ્યું?",
+        "options": ["કેરળ", "ગોવા", "આંધ્ર પ્રદેશ", "સિક્કિમ"],
+        "explanation": "28 રાજ્યોમાં ગોવા 0.68ના સ્કોર સાથે પ્રથમ, આંધ્ર પ્રદેશ (0.66) બીજા અને સિક્કિમ (0.63) ત્રીજા ક્રમે રહ્યું. આ સૂચકાંક પાંચ સ્તંભો અને 60 સૂચકો પર આધારિત છે, અને 0.42થી વધુ સ્કોર ધરાવતાં રાજ્યોને 'ફ્રન્ટ-રનર્સ' કહેવાય છે. આંધ્ર પ્રદેશ સામાજિક-આર્થિક સુરક્ષા સ્તંભમાં પ્રથમ રહ્યું અને પોતાની આવકની સરખામણીમાં શ્રેષ્ઠ દેખાવ કર્યો: માથાદીઠ આવકમાં તે 13મા ક્રમે છે, પરંતુ તેનો સ્કોર આવકના આધારે અપેક્ષિત સ્કોર કરતાં 0.15 વધુ રહ્યો, જે કેરળ અને હિમાચલ પ્રદેશ કરતાં આગળ છે."
+      }
+    },
+    {
+      "category": "Defence",
+      "question": "IMNEX-26, the 8th edition of a bilateral naval exercise, was held in Visakhapatnam from 10 to 14 November 2026. India held it with which country?",
+      "options": ["Malaysia", "Maldives", "Indonesia", "Myanmar"],
+      "answer": 3,
+      "explanation": "IMNEX is the India–Myanmar Naval Exercise. The opening ceremony was held aboard the destroyer INS Rana; the offshore patrol vessel INS Sumedha and the Myanmar Navy's UMS King Sin Phyu Shin also took part. It fits India's MAHASAGAR vision (Mutual and Holistic Advancement for Security and Growth Across Regions). Separately, the 6th India–Malaysia army exercise Harimau Shakti runs from 18 to 30 November 2026.",
+      "gu": {
+        "question": "દ્વિપક્ષીય નૌકા કવાયતની 8મી આવૃત્તિ IMNEX-26 વિશાખાપટ્ટનમમાં 10થી 14 નવેમ્બર 2026 દરમિયાન યોજાઈ. ભારતે આ કવાયત કયા દેશ સાથે કરી?",
+        "options": ["મલેશિયા", "માલદીવ", "ઇન્ડોનેશિયા", "મ્યાનમાર"],
+        "explanation": "IMNEX એટલે ભારત–મ્યાનમાર નૌકા કવાયત. ઉદ્ઘાટન સમારોહ ડિસ્ટ્રોયર INS રાણા પર યોજાયો; ઓફશોર પેટ્રોલ જહાજ INS સુમેધા અને મ્યાનમાર નૌકાદળના UMS કિંગ સિન ફ્યુ શિને પણ ભાગ લીધો. આ કવાયત ભારતના MAHASAGAR (Mutual and Holistic Advancement for Security and Growth Across Regions) વિઝનને અનુરૂપ છે. અલગથી, 6ઠ્ઠી ભારત–મલેશિયા સૈન્ય કવાયત હરિમાઉ શક્તિ 18થી 30 નવેમ્બર 2026 દરમિયાન યોજાશે."
+      }
+    },
+    {
+      "category": "Culture",
+      "question": "The 57th International Film Festival of India (IFFI) will be held in Goa from 20 to 28 November 2026. Which is the Guest Country this year?",
+      "options": ["Spain", "France", "Japan", "Australia"],
+      "answer": 0,
+      "explanation": "Spain is the Guest Country as part of the Spain–India Dual Year 2026. The theme is 'Stories Without Borders' and Ashutosh Gowariker is Festival Director. 159 films from 86 countries will be screened; Paweł Pawlikowski's 'Fatherland' opens the festival and 'Dhurandhar' opens the Indian Panorama. A new Best Web Series (OTT) award carries ₹10 lakh. IFFI began in 1952 and has been held in Goa since 2004.",
+      "gu": {
+        "question": "ભારતનો 57મો આંતરરાષ્ટ્રીય ફિલ્મ મહોત્સવ (IFFI) 20થી 28 નવેમ્બર 2026 દરમિયાન ગોવામાં યોજાશે. આ વર્ષનો મહેમાન દેશ (ગેસ્ટ કન્ટ્રી) કયો છે?",
+        "options": ["સ્પેન", "ફ્રાન્સ", "જાપાન", "ઓસ્ટ્રેલિયા"],
+        "explanation": "સ્પેન–ભારત ડ્યુઅલ યર 2026 અંતર્ગત સ્પેન મહેમાન દેશ છે. થીમ 'સ્ટોરીઝ વિધાઉટ બોર્ડર્સ' છે અને આશુતોષ ગોવારીકર ફેસ્ટિવલ ડિરેક્ટર છે. 86 દેશોની 159 ફિલ્મો દર્શાવાશે; પાવેલ પાવલિકોવસ્કીની 'ફાધરલેન્ડ'થી મહોત્સવ અને 'ધુરંધર'થી ઇન્ડિયન પેનોરમાની શરૂઆત થશે. નવો બેસ્ટ વેબ સિરીઝ (OTT) પુરસ્કાર ₹10 લાખનો છે. IFFI 1952માં શરૂ થયો હતો અને 2004થી ગોવામાં યોજાય છે."
+      }
+    },
+    {
+      "category": "Personalities",
+      "question": "Padma Shri awardee Sanjit 'Bunker' Roy, who died aged 81 in November 2026, founded the Barefoot College in 1972. In which village of Rajasthan is it located?",
+      "options": ["Ralegan Siddhi", "Tilonia", "Hiware Bazar", "Anandwan"],
+      "answer": 1,
+      "explanation": "Barefoot College (Social Work and Research Centre) is in Tilonia, Ajmer district. Roy, born in 1945 in Burnpur, West Bengal, was a three-time national squash champion who turned to rural work after seeing the 1966–67 Bihar famine. His 'Solar Mamas' programme, started in 2000, trained rural women from 96 countries as solar engineers. Ralegan Siddhi and Hiware Bazar are model villages in Maharashtra, and Anandwan is Baba Amte's ashram in Maharashtra.",
+      "gu": {
+        "question": "નવેમ્બર 2026માં 81 વર્ષની વયે અવસાન પામેલા પદ્મશ્રી સન્માનિત સંજિત 'બંકર' રોયે 1972માં બેરફૂટ કૉલેજની સ્થાપના કરી હતી. તે રાજસ્થાનના કયા ગામમાં આવેલી છે?",
+        "options": ["રાલેગણ સિદ્ધિ", "તિલોનિયા", "હિવરે બજાર", "આનંદવન"],
+        "explanation": "બેરફૂટ કૉલેજ (સોશિયલ વર્ક એન્ડ રિસર્ચ સેન્ટર) અજમેર જિલ્લાના તિલોનિયામાં છે. 1945માં પશ્ચિમ બંગાળના બર્નપુરમાં જન્મેલા રોય ત્રણ વખત રાષ્ટ્રીય સ્ક્વોશ ચેમ્પિયન હતા અને 1966–67ના બિહાર દુષ્કાળ જોઈને ગ્રામીણ કાર્ય તરફ વળ્યા. 2000માં શરૂ થયેલા તેમના 'સોલાર મામાસ' કાર્યક્રમે 96 દેશોની ગ્રામીણ મહિલાઓને સોલાર એન્જિનિયર તરીકે તાલીમ આપી. રાલેગણ સિદ્ધિ અને હિવરે બજાર મહારાષ્ટ્રનાં આદર્શ ગામો છે, અને આનંદવન મહારાષ્ટ્રમાં બાબા આમટેનો આશ્રમ છે."
+      }
+    },
+    {
+      "category": "Economy",
+      "question": "According to RBI data released in November 2026, how much was India's current account deficit (CAD) in the first half of 2026–27 (April–September 2026)?",
+      "options": ["$25.8 billion", "$18.0 billion", "$32.4 billion", "$41.2 billion"],
+      "answer": 0,
+      "explanation": "The CAD widened to $25.8 billion from $18 billion in H1 2025–26, as the merchandise trade deficit reached $176.1 billion (exports $265.3 billion, imports $441.4 billion). Services exports and remittances partly offset it. A $92.6 billion capital account surplus still gave an overall balance of payments surplus of $66.8 billion. Forex reserves rose by $2.49 billion to $719.547 billion in the week ended 6 November 2026.",
+      "gu": {
+        "question": "નવેમ્બર 2026માં જાહેર થયેલા RBIના આંકડા મુજબ 2026–27ના પ્રથમ છ મહિના (એપ્રિલ–સપ્ટેમ્બર 2026)માં ભારતની ચાલુ ખાતાની ખાધ (CAD) કેટલી હતી?",
+        "options": ["$25.8 અબજ", "$18.0 અબજ", "$32.4 અબજ", "$41.2 અબજ"],
+        "explanation": "વેપારી માલની વેપાર ખાધ $176.1 અબજ (નિકાસ $265.3 અબજ, આયાત $441.4 અબજ) થતાં CAD 2025–26ના પ્રથમ છ મહિનાના $18 અબજથી વધીને $25.8 અબજ થઈ. સેવા નિકાસ અને વિદેશથી આવતાં નાણાંએ તેની આંશિક ભરપાઈ કરી. $92.6 અબજના મૂડી ખાતાના સરપ્લસને કારણે કુલ લેણદેણની તુલામાં $66.8 અબજનો સરપ્લસ રહ્યો. 6 નવેમ્બર 2026ના રોજ પૂરા થયેલા સપ્તાહમાં વિદેશી હૂંડિયામણ ભંડાર $2.49 અબજ વધીને $719.547 અબજ થયો."
+      }
+    },
+    {
+      "category": "Important Days",
+      "question": "World Diabetes Day is observed on 14 November, the birth anniversary of the scientist who co-discovered insulin in 1921. Who was he?",
+      "options": ["Charles Best", "Alexander Fleming", "Edward Jenner", "Frederick Banting"],
+      "answer": 3,
+      "explanation": "Sir Frederick Banting discovered insulin with Charles Best in 1921 and shared the 1923 Nobel Prize in Medicine with J.J.R. Macleod. The International Diabetes Federation (IDF) started the day in 1991 with WHO support, and the UN recognised it in 2006. The 2026–27 theme is 'Early action on diabetes'. The IDF estimates about 589 million adults had diabetes in 2025. India also celebrates Children's Day (Bal Diwas) on 14 November, Jawaharlal Nehru's birth anniversary (born 1889, Allahabad).",
+      "gu": {
+        "question": "વિશ્વ ડાયાબિટીસ દિવસ 14 નવેમ્બરે 1921માં ઇન્સ્યુલિનની સહ-શોધ કરનાર વૈજ્ઞાનિકની જન્મજયંતીએ ઉજવાય છે. તે કોણ હતા?",
+        "options": ["ચાર્લ્સ બેસ્ટ", "એલેક્ઝાન્ડર ફ્લેમિંગ", "એડવર્ડ જેનર", "ફ્રેડરિક બેન્ટિંગ"],
+        "explanation": "સર ફ્રેડરિક બેન્ટિંગે 1921માં ચાર્લ્સ બેસ્ટ સાથે ઇન્સ્યુલિનની શોધ કરી હતી અને 1923નો મેડિસિનનો નોબેલ પુરસ્કાર જે.જે.આર. મેક્લિઓડ સાથે વહેંચ્યો હતો. ઇન્ટરનેશનલ ડાયાબિટીસ ફેડરેશન (IDF)એ WHOના સહયોગથી 1991માં આ દિવસ શરૂ કર્યો અને 2006માં સંયુક્ત રાષ્ટ્રએ તેને માન્યતા આપી. 2026–27ની થીમ 'ડાયાબિટીસ પર વહેલી કાર્યવાહી' છે. IDFના અંદાજ મુજબ 2025માં આશરે 58.9 કરોડ પુખ્તોને ડાયાબિટીસ હતો. ભારતમાં 14 નવેમ્બરે જવાહરલાલ નેહરુની જન્મજયંતી (જન્મ 1889, અલાહાબાદ) નિમિત્તે બાળ દિવસ પણ ઉજવાય છે."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "SSBCrack Exams: Current Affairs 14 November 2026",
+      "url": "https://ssbcrackexams.com/current-affairs-14-november-2026/"
+    },
+    {
+      "name": "AffairsCloud: Current Affairs 14 November 2026",
+      "url": "https://affairscloud.com/current-affairs-14-november-2026/"
+    },
+    {
+      "name": "Bankersadda: Daily Current Affairs 14th November 2026",
+      "url": "https://www.bankersadda.com/daily-current-affairs-and-gk-updates-14th-november-2026/"
+    }
+  ]
+}
