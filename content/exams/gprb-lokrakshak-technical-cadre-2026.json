@@ -1,0 +1,85 @@
+{
+  "id": "gprb-lokrakshak-technical-cadre-2026",
+  "board": "GPRB",
+  "advtNo": "GPRB/202627/1 to 3",
+  "published": "2026-11-19",
+  "startDate": "2026-11-26",
+  "lastDate": "2026-12-16",
+  "totalVacancies": 3000,
+  "notificationUrl": "https://gprb.gujarat.gov.in/",
+  "applyUrl": "https://ojas.gujarat.gov.in/",
+
+  "title": "Gujarat Police Lokrakshak and Technical Cadre Recruitment 2026",
+  "organization": "Gujarat Police Recruitment Board (GPRB), Gandhinagar",
+  "summary": "The Gujarat Police Recruitment Board has announced 3,000 Class-3 posts in the Gujarat Police: 2,841 Lokrakshak (police constable) posts and 159 Technical Cadre (Motor Transport) posts. Online applications open on OJAS from 26 November to 16 December 2026. This page is based on the short advertisement of 19 November 2026; the detailed notification with age limit, fees, physical standards and selection process will be uploaded on OJAS on 26 November 2026.",
+  "posts": [
+    { "name": "Unarmed Police Constable (UPC), Lokrakshak cadre, Advt. GPRB/202627/1", "vacancies": "1,000" },
+    { "name": "Armed Police Constable (APC), Lokrakshak cadre, Advt. GPRB/202627/1", "vacancies": "1,000" },
+    { "name": "Armed Police Constable (SRPF), Lokrakshak cadre, Advt. GPRB/202627/1", "vacancies": "841" },
+    { "name": "Head Constable Driver Mechanic (Grade-2), Technical cadre, Advt. GPRB/202627/2", "vacancies": "133" },
+    { "name": "Motor Transport Supervisor (Grade-2), Technical cadre, Advt. GPRB/202627/3", "vacancies": "26" }
+  ],
+  "importantDates": [
+    { "event": "Short advertisement published", "date": "19 November 2026" },
+    { "event": "Detailed notification on OJAS", "date": "26 November 2026" },
+    { "event": "Online application starts", "date": "26 November 2026, 2:00 pm" },
+    { "event": "Last date to apply", "date": "16 December 2026, 11:59 pm" },
+    { "event": "Exam date", "date": "To be announced on gprb.gujarat.gov.in" }
+  ],
+  "education": [
+    "Lokrakshak cadre (UPC, APC, SRPF): Higher Secondary School Certificate (Class 12) from the Secondary and Higher Secondary Education Board, or an equivalent qualification recognised by the government",
+    "Head Constable Driver Mechanic (Grade-2) and Motor Transport Supervisor (Grade-2): Class 12 (HSC) or equivalent, and",
+    "a Motor Mechanic Vehicle trade certificate with one year of apprenticeship from a government-recognised ITI, or a three-year apprenticeship certificate in the Motor Mechanic Vehicle trade under the National Apprenticeship Training Scheme"
+  ],
+  "ageLimit": "Not given in the short advertisement; it will be in the detailed notification on OJAS on 26 November 2026.",
+  "howToApply": [
+    "Read the detailed notification on ojas.gujarat.gov.in after it is uploaded on 26 November 2026",
+    "Apply online on ojas.gujarat.gov.in between 26 November 2026 (2:00 pm) and 16 December 2026 (11:59 pm)",
+    "Fill a separate online form for each of the three cadres: Lokrakshak, Head Constable Driver Mechanic (Grade-2) and Motor Transport Supervisor (Grade-2)",
+    "Confirm the application, print it and keep it; produce it when the board asks",
+    "Applications by post, e-mail or in person are not accepted",
+    "Check gprb.gujarat.gov.in regularly for updates"
+  ],
+  "examNotes": [
+    "Lokrakshak vacancies may change if the Gujarat government approves more posts; Technical cadre vacancies may also change",
+    "The board may change or cancel the advertisement or recruitment process"
+  ],
+
+  "gu": {
+    "title": "ગુજરાત પોલીસ લોકરક્ષક અને ટેકનિકલ કેડર ભરતી 2026",
+    "organization": "ગુજરાત પોલીસ ભરતી બોર્ડ (GPRB), ગાંધીનગર",
+    "summary": "ગુજરાત પોલીસ ભરતી બોર્ડે ગુજરાત પોલીસ દળમાં વર્ગ-3ની કુલ 3,000 જગ્યાઓની જાહેરાત કરી છે: લોકરક્ષક કેડરની 2,841 અને ટેકનિકલ કેડર (મોટર ટ્રાન્સપોર્ટ)ની 159 જગ્યાઓ. OJAS પર 26 નવેમ્બરથી 16 ડિસેમ્બર 2026 સુધી ઓનલાઇન અરજી કરી શકાશે. આ પેજ 19 નવેમ્બર 2026ની ટૂંકી જાહેરાત પર આધારિત છે; વય મર્યાદા, ફી, શારીરિક ધોરણો અને પસંદગી પ્રક્રિયા સાથેની વિગતવાર જાહેરાત 26 નવેમ્બર 2026ના રોજ OJAS પર મુકાશે.",
+    "posts": [
+      { "name": "બિન હથિયારી પોલીસ કોન્સ્ટેબલ (UPC), લોકરક્ષક કેડર, જાહેરાત GPRB/202627/1", "vacancies": "1,000" },
+      { "name": "હથિયારી પોલીસ કોન્સ્ટેબલ (APC), લોકરક્ષક કેડર, જાહેરાત GPRB/202627/1", "vacancies": "1,000" },
+      { "name": "હથિયારી પોલીસ કોન્સ્ટેબલ (SRPF), લોકરક્ષક કેડર, જાહેરાત GPRB/202627/1", "vacancies": "841" },
+      { "name": "હેડ કોન્સ્ટેબલ ડ્રાયવર મિકેનિક (ગ્રેડ-2), ટેકનિકલ કેડર, જાહેરાત GPRB/202627/2", "vacancies": "133" },
+      { "name": "મોટર ટ્રાન્સપોર્ટ સુપરવાઇઝર (ગ્રેડ-2), ટેકનિકલ કેડર, જાહેરાત GPRB/202627/3", "vacancies": "26" }
+    ],
+    "importantDates": [
+      { "event": "ટૂંકી જાહેરાત પ્રસિદ્ધ", "date": "19 નવેમ્બર 2026" },
+      { "event": "OJAS પર વિગતવાર જાહેરાત", "date": "26 નવેમ્બર 2026" },
+      { "event": "ઓનલાઇન અરજી શરૂ", "date": "26 નવેમ્બર 2026, બપોરે 2:00" },
+      { "event": "અરજી કરવાની છેલ્લી તારીખ", "date": "16 ડિસેમ્બર 2026, રાત્રે 11:59" },
+      { "event": "પરીક્ષાની તારીખ", "date": "gprb.gujarat.gov.in પર જાહેર થશે" }
+    ],
+    "education": [
+      "લોકરક્ષક કેડર (UPC, APC, SRPF): માધ્યમિક અને ઉચ્ચતર માધ્યમિક શિક્ષણ બોર્ડની ઉચ્ચતર માધ્યમિક શાળા પ્રમાણપત્ર (ધોરણ 12) પરીક્ષા પાસ, અથવા સરકાર માન્ય સમકક્ષ લાયકાત",
+      "હેડ કોન્સ્ટેબલ ડ્રાયવર મિકેનિક (ગ્રેડ-2) અને મોટર ટ્રાન્સપોર્ટ સુપરવાઇઝર (ગ્રેડ-2): ધોરણ 12 (HSC) અથવા સમકક્ષ પાસ, અને",
+      "સરકાર માન્ય ITIમાંથી એક વર્ષની એપ્રેન્ટિસશિપ સાથે મોટર મિકેનિક વ્હીકલ ટ્રેડ પ્રમાણપત્ર, અથવા નેશનલ એપ્રેન્ટિસશિપ ટ્રેનિંગ સ્કીમ હેઠળ મોટર મિકેનિક વ્હીકલ ટ્રેડમાં ત્રણ વર્ષનું એપ્રેન્ટિસશિપ પ્રમાણપત્ર"
+    ],
+    "ageLimit": "ટૂંકી જાહેરાતમાં આપેલ નથી; 26 નવેમ્બર 2026ના રોજ OJAS પર મુકાનારી વિગતવાર જાહેરાતમાં હશે.",
+    "howToApply": [
+      "26 નવેમ્બર 2026ના રોજ ojas.gujarat.gov.in પર મુકાયા પછી વિગતવાર જાહેરાત વાંચો",
+      "26 નવેમ્બર 2026 (બપોરે 2:00)થી 16 ડિસેમ્બર 2026 (રાત્રે 11:59) સુધી ojas.gujarat.gov.in પર ઓનલાઇન અરજી કરો",
+      "લોકરક્ષક, હેડ કોન્સ્ટેબલ ડ્રાયવર મિકેનિક (ગ્રેડ-2) અને મોટર ટ્રાન્સપોર્ટ સુપરવાઇઝર (ગ્રેડ-2) એમ ત્રણેય કેડર માટે અલગ અલગ ઓનલાઇન અરજી કરો",
+      "અરજી કન્ફર્મ કરી તેની પ્રિન્ટ કાઢીને રાખો; ભરતી બોર્ડ માંગે ત્યારે રજૂ કરો",
+      "ટપાલ, ઇ-મેઇલ કે રૂબરૂ અરજી સ્વીકારવામાં આવશે નહીં",
+      "સમયાંતરે gprb.gujarat.gov.in પર સૂચનાઓ જોતા રહો"
+    ],
+    "examNotes": [
+      "ગુજરાત સરકાર લોકરક્ષક કેડરમાં વધુ જગ્યાઓ મંજૂર કરે તો જગ્યાઓમાં ફેરફાર થઈ શકે; ટેકનિકલ કેડરની જગ્યાઓમાં પણ ફેરફાર થવાની શક્યતા છે",
+      "ભરતી બોર્ડ જાહેરાત કે ભરતી પ્રક્રિયામાં ફેરફાર કરી શકે અથવા તેને રદ કરી શકે"
+    ]
+  }
+}
